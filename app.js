@@ -6,9 +6,9 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
+var navigation = require('./routes/navigation');
 
-var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
 
@@ -17,7 +17,7 @@ var app = express();
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', handlebars());
+app.engine('handlebars', handlebars({defaultLayout:'main'}));
 app.set('view engine', 'handlebars');
 app.use(express.favicon());
 app.use(express.logger('dev'));
@@ -34,7 +34,11 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+app.get('/', navigation.home);
+app.get('/menu', navigation.menu);
+app.get('/gallery', navigation.gallery);
+app.get('/about', navigation.about);
+app.get('/contact', navigation.contact);
 // Example route
 // app.get('/users', user.list);
 
