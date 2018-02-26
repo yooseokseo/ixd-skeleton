@@ -41,5 +41,29 @@
 
 
 @media (min-width: 700px) {
+  .home-content-container{
+    height: 43rem;
+  }
+  .home-content-box{
+    height: 40rem;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+      "Title Image"
+      "Desc Image";
+  }
+  .home-image{
+    grid-area: Image;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+  }
+  .home-title{
+    margin-bottom:0;
+  }
+  .home-desc{
+    margin: 1rem;
+  }
 }

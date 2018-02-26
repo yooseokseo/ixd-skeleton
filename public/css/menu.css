@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+#menu-cover-up{
+  height:9.9rem;
+}
+
 .page-title {
   width: 100%;
   height: 5rem;
@@ -237,4 +241,51 @@
 
 .protein {
   height: 2rem;
+}
+@media (min-width: 700px) {
+  .page-title {
+    display: none;
+  }
+  .menu-signature-container{
+    display: none;
+  }
+  .menu-signature-one-container{
+    top:-0.4rem;
+    height: 20rem;
+  }
+  #menu-cover-up{
+    height:19.6rem;
+  }
+  .signature-btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 5rem;
+    font-size: 1.5rem;
+  }
+  .signature-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    position: relative;
+  }
+  .arrow-up{
+    position: absolute;
+    top: -3rem;
+    width: 100%;
+    height: 3rem;
+    background-color: red;
+    display: none;
+    left: 0;
+  }
+  .arrowActive{
+    display:block;
+  }
+  .menu-container{
+    margin-top: 3rem;
+  }
+
 }

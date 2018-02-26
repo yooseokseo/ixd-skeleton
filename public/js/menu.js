@@ -6,7 +6,9 @@ $(document).ready(function(){
     console.log('item1 is clicked');
     currentSignatureMenuIndex = 0;
     hideAllArrowDown();
+    hideAllArrowUp();
     showArrowDown(currentSignatureMenuIndex);
+    showArrowUp(currentSignatureMenuIndex);
     hideAllSignatureOne();
     showSignatureOne(currentSignatureMenuIndex);
   })
@@ -14,7 +16,9 @@ $(document).ready(function(){
     console.log('item2 is clicked');
     currentSignatureMenuIndex = 1;
     hideAllArrowDown();
+    hideAllArrowUp();
     showArrowDown(currentSignatureMenuIndex);
+    showArrowUp(currentSignatureMenuIndex);
     hideAllSignatureOne();
     showSignatureOne(currentSignatureMenuIndex);
   })
@@ -22,7 +26,9 @@ $(document).ready(function(){
     console.log('item3 is clicked');
     currentSignatureMenuIndex = 2;
     hideAllArrowDown();
+    hideAllArrowUp();
     showArrowDown(currentSignatureMenuIndex);
+    showArrowUp(currentSignatureMenuIndex);
     hideAllSignatureOne();
     showSignatureOne(currentSignatureMenuIndex);
   })
@@ -30,7 +36,9 @@ $(document).ready(function(){
     console.log('item4 is clicked');
     currentSignatureMenuIndex = 3;
     hideAllArrowDown();
+    hideAllArrowUp();
     showArrowDown(currentSignatureMenuIndex);
+    showArrowUp(currentSignatureMenuIndex);
     hideAllSignatureOne();
     showSignatureOne(currentSignatureMenuIndex);
   })
@@ -43,6 +51,18 @@ function hideAllArrowDown(){
     $(arrowDownId).removeClass('arrowActive');
   }
 }
+
+function hideAllArrowUp(){
+  for (var i = 0; i < totalNumberofSignatureMenu; i++) {
+    var arrowUpId= '#arrow-up-'+ i;
+    $(arrowUpId).removeClass('arrowActive');
+  }
+}
+function showArrowUp(index){
+  var arrowUpId= '#arrow-up-'+ index;
+  $(arrowUpId).addClass('arrowActive');
+}
+
 
 function showArrowDown(index){
   var arrowDownId= '#arrow-down-'+ index;
