@@ -574,16 +574,16 @@ html, body {
   }
   .footer-content-container{
     width:100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "Back Back Back Back Back Back Back Back Back Back Back Back"
-      ". . . . LocIcon LocDrop LocDrop LocDrop . . . ."
-      ". . . . AddeIcon AddeData AddeData AddeData . . . ."
-      "HoursTitle HoursTitle HoursTitle HoursTitle ContactTitle ContactTitle ContactTitle ContactTitle Staytitle Staytitle Staytitle Staytitle"
-      " Day Day Day Day PhoneIcon PhoneData PhoneData PhoneData Social Social Social Social"
-      " HoursIcon HoursData HoursData HoursData EmailIcon EmailData EmailData EmailData Social Social Social Social"
-      "Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy";
+      "Back Back Back Back Back Back Back Back Back"
+      ". . . LocIcon LocDrop LocDrop . . ."
+      ". . . AddeIcon AddeData AddeData . . ."
+      "HoursTitle HoursTitle HoursTitle ContactTitle ContactTitle ContactTitle Staytitle Staytitle Staytitle"
+      " Day Day Day PhoneIcon PhoneData PhoneData Social Social Social "
+      " HoursIcon HoursData HoursData  EmailIcon EmailData EmailData Social Social Social"
+      "Copy Copy Copy Copy Copy Copy Copy Copy Copy";
 
   }
   .back{
