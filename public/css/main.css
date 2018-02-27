@@ -402,7 +402,6 @@ html, body {
 .icons {
   width: 2rem;
   height: 2rem;
-  background-color: white;
 }
 
 .adde-icon {
@@ -474,7 +473,6 @@ html, body {
 }
 
 .social-icons {
-  background-color: white;
   height: 3rem;
   width: 3rem;
 }
