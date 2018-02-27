@@ -17,22 +17,22 @@ function localChange(){
     case 'Denver1':
     console.log('denver1');
     footerAddsDataDiv.html('8101 E Belleview Ave. Suite B1. <br>Denver, CO 80237');
-    footerPhoneDataDiv.text('denver1 phone Number');
+    footerPhoneDataDiv.text('(303)-862-9941');
     break;
     case 'Denver2':
     console.log('denver2');
     footerAddsDataDiv.html('1128 S Colorado Blvd. <br>Denver, CO 80246');
-    footerPhoneDataDiv.text('denver2 phone Number');
+    footerPhoneDataDiv.text('(303)-954-0005');
     break;
     case 'Denver3':
     console.log('denver3');
     footerAddsDataDiv.html('216 16th Street Suite 100. <br>Denver, CO 80202');
-    footerPhoneDataDiv.text('denver3 phone Number');
+    footerPhoneDataDiv.text('(720)-904-7937');
     break;
     case 'Denver4':
     console.log('denver4');
     footerAddsDataDiv.html('3401 S Broadway Suite 103. <br>Englewood, CO 80110');
-    footerPhoneDataDiv.text('denver4 phone Number');
+    footerPhoneDataDiv.text('Coming Soon');
     break;
     case 'Denver5':
     console.log('denver5');

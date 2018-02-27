@@ -5,7 +5,7 @@
 }
 .contact-content-container{
   width: 100%;
-    height: 150rem;
+    height: 125rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,7 +155,7 @@ background-color: gray;
   font-size: 1.5rem;
 }
 
-.form-popup-name, .form-popup-email, .form-popup-mesg, .form-popup-submit, .thank{
+.form-popup-name, .form-popup-email, .form-popup-mesg, .form-popup-submit, .thank, .poke-form-box{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -199,20 +199,24 @@ background-color: gray;
 @media (min-width: 700px) {
   .contact-content-boxes{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 125rem;
+    grid-template-rows: 1fr 1fr;
+    height: 55rem;
     grid-template-areas: "Item1 Item2"
-     "Item3 Item4" "Item5 .";
+     "Item3 Item4";
   }
 
   .contact-content-container{
-    height: 125rem;
+    height: 100rem;
   }
 
   .contact-form-container{
     display:block;
     width: 100%;
     height: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .contact-form-box{
     display: none;
@@ -234,6 +238,21 @@ background-color: gray;
     margin-bottom: auto;
     margin-top: 0;
   }
+  .poke-form-container{
+    width: 30rem;
+    height: 100%;
+    background-color: gray;
+  }
+  .poke-form-box input{
+    width: 20rem;
+    margin: 1rem;
+    height: 2rem;
+  }
+  .poke-form-text input{
+    height: 5rem;
+  }
+  .thank{
 
+  }
 
 }
