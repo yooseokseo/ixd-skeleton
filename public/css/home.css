@@ -30,7 +30,7 @@
 .home-desc{
   grid-area:Desc;
   margin: auto;
-  text-align: center;
+  text-align: left;
 }
 
 .home-image img{

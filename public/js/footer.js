@@ -16,18 +16,28 @@ function localChange(){
   switch (locationSelesction) {
     case 'Denver1':
     console.log('denver1');
-    footerAddsDataDiv.text('denver1 Address');
+    footerAddsDataDiv.html('8101 E Belleview Ave. Suite B1. <br>Denver, CO 80237');
     footerPhoneDataDiv.text('denver1 phone Number');
     break;
     case 'Denver2':
     console.log('denver2');
-    footerAddsDataDiv.text('denver2 Address');
+    footerAddsDataDiv.html('1128 S Colorado Blvd. <br>Denver, CO 80246');
     footerPhoneDataDiv.text('denver2 phone Number');
     break;
     case 'Denver3':
     console.log('denver3');
-    footerAddsDataDiv.text('denver3 Address');
+    footerAddsDataDiv.html('216 16th Street Suite 100. <br>Denver, CO 80202');
     footerPhoneDataDiv.text('denver3 phone Number');
+    break;
+    case 'Denver4':
+    console.log('denver4');
+    footerAddsDataDiv.html('3401 S Broadway Suite 103. <br>Englewood, CO 80110');
+    footerPhoneDataDiv.text('denver4 phone Number');
+    break;
+    case 'Denver5':
+    console.log('denver5');
+    footerAddsDataDiv.html('Coming Soon');
+    footerPhoneDataDiv.text('Coming Soon');
     break;
 
     default:
