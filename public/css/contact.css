@@ -199,32 +199,41 @@ background-color: gray;
 @media (min-width: 700px) {
   .contact-content-boxes{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     height: 125rem;
     grid-template-areas: "Item1 Item2"
-     "Item3 Item4" "Item5 ."
-     "Cform Cform";
+     "Item3 Item4" "Item5 .";
   }
 
   .contact-content-container{
     height: 125rem;
   }
-  .contact-form-box{
-    grid-area: Cform;
-    width:100%;
-    margin: auto;
-  }
+
   .contact-form-container{
     display:block;
     width: 100%;
     height: 30rem;
-    background-color: red;
   }
   .contact-form-box{
     display: none;
   }
   .contact-form-box-desktop{
     display: block;
+    width: 100%;
+    height: 15rem;
+    background-color: gray;
   }
+  .contact-content-box2{
+    grid-template-rows: 1fr 1fr;
+  }
+  .contact-title2{
+
+  }
+  .contact-desc{
+    font-size: 2rem;
+    margin-bottom: auto;
+    margin-top: 0;
+  }
+
 
 }

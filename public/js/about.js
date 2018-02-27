@@ -1,15 +1,17 @@
-var currentViewItemIndex = 0;
+var currentViewItemIndexAbout = 0;
 var totalNumOfImages = 4;
 
 
 $(document).ready(function(){
-  startAutoplay();
+  startAutoplayAbout();
   $('#arrow-left-about').click(function(){
     showPrevAbout();
+    console.log('currentViewItemIndexAbout: ' + currentViewItemIndexAbout);
   })
 
   $('#arrow-right-about').click(function(){
     showNextAbout();
+    console.log('currentViewItemIndexAbout: ' + currentViewItemIndexAbout);
   })
 
 
@@ -17,31 +19,27 @@ $(document).ready(function(){
   $('#bar-0-about').addClass('activeBar');
 
   $('#bar-0-about').click(function(){
-    currentViewItemIndex = 0;
-    showCurrentCaroselImageAbout(currentViewItemIndex);
+    currentViewItemIndexAbout = 0;
+    showCurrentCaroselImageAbout(currentViewItemIndexAbout);
 
   });
 
   $('#bar-1-about').click(function(){
-    currentViewItemIndex = 1;
-    showCurrentCaroselImageAbout(currentViewItemIndex);
+    currentViewItemIndexAbout = 1;
+    showCurrentCaroselImageAbout(currentViewItemIndexAbout);
 
   });
 
   $('#bar-2-about').click(function(){
-    currentViewItemIndex = 2;
-    showCurrentCaroselImageAbout(currentViewItemIndex);
+    currentViewItemIndexAbout = 2;
+    showCurrentCaroselImageAbout(currentViewItemIndexAbout);
 
   });
   $('#bar-3-about').click(function(){
-    currentViewItemIndex = 3;
-    showCurrentCaroselImageAbout(currentViewItemIndex);
+    currentViewItemIndexAbout = 3;
+    showCurrentCaroselImageAbout(currentViewItemIndexAbout);
 
   });
-
-
-
-
 
 });
 
@@ -69,10 +67,10 @@ function showPrevAbout(){
   hideCurrentImageAbout();
   hideCurrentBarAbout();
   //decrease index by 1
-  if(currentViewItemIndex == 0){
-    currentViewItemIndex = 4;
+  if(currentViewItemIndexAbout == 0){
+    currentViewItemIndexAbout = 4;
   }
-  currentViewItemIndex--;
+  currentViewItemIndexAbout--;
 
   showCurrentImageAbout();
   showCurrentBarAbout();
@@ -85,11 +83,11 @@ function showNextAbout(){
 
 
   //increase index by 1
-  currentViewItemIndex++;
-  if(currentViewItemIndex == totalNumOfImages){
-    currentViewItemIndex= 0;
+  currentViewItemIndexAbout++;
+  if(currentViewItemIndexAbout == totalNumOfImages){
+    currentViewItemIndexAbout= 0;
   }
-  console.log('currentViewItemIndex: ' + currentViewItemIndex );
+  console.log('currentViewItemIndex: ' + currentViewItemIndexAbout );
 
   showCurrentImageAbout();
   showCurrentBarAbout();
@@ -100,27 +98,35 @@ function showNextAbout(){
 
 function hideCurrentImageAbout(){
   //make current image as display:none
-  var currentItemId = '#c'+ currentViewItemIndex + '-about';
+  for (var i = 0; i < totalNumOfImages; i++) {
+    var currentItemId = '#c'+ i + '-about';
+    $(currentItemId).removeClass('active');
+  }
+  var currentItemId = '#c'+ currentViewItemIndexAbout + '-about';
   console.log('currentItemId: ' + currentItemId);
   $(currentItemId).removeClass('active');
 }
 
 function showCurrentImageAbout(){
   //make next image as display:block
-  currentItemId = '#c'+ currentViewItemIndex + '-about';
+  currentItemId = '#c'+ currentViewItemIndexAbout + '-about';
   $(currentItemId).addClass('active');
 }
 
 function hideCurrentBarAbout(){
+  for (var i = 0; i < totalNumOfImages; i++) {
+    var currentItemId = '#bar-'+ i + '-about';
+    $(currentItemId).removeClass('active');
+  }
   //make current bar as background-color as gray
-  var currentItemId = '#bar-'+ currentViewItemIndex + '-about';
+  var currentItemId = '#bar-'+ currentViewItemIndexAbout + '-about';
   console.log('currentItemId: ' + currentItemId);
   $(currentItemId).removeClass('activeBar');
 }
 
 function showCurrentBarAbout(){
   //make next image as display:block
-  currentItemId = '#bar-'+ currentViewItemIndex + '-about';
+  currentItemId = '#bar-'+ currentViewItemIndexAbout + '-about';
   $(currentItemId).addClass('activeBar');
 }
 
