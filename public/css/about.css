@@ -36,3 +36,17 @@ text-align: center;
 .about-image img{
   width: 100%;
 }
+.about-content-box-desktop{
+  display: none;
+}
+@media (min-width: 700px) {
+  .about-content-container{
+    height: 20rem;
+  }
+  .about-content-box, .about-desc, .about-image, .about-image img{
+    display: none;
+  }
+  .about-content-box-desktop{
+    display: block;
+  }
+}
