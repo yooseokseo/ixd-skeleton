@@ -26,6 +26,8 @@
 }
 .what-is-poke{
   font-size: 2rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight:300;
 }
 
 .home-desc{
@@ -34,6 +36,8 @@
   text-align: center;
   height: 10rem;
   line-height: 1.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight:300;
 
 }
 

@@ -1,9 +1,9 @@
 /* this is for main layout */
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+
 
 * {
   margin: 0;
@@ -374,6 +374,7 @@ html, body {
   align-items: center;
   position: relative;
   background-color: #ACBA9A;
+
 }
 
 .footer-content-container {
