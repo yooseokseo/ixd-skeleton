@@ -2,7 +2,7 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Karma:300');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 * {
   margin: 0;
@@ -20,8 +20,8 @@ html, body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: Arial;
-  background-color:  #FF4D00;
+  font-family: 'Open Sans', sans-serif;
+  background-color:  #ACBA9A;
   color: white;
 }
 
@@ -53,7 +53,7 @@ html, body {
   z-index: 100;
   background-position: center;
   background-size: cover;
-  font-family: 'Karma', Arial;
+  font-family: 'Karma', sans-serif;
   font-weight: 300;
 }
 
@@ -188,13 +188,16 @@ html, body {
 }
 
 .nav-pop-up {
-  background-color: #eeeeee;
+  background-color: #ACBA9A;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: 'Karma', sans-serif;
+  font-weight: 300;
+
 }
 
 .nav-pop-up a {
@@ -261,7 +264,6 @@ html, body {
 .arrow img {
   height: 3rem;
   width: 3rem;
-  background-color: white;
 }
 
 .menu-btn-container {
@@ -275,7 +277,7 @@ html, body {
 }
 
 .menu-btn {
-  background-color: white;
+  background-color: #ACBA9A;
   height: 3rem;
   width: 6rem;
   display: flex;
@@ -283,6 +285,8 @@ html, body {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  font-family: 'Karma', sans-serif;
+  font-weight: 300;
 }
 
 .carousel-img {
@@ -344,7 +348,7 @@ html, body {
 }
 
 .activeBar {
-  background-color: red;
+  background-color: #F2EFE9;
 }
 
 .displayNone {
