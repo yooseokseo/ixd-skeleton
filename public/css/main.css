@@ -145,10 +145,10 @@ html, body {
 #navbar .site-nav a {
   float: left;
   display: block;
-  color: #f2f2f2;
   text-align: center;
   padding: 1rem;
   text-decoration: none;
+  color: white;
 }
 
 .site-nav-open {
@@ -553,6 +553,8 @@ html, body {
   }
   .site-nav a {
     font-size: 1.5rem;
+
+
   }
   .site-nav a:hover, .site-nav a:focus {
     background: transparent;
@@ -585,10 +587,10 @@ html, body {
   }
   .nav-down-bar {
     width: 70%;
-    height: 0.5rem;
+    height: 0.2rem;
     position: relative;
     z-index: 100;
-    background-color: green;
+    background-color: #ACBA9A;
   }
   .footer-content-container {
     display: none;
