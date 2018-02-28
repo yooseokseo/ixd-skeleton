@@ -1,8 +1,9 @@
 /* this is for main layout */
 
 
-@import url('https://fonts.googleapis.com/css?family=Karma:300');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 * {
   margin: 0;
@@ -20,7 +21,7 @@ html, body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color:  #ACBA9A;
   color: white;
 }
@@ -53,9 +54,10 @@ html, body {
   z-index: 100;
   background-position: center;
   background-size: cover;
-  font-family: 'Karma', sans-serif;
-  font-weight: 300;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight:300;
 }
+
 
 #logo-img {
   width: 4rem;
@@ -195,7 +197,7 @@ html, body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: 'Karma', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
 
 }
@@ -285,7 +287,7 @@ html, body {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  font-family: 'Karma', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
 }
 
