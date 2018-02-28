@@ -270,7 +270,7 @@ html, body {
 
 .menu-btn-container {
   position: absolute;
-  bottom: 6.5rem;
+  bottom: 5.5rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -281,15 +281,17 @@ html, body {
 .menu-btn {
   background-image:url('/images/nav2.jpg');
   height: 3rem;
-  width: 6rem;
+  width: 10rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.1rem;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
   color: white;
+  border: 0.1rem solid white;
+  border-radius: 0.1rem;
 }
 
 .carousel-img {
