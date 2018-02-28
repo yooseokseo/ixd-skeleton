@@ -38,7 +38,7 @@
 }
 .contact-map{
   grid-area: Map;
-  border: 1px solid gray;
+  border: 0.5rem solid #eeeeee;
 }
 
 .contact-name, .contact-adde, .contact-phone, .contact-btn-box{
@@ -200,13 +200,14 @@ background-color: gray;
   .contact-content-boxes{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 55rem;
+    height: 130rem;
     grid-template-areas: "Item1" "Item2"
      "Item3" "Item4";
+     margin: 5rem auto;
   }
 
   .contact-content-container{
-    height: 100rem;
+    height: 135rem;
   }
 
   .contact-form-container{
@@ -251,8 +252,35 @@ background-color: gray;
   .poke-form-text input{
     height: 5rem;
   }
-  .thank{
+  .contact-content-box{
+    grid-template-columns: 2.5fr 5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Info Map";
+    height: 18rem;
+    margin: 1rem auto;
+  }
+  .contact-info{
 
+  height: 100%;
+
+  }
+  .contact-map{
+    grid-area: Map;
+    height: 16rem;
+  }
+  .contact-info{
+    grid-area: Info;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
+    grid-template-areas: "Name" "Adde" "Phone" "Hours";
+
+  }
+  .contact-hours{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
 }

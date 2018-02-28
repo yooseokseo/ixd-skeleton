@@ -493,6 +493,9 @@ html, body {
 .footer-content-container-desk{
   display: none;
 }
+.copy{
+  display: none;
+}
 
 /* for desktop version*/
 
