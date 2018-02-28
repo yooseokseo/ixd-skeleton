@@ -289,6 +289,7 @@ html, body {
   font-size: 2rem;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
+  color: white;
 }
 
 .carousel-img {
@@ -345,12 +346,12 @@ html, body {
 
 .bar {
   height: 0.5rem;
-  background-color: gray;
+  background-color: white;
   width: 90%;
 }
 
 .activeBar {
-  background-color: #F2EFE9;
+  background-color: #ACBA9A;
 }
 
 .displayNone {
