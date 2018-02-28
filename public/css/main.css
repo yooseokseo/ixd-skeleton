@@ -149,6 +149,8 @@ html, body {
   padding: 1rem;
   text-decoration: none;
   color: white;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight:300;
 }
 
 .site-nav-open {
@@ -373,11 +375,14 @@ html, body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-color: #ACBA9A;
+  background-image: url('/images/nav2.jpg');
 
 }
 
 .footer-content-container {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight:300;
+  color: white;
   width: 60%;
   height: 23rem;
   display: grid;
@@ -731,7 +736,9 @@ html, body {
     font-size: 1rem;
   }
   .footer-content-container-desk{
-
+    font-family: 'Cormorant Garamond', serif;
+    font-weight:300;
+    color: white;
     margin-top: 1rem;
     width: 90%;
     display: grid;
@@ -748,7 +755,10 @@ html, body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #eeeeee;
+  background-color: #ACBA9A;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  background-color:  #ACBA9A;
   }
   .footer{
     height: 17rem;
