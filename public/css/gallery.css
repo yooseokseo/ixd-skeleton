@@ -3,7 +3,6 @@
 }
 .gallery-container {
   width: 100%;
-  height: 165rem;
   display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,14 +10,13 @@
 }
 .gallery-box {
   width: 95%;
-  height: 160rem;
+  height: 165rem;
 }
 
 .photo{
   width: 100%;
-  height: 15rem;
+  height: 100%;
   border: 1px solid gray;
-  margin-bottom: 1rem;
   position: relative;
 }
 .photo-share-icons{
@@ -33,4 +31,82 @@
   border: 1px solid gray;
   width: 100%;
   height: 3rem;
+}
+.gallery-container-desk{
+  display: none;
+}
+@media (min-width: 700px) {
+  .gallery-container{
+    display: none;
+  }
+  .gallery-container-desk{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .gallery-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-areas:
+    "g1 g1 g1 g1 g1 g2 g2 g2"
+    "g1 g1 g1 g1 g1 g2 g2 g2"
+    "g4 g4 g5 g5 g6 g6 g6 g6"
+    "g4 g4 g7 g7 g6 g6 g6 g6"
+    "g4 g4 g7 g7 g6 g6 g6 g6"
+    "g8 g8 g8 g3 g9 g9 g9 g9";
+
+    grid-gap: 0.8rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    height: 50rem;
+  }
+  .gallery-box img{
+    width: 100%;
+    height: 100%;
+  }
+  .photo{
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-0{
+    grid-area:g1;
+    background-image: url('/images/gallery/1.jpg');
+  }
+  #photo-1{
+    grid-area:g2;
+    background-image: url('/images/gallery/2.jpg');
+  }
+  #photo-2{
+    grid-area:g3;
+    background-image: url('/images/gallery/3.jpg');
+  }
+  #photo-3{
+    grid-area:g4;
+    background-image: url('/images/gallery/4.jpg');
+  }
+  #photo-4{
+    grid-area:g5;
+    background-image: url('/images/gallery/5.jpg');
+  }
+  #photo-5{
+    grid-area:g6;
+    background-image: url('/images/gallery/6.jpg');
+  }
+  #photo-6{
+    grid-area:g7;
+    background-image: url('/images/gallery/7.jpg');
+  }
+  #photo-7{
+    grid-area:g8;
+    background-image: url('/images/gallery/8.jpg');
+  }
+  #photo-8{
+    grid-area:g9;
+    background-image: url('/images/gallery/9.jpg');
+  }
+
 }
