@@ -198,11 +198,11 @@ background-color: gray;
 
 @media (min-width: 700px) {
   .contact-content-boxes{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 55rem;
-    grid-template-areas: "Item1 Item2"
-     "Item3 Item4";
+    grid-template-areas: "Item1" "Item2"
+     "Item3" "Item4";
   }
 
   .contact-content-container{
