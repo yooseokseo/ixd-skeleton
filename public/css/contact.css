@@ -97,10 +97,11 @@
   border: 1px solid #ededed;
 }
 .form-popup-container{
+
   width: 100%;
   position: fixed;
   bottom: 0;
-  height: 0;
+
 background-color: gray;
   display: flex;
   flex-direction: row;
@@ -109,6 +110,7 @@ background-color: gray;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
   z-index: 100;
+    display: none;
 }
 .form-popup-box{
   width: 95%;
