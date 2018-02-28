@@ -37,7 +37,7 @@ html, body {
 #navbar {
   height: 5rem;
   overflow: hidden;
-  background-image:url('/images/nav.jpg');
+  background-image:url('/images/nav2.jpg');
   color: #EBEBD3;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
