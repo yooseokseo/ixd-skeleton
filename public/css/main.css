@@ -381,12 +381,12 @@ html, body {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+
   align-items: center;
 }
 
 .loc-drop select {
-  width: 100%;
+  width: 70%;
   background-color: white;
   text-align-last: center;
 }
@@ -483,11 +483,11 @@ html, body {
   align-items: center;
 }
 
-.desktopOnly{
+.desktopOnly {
   display: none;
 }
 
-.carousel-container-about{
+.carousel-container-about {
   display: none;
 }
 
@@ -567,103 +567,91 @@ html, body {
     z-index: 100;
     background-color: green;
   }
-  .footer-content-container{
-    width:100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "Back Back Back Back Back Back Back Back Back"
-      ". . . LocIcon LocDrop LocDrop . . ."
-      ". . . AddeIcon AddeData AddeData . . ."
-      "HoursTitle HoursTitle HoursTitle ContactTitle ContactTitle ContactTitle Staytitle Staytitle Staytitle"
-      " Day Day Day PhoneIcon PhoneData PhoneData Social Social Social "
-      " HoursIcon HoursData HoursData  EmailIcon EmailData EmailData Social Social Social"
-      "Copy Copy Copy Copy Copy Copy Copy Copy Copy";
-
+  .footer-content-container {
+    display: none;
   }
-  .back{
-    grid-area:Back;
+  .back {
+    display: none;
   }
-  .loc-icon{
-    grid-area:LocIcon;
+  .loc-icon {
+    grid-area: LocIcon;
   }
-  .loc-drop{
-    grid-area:LocDrop;
+  .loc-drop {
+    grid-area: LocDrop;
   }
-  .adde-icon{
-    grid-area:AddeIcon;
+  .adde-icon {
+    grid-area: AddeIcon;
   }
-  .adds-data{
-    grid-area:AddeData;
+  .adds-data {
+    grid-area: AddeData;
   }
-  .desktopOnly{
+  .desktopOnly {
     display: block;
     font-size: 1.5rem;
     text-align: center;
     margin-top: auto;
   }
-  .hours-title-footer{
-    grid-area:HoursTitle;
+  .hours-title-footer {
+    grid-area: HoursTitle;
   }
-  .contact-title-footer{
-    grid-area:ContactTitle;
+  .contact-title-footer {
+    grid-area: ContactTitle;
   }
-  .Stay-title-footer{
-    grid-area:Staytitle;
+  .location-title-footer {
+    grid-area: Loctitle;
   }
-  .hours-icon{
-    grid-area:HoursIcon;
+  .hours-icon {
+    grid-area: HoursIcon;
   }
-  .hours-data{
-    grid-area:HoursData;
+  .hours-data {
+    grid-area: HoursData;
   }
-  .phone-icon{
-    grid-area:PhoneIcon;
+  .phone-icon {
+    grid-area: PhoneIcon;
   }
-  .phone-data{
-    grid-area:PhoneData;
+  .phone-data {
+    grid-area: PhoneData;
   }
-  .social-icons-container{
-    grid-area:Social;
+  .social-icons-container {
+    grid-area: Social;
   }
-  .email-icon{
-    grid-area:EmailIcon;
+  .email-icon {
+    grid-area: EmailIcon;
   }
-  .email-data{
-    grid-area:EmailData;
+  .email-data {
+    grid-area: EmailData;
   }
-  .copyright-container{
-    grid-area:Copy;
+  .copyright-container {
+    grid-area: Copy;
   }
-  .social-icons-container{
-  justify-content:center;
-  }
-  .social-icons{
-    margin: 0 0.5rem;
-  }
-  .footerIcons{
+  .social-icons-container {
     justify-content: center;
   }
-  .hours-day-footer{
-    grid-area:Day;
+  .social-icons {
+    margin: 0 0.5rem;
   }
-  .data{
+  .footerIcons {
+    justify-content: center;
+  }
+  .hours-day-footer {
+    grid-area: Day;
+  }
+  .data {
     background-color: transparent;
   }
-  .carousel-container-about{
+  .carousel-container-about {
     display: block;
     height: 22.5rem;
     border: 1px solid gray;
     position: relative;
     width: 100%;
   }
-  .arrow-about{
+  .arrow-about {
     position: absolute;
     top: 10rem;
     height: 1rem;
     width: 100%;
   }
-
   .show-next-about {
     display: flex;
     flex-direction: row;
@@ -672,13 +660,13 @@ html, body {
   .carousel-container-about img {
     width: 100%;
     height: 100%;
-}
-.arrow-about img {
-  height: 3rem;
-  width: 3rem;
-  background-color: white;
-}
-.carousel-circle-btn-container-about {
+  }
+  .arrow-about img {
+    height: 3rem;
+    width: 3rem;
+    background-color: white;
+  }
+  .carousel-circle-btn-container-about {
     position: absolute;
     bottom: 3.5rem;
     display: flex;
@@ -687,7 +675,6 @@ html, body {
     align-items: center;
     width: 100%;
   }
-
   .carousel-circle-btns-about {
     display: grid;
     grid-template-columns: 8fr 1fr 1fr 1fr 1fr 8fr;
@@ -695,24 +682,26 @@ html, body {
     grid-template-areas: ". img1 img2 img3 img4 .";
     width: 100%;
     height: 1.5rem;
-}
-#status-00-about{
-  grid-area:img1;
-}
-#status-01-about{
-  grid-area:img2;
-}
-#status-02-about{
-  grid-area:img3;
-}
-#status-03-about{
-  grid-area:img4;
-}
-.carousel-about-img{
-  display: none;
-}
-.active {
-  display: block;
-}
-
+  }
+  #status-00-about {
+    grid-area: img1;
+  }
+  #status-01-about {
+    grid-area: img2;
+  }
+  #status-02-about {
+    grid-area: img3;
+  }
+  #status-03-about {
+    grid-area: img4;
+  }
+  .carousel-about-img {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  #day{
+    font-size: 1rem;
+  }
 }
