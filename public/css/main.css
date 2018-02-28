@@ -160,12 +160,12 @@ html, body {
 .site-nav-show {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "cover Home" "cover Menu" "cover Gallery" "cover About" "cover Contact" "cover Order";
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "cover Home" "cover Menu" "cover Gallery" "cover About" "cover Contact" "cover Order" ". .";
   grid-area: NavMenu;
   width: 100%;
   position: absolute;
-  height: 30rem;
+  height: 34rem;
   z-index: 100;
 }
 
@@ -372,7 +372,8 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-      position: relative;
+  position: relative;
+  background-color: #ACBA9A;
 }
 
 .footer-content-container {
