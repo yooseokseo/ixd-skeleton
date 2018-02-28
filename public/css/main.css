@@ -239,7 +239,6 @@ html, body {
 
 .carousel-container {
   height: 39.8rem;
-  border: 1px solid gray;
   position: relative;
   width: 100%;
 }
@@ -350,7 +349,6 @@ html, body {
 
 .footer {
   width: 100%;
-  background-color: gray;
   height: 25rem;
   display: flex;
   flex-direction: column;
@@ -648,7 +646,6 @@ html, body {
   .carousel-container-about {
     display: block;
     height: 22.5rem;
-    border: 1px solid gray;
     position: relative;
     width: 100%;
   }
