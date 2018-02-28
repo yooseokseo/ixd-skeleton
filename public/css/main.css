@@ -44,6 +44,8 @@ html, body {
   grid-template-rows: 1fr;
   grid-template-areas: "Logo Name HambergerMenu";
   z-index: 100;
+  background-position: center;
+  background-size: cover;
 }
 
 #logo-img {
