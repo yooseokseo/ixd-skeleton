@@ -279,7 +279,7 @@ html, body {
 }
 
 .menu-btn {
-  background-color: #ACBA9A;
+  background-image:url('/images/nav2.jpg');
   height: 3rem;
   width: 6rem;
   display: flex;
