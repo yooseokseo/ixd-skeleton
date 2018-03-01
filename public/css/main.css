@@ -54,7 +54,7 @@ html, body {
   z-index: 100;
   background-position: center;
   background-size: cover;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Raleway', sans-serif;
   font-weight:300;
 }
 
@@ -76,6 +76,7 @@ html, body {
   justify-content: center;
   align-items: center;
   grid-area: Logo;
+  position: relative;
 }
 
 .menu-toggle {
@@ -149,7 +150,7 @@ html, body {
   padding: 1rem;
   text-decoration: none;
   color: white;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Raleway', sans-serif;
   font-weight:300;
 }
 
@@ -161,13 +162,21 @@ html, body {
 
 .site-nav-show {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "cover Home" "cover Menu" "cover Gallery" "cover About" "cover Contact" "cover Order" ". .";
+  grid-template-columns: 0fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "cover Home"
+  "cover Menu"
+  "cover Gallery"
+  "cover About"
+  "cover Contact"
+  "cover Order"
+  "cover Empty"
+  ". .";
   grid-area: NavMenu;
   width: 100%;
   position: absolute;
-  height: 34rem;
+  height: 44rem;
   z-index: 100;
 }
 
@@ -199,8 +208,9 @@ html, body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  opacity: 0.95;
 
 }
 
@@ -232,7 +242,6 @@ html, body {
 
 .cover {
   grid-area: cover;
-  background-color: transparent;
 }
 
 .arrow {
@@ -289,7 +298,7 @@ html, body {
   justify-content: center;
   align-items: center;
   font-size: 1.1rem;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   color: white;
   border: 0.1rem solid white;
@@ -380,7 +389,7 @@ html, body {
 }
 
 .footer-content-container {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Raleway', sans-serif;
   font-weight:300;
   color: white;
   width: 60%;
@@ -522,13 +531,29 @@ html, body {
 .copy{
   display: none;
 }
+.nav-desk-upper-cover{
+  display: none;
+}
+
 
 /* for desktop version*/
 
 @media (min-width: 700px) {
   #navbar {
     grid-template-columns: 1fr 4fr 2fr;
+
+    grid-template-rows: 1fr;
     grid-template-areas: "Logo Nav Order";
+    height: 5rem;
+  }
+  .logo{
+    width: 100%;
+    height: 100%;
+  }
+  #navbar a{
+    grid-area:Logo;
+    width: 100%;
+    height: 100%;
   }
   .menu-toggle {
     display: none;
@@ -553,12 +578,14 @@ html, body {
     flex-direction: row;
     align-items: center;
     grid-area: Nav;
+    position: relative;
   }
   #site-name {
     display: none;
   }
   #orderOnline {
     display: block;
+    grid-area:Order;
   }
   .site-nav a {
     font-size: 1.5rem;
@@ -736,7 +763,7 @@ html, body {
     font-size: 1rem;
   }
   .footer-content-container-desk{
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Raleway', sans-serif;
     font-weight:300;
     color: white;
     margin-top: 1rem;
@@ -745,6 +772,7 @@ html, body {
     grid-template-columns: 5fr 15fr 10fr 5fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "Name1 Adde1 Hour1 Phone1 F1 I1 Y1";
+    font-size: 0.9rem;
   }
   .copy{
   position:absolute;
@@ -766,6 +794,11 @@ html, body {
   .firstDestTopFooter{
   margin-top: 3.5rem;
   }
-
+  #orderOnline-btn{
+    font-family: 'Raleway', sans-serif;
+  }
+  .empty{
+    grid-area: Empty;
+  }
 
 }
