@@ -1,5 +1,5 @@
 /* this is for main layout */
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400');
+
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 
@@ -556,7 +556,32 @@ html, body {
   border: 0.3rem solid red;
   padding: 1rem;
 }
+#about-page-div{
+  background-image: url('/images/header1.jpg');
+  background-size: cover;
+  position: relative;
+}
+#menu-page-div{
+  background-image: url('/images/header4.jpg');
+  background-size: cover;
+  position: relative;
+}
+#gallery-page-div{
+  background-image: url('/images/header3.jpg');
+  background-size: cover;
+  position: relative;
+}
 
+#contact-page-div{
+  background-image: url('/images/header2.jpg');
+  background-size: cover;
+}
+
+
+.page-title-color-font{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
 
 /* for desktop version*/
 

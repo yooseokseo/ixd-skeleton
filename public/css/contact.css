@@ -2,6 +2,8 @@
   grid-area: Title;
   margin: auto;
   font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  color: white;
 }
 .contact-content-container{
   width: 100%;
