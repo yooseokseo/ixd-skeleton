@@ -23,11 +23,7 @@
           </div>
         </div>
         <div class="contact-map">
-          <picture>
-            <source media="(min-width: 700px)" srcset="/images/DTC600300.jpg">
-                <img style="width: 100%; height:100%;" src="/images/DTC450.jpg" alt="">
-          </picture>
-
+            <div id="map" style="height:100%; width:100%;"></div>
         </div>
 
       </div>
@@ -47,11 +43,7 @@
           </div>
         </div>
         <div class="contact-map">
-          <picture>
-            <source media="(min-width: 700px)" srcset="/images/Glendale600300.jpg">
-                <img style="width: 100%; height:100%;" src="/images/Glendale450.jpg" alt="">
-          </picture>
-
+            <div id="map2" style="height:100%; width:100%;"></div>
         </div>
 
       </div>
@@ -71,11 +63,7 @@
           </div>
         </div>
         <div class="contact-map">
-          <picture>
-            <source media="(min-width: 700px)" srcset="/images/Downtown600300.jpg">
-                <img style="width: 100%; height:100%;" src="/images/Downtown450.jpg" alt="">
-          </picture>
-
+          <div id="map3" style="height:100%; width:100%;"></div>
         </div>
 
       </div>
@@ -95,14 +83,9 @@
           </div>
         </div>
         <div class="contact-map">
-          <picture>
-            <source media="(min-width: 700px)" srcset="/images/Englewood600300.jpg">
-                <img style="width: 100%; height:100%;" src="/images/Englewood450.jpg" alt="">
-          </picture>
-        </div>
-
+          <div id="map4" style="height:100%; width:100%;"></div>
       </div>
-        <!--
+<!--
       <div class="contact-content-box">
         <div class="contact-info">
           <div class="contact-name">
@@ -183,3 +166,6 @@
   </div>
 
 </div>
+<script src="/js/googleMap.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrVuBl3fcPOe_NupbvEPvGW2yZLVCxzqY&callback=initMap"
+    async defer></script>
