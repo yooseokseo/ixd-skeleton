@@ -11,11 +11,13 @@
 
 .page-title {
   width: 100%;
-  height: 5rem;
+  height: 3rem;
 }
 
 .menu-title {
-  font-size: 3rem;
+  font-size: 1.5rem;
+  position: absolute;
+  top:-1rem;
 }
 
 .menu-signature-container {
@@ -34,8 +36,10 @@
 .signature-title {
   position: relative;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   bottom: -1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight:300;
 }
 
 .items-containers {
@@ -61,6 +65,8 @@
 
 .menu-signature-title {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight:300;
 }
 
 .arrow-down {
@@ -154,12 +160,12 @@
 
 .menu-container {
   width: 100%;
-  height: 110rem;
+  height: 130rem;
 }
 
 .menu-box {
   width: 95%;
-  height: 108rem;
+  height: 126rem;
 }
 
 .menu-start {
@@ -172,6 +178,7 @@
   font-size: 1.5rem;
   text-align: center;
   margin: 2rem 0;
+  font-family: 'Playball', cursive;
 }
 
 .menu-box-title {

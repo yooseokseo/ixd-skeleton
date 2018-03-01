@@ -1,6 +1,7 @@
 /* this is for main layout */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playball');
 
 
 
@@ -32,6 +33,7 @@ a:visited{
   justify-content: center;
   align-items: center;
   font-family: 'Raleway', sans-serif;
+  font-weight:300;
   background-color:  #ACBA9A;
   color: white;
 }
@@ -566,29 +568,29 @@ a:visited{
   padding: 1rem;
 }
 #about-page-div{
-  background-image: url('/images/header1.jpg');
+  background-image: url('/images/nav2.jpg');
   background-size: cover;
   position: relative;
 }
 #menu-page-div{
-  background-image: url('/images/header4.jpg');
+  background-image: url('/images/nav2.jpg');
   background-size: cover;
   position: relative;
 }
 #gallery-page-div{
-  background-image: url('/images/header3.jpg');
+  background-image: url('/images/nav2.jpg');
   background-size: cover;
   position: relative;
 }
 
 #contact-page-div{
-  background-image: url('/images/header2.jpg');
+  background-image: url('/images/nav2.jpg');
   background-size: cover;
 }
 
 
 .page-title-color-font{
-  font-family: 'Raleway', sans-serif;
+    font-family: 'Playball', cursive;
   color: white;
 }
 
