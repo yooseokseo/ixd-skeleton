@@ -25,9 +25,15 @@ function stickyFunc() {
 
 $('.menu-toggle').click(function() {
 
+
+
+
   $('.site-nav').toggleClass('site-nav--open', 500);
   $(this).toggleClass('open');
   $('.site-nav-open').toggleClass('site-nav-show', 100);
+/*
+  $('.site-nav-open').toggleClass('site-nav-show', 100);
+*/
 
 
 })
