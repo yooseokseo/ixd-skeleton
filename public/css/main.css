@@ -166,8 +166,8 @@ html, body {
   height: 0rem;
 }
 @keyframes navDrop {
-    from {top:-41rem;}
-    to {top:5rem;}
+    from {right: -26rem;}
+    to {right:0;}
 }
 
 .site-nav-show {
@@ -189,7 +189,9 @@ html, body {
   height: 44rem;
   z-index: 50;
   visibility: visible;
-  top: -30rem;
+  animation-name: navDrop;
+  animation-duration: 1s;
+
 
 }
 
