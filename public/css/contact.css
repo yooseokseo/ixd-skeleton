@@ -1,9 +1,16 @@
 .contact-title{
   grid-area: Title;
   margin: auto;
-  font-size: 3rem;
-  font-family: 'Raleway', sans-serif;
   color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top:-0.2rem;
+  width: 100%;
+  text-align: center;
+  letter-spacing:0.5rem;
+  left: 0;
+  right: 0;
+  font-family: 'Playball', cursive;
 }
 .contact-content-container{
   width: 100%;
@@ -36,6 +43,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.5fr 0.5fr;
   grid-template-areas: "Name" "Adde" "Phone";
+  font-family: 'Raleway', sans-serif;
+  font-weight:300;
 
 }
 .contact-map{
@@ -61,6 +70,9 @@
 .contact-phone{
   font-size: 1.3rem;
   margin-left: 0.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 .contact-content-box2{
@@ -80,6 +92,8 @@
     margin: auto;
     text-align: center;
     font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
 }
 .contact-btn-box{
   grid-area: Btn;
@@ -96,7 +110,9 @@
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  border: 1px solid #ededed;
+  border: 0.3rem solid gray;
+  background-color: #ACBA9A;
+  color: white;
 }
 .form-popup-container{
 
@@ -200,6 +216,7 @@ background-color: gray;
 }
 
 
+
 @media (min-width: 700px) {
   .contact-content-boxes{
     grid-template-columns: 1fr;
@@ -213,6 +230,9 @@ background-color: gray;
 
   .contact-content-container{
     height: 135rem;
+  }
+  .mobileOnly{
+    display: none;
   }
 
   .contact-form-container{

@@ -565,7 +565,7 @@ a:visited{
   display: none;
 }
 .order a{
-  border: 0.3rem solid red;
+  border: 0.3rem solid gray;
   padding: 0.1rem;
 }
 #about-page-div{

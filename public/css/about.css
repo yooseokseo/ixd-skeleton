@@ -1,7 +1,14 @@
 .about-title {
   grid-area: Title;
   margin: auto;
-  font-size: 3rem;
+  font-size: 1.5rem;
+  position: absolute;
+  top:-0.2rem;
+  width: 100%;
+  text-align: center;
+  letter-spacing:0.5rem;
+  left: 0;
+  right: 0;
 }
 
 .about-content-container {
@@ -30,6 +37,8 @@
   grid-area: Desc;
 margin: auto;
 text-align: center;
+font-family: 'Raleway', sans-serif;
+font-weight:300;
 }
 
 
