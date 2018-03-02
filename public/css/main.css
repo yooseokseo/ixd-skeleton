@@ -183,7 +183,7 @@ a:visited{
 
 .site-nav-show {
   display: grid;
-  grid-template-columns: 0fr 2fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "cover Home"
@@ -271,6 +271,7 @@ a:visited{
 
 .cover {
   grid-area: cover;
+  background-color: transparent;
 }
 
 .arrow {
