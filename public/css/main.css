@@ -197,7 +197,7 @@ a:visited{
   grid-area: NavMenu;
   width: 100%;
   position: absolute;
-  height: 44rem;
+  height: 35rem;
   z-index: 50;
   visibility: visible;
   animation-name: navDrop;
@@ -566,7 +566,7 @@ a:visited{
 }
 .order a{
   border: 0.3rem solid red;
-  padding: 1rem;
+  padding: 0.1rem;
 }
 #about-page-div{
   background-image: url('/images/nav2.jpg');
