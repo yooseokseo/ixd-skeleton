@@ -344,5 +344,8 @@
   .menu-container{
     margin-top: 3rem;
   }
+  #one-item-0{
+  background-size: cover;
+  }
 
 }

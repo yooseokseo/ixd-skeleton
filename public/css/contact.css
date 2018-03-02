@@ -61,6 +61,10 @@
   grid-area: Name;
   font-size: 2rem;
   text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
 }
 .contact-adde{
   grid-area: Adde;
@@ -214,7 +218,11 @@ background-color: gray;
 .contact-form-container, .contact-form-box-desktop{
   display: none;
 }
-
+.open{
+font-size: 0.9rem;
+text-align: right;
+color: red;
+}
 
 
 @media (min-width: 700px) {
@@ -306,6 +314,9 @@ background-color: gray;
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  .open{
+  text-align: center;
   }
 
 }
