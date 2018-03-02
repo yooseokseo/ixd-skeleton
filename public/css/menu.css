@@ -20,6 +20,9 @@
   top:-0.2rem;
   width: 100%;
   text-align: center;
+  letter-spacing:0.5rem;
+  left: 0;
+  right: 0;
 }
 
 .menu-signature-container {
