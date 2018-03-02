@@ -37,7 +37,7 @@ $(function() {
   }
   else {
     console.log('close');
-    $('#store1-open-closed').html('Closed')
+    $('#store1-open-closed').html('Closed Now')
   }
   if (now > openHourStore2 && now < closedHourStore2) {
     console.log('open');
@@ -45,7 +45,7 @@ $(function() {
   }
   else {
     console.log('close');
-    $('#store2-open-closed').html('Closed')
+    $('#store2-open-closed').html('Closed Now')
   }
   if (now > openHourStore3 && now < closedHourStore3) {
     console.log('open');
@@ -53,7 +53,7 @@ $(function() {
   }
   else {
     console.log('close');
-    $('#store3-open-closed').html('Closed')
+    $('#store3-open-closed').html('Closed Now')
   }
 
 
