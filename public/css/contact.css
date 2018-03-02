@@ -323,12 +323,15 @@
     grid-template-areas: "Name" "Adde" "Phone" "Hours";
   }
   .contact-hours {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
   .open {
     text-align: center;
+  }
+  .start-end-hours{
+    display: none;
   }
 }
