@@ -250,13 +250,13 @@
   .contact-content-boxes {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 130rem;
+    height: 120rem;
     grid-template-areas: "Item1" "Item2" "Item3" "Item4";
     margin: 5rem auto;
     margin-bottom: 0;
   }
   .contact-content-container {
-    height: 135rem;
+    height: 110rem;
   }
   .mobileOnly {
     display: none;
@@ -277,7 +277,7 @@
     display: block;
     width: 100%;
     height: 15rem;
-    background-color: gray;
+
   }
   .contact-content-box2 {
     grid-template-rows: 1fr 1fr;
