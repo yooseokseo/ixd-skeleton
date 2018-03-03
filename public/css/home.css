@@ -1,0 +1,78 @@
+.home-content-container{
+  width:100%;
+  height: 42rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content-box{
+  width: 95%;
+  height: 42rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 3fr;
+  grid-template-areas:
+    "Title"
+    "Desc"
+    "Image";
+}
+
+.home-title{
+  grid-area:Title;
+  margin: auto;
+  margin-bottom: 0;
+}
+.what-is-poke{
+  font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+  font-weight:300;
+}
+
+.home-desc{
+  grid-area:Desc;
+
+  text-align: center;
+  height: 10rem;
+  line-height: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+  font-weight:300;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.home-image img{
+  width: 100%;
+}
+
+
+
+
+@media (min-width: 700px) {
+  .home-content-container{
+    height: 43rem;
+  }
+  .home-content-box{
+    height: 40rem;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+      "Title Image"
+      "Desc Image";
+  }
+  .home-image{
+    grid-area: Image;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .home-title{
+    margin-bottom:0;
+  }
+  .home-desc{
+    margin: 1rem;
+  }
+}

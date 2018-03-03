@@ -1,0 +1,113 @@
+.about-title {
+  grid-area: Title;
+  margin: auto;
+  font-size: 1.5rem;
+  position: absolute;
+  top:-0.2rem;
+  width: 100%;
+  text-align: center;
+  letter-spacing:0.5rem;
+  left: 0;
+  right: 0;
+}
+
+.about-content-container {
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content-box {
+    width: 95%;
+    height: 32rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr 1fr 3fr;
+    grid-template-areas: "Title" "Desc" "Image";
+}
+
+.about-content{
+  font-size: 2rem;
+}
+
+.about-desc{
+  grid-area: Desc;
+margin: auto;
+text-align: center;
+font-family: 'Raleway', sans-serif;
+font-weight:300;
+
+height: 12rem;
+line-height: 1.5rem;
+
+margin: 1rem;
+margin-bottom: 2rem;
+}
+
+
+.about-image img{
+  width: 100%;
+}
+.about-content-box-desktop, .about-desc-desktop{
+  display: none;
+}
+.what-is-pokecity{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+  font-weight:300;
+}
+@media (min-width: 700px) {
+  .about-content-container{
+    height: 25em;
+  }
+  .about-content-box, .about-desc, .about-image, .about-image img{
+    display: none;
+  }
+  .about-content-box-desktop, .about-desc-desktop{
+    display: block;
+  }
+  .about-content-box-desktop{
+      width: 95%;
+      height: 20rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows:  1fr 3fr;
+      grid-template-areas: "Title Image" "Desc Image";
+  }
+  .what-is-pokecity-desktop{
+    grid-area:Title;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+  }
+  .about-desc-desktop{
+    grid-area:Desc;
+    text-align: center;
+    height: 10rem;
+    line-height: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin: 1rem;
+
+  }
+  .about-image-desktop{
+    grid-area:Image;
+    width: 100%;
+  }
+  .about-image-desktop img{
+
+    width: 100%;
+  }
+
+}
