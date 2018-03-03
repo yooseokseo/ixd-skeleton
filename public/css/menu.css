@@ -317,11 +317,11 @@
     display: none;
   }
   .menu-signature-one-container{
-    top:-0.4rem;
-    height: 20rem;
+    top:-0.5rem;
+    height: 30rem;
   }
   #menu-cover-up{
-    height:19.6rem;
+    height:29.5rem;
   }
   .signature-btns{
     display: grid;
@@ -354,7 +354,7 @@
   .menu-container{
     margin-top: 3rem;
   }
-  #one-item-0{
+  #one-item-0, #one-item-1, #one-item-2, #one-item-3{
   background-size: cover;
   }
 
