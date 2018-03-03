@@ -138,16 +138,17 @@
 }
 
 #one-item-0{
-  background-image: url('/images/h.jpg');
+  background-image: url('/images/menu/s1Mobile.jpg');
 }
 #one-item-1{
-  background-image: url('');
+  background-image: url('/images/menu/s2Mobile.jpg');
 }
 #one-item-2{
-  background-image: url('');
+  background-image: url('/images/menu/s3Mobile.jpg');
 }
+
 #one-item-3{
-  background-image: url('');
+  background-image: url('/images/menu/s4Mobile.jpg');
 }
 
 .slide-layout-title {
