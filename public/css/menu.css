@@ -139,16 +139,24 @@
 
 #one-item-0{
   background-image: url('/images/menu/s1Mobile.jpg');
+  background-size: cover;
+  background-position: center;
 }
 #one-item-1{
   background-image: url('/images/menu/s2Mobile.jpg');
+  background-size: cover;
+  background-position: center;
 }
 #one-item-2{
   background-image: url('/images/menu/s3Mobile.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 #one-item-3{
   background-image: url('/images/menu/s4Mobile.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .slide-layout-title {
@@ -200,6 +208,7 @@
   margin: 3rem 0;
   font-family: 'Playball', cursive;
   margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
 }
 
 .menu-box-title {
@@ -330,6 +339,8 @@
     width: 100%;
     height: 5rem;
     font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
   }
   .signature-btn{
     display: flex;
@@ -338,6 +349,7 @@
     align-items: center;
     border: 1px solid gray;
     position: relative;
+
   }
   .arrow-up{
     position: absolute;
@@ -349,7 +361,7 @@
   }
   .arrowActive{
     display:block;
-    background-color: red;
+    background-color: gray;
   }
   .menu-container{
     margin-top: 3rem;

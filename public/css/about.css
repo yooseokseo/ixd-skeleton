@@ -13,7 +13,7 @@
 
 .about-content-container {
     width: 100%;
-    height: 25rem;
+    height: 35rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -22,11 +22,11 @@
 
 .about-content-box {
     width: 95%;
-    height: 20rem;
+    height: 32rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas: "Desc" "Image";
+    grid-template-rows:  1fr 1fr 3fr;
+    grid-template-areas: "Title" "Desc" "Image";
 }
 
 .about-content{
@@ -39,6 +39,12 @@ margin: auto;
 text-align: center;
 font-family: 'Raleway', sans-serif;
 font-weight:300;
+
+height: 12rem;
+line-height: 1.5rem;
+
+margin: 1rem;
+margin-bottom: 2rem;
 }
 
 
@@ -47,6 +53,15 @@ font-weight:300;
 }
 .about-content-box-desktop{
   display: none;
+}
+.what-is-pokecity{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+  font-weight:300;
 }
 @media (min-width: 700px) {
   .about-content-container{
