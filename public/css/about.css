@@ -65,7 +65,7 @@ margin-bottom: 2rem;
 }
 @media (min-width: 700px) {
   .about-content-container{
-    height: 25em;
+    height: 37em;
   }
   .about-content-box, .about-desc, .about-image, .about-image img{
     display: none;
@@ -75,7 +75,7 @@ margin-bottom: 2rem;
   }
   .about-content-box-desktop{
       width: 95%;
-      height: 20rem;
+      height: 27rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows:  1fr 3fr;

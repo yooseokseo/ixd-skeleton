@@ -305,6 +305,13 @@
   background-color:  #ACBA9A;
   color: white;
 }
+
+.menu-order-deliver-btn:hover{
+  color: black;
+  background-color: white;
+  border-color: #ACBA9A;
+}
+
 .base, .protein, .size-price, .mix, .sauce, .salad, .toppings, .menu-order-deliver-btn, .menu-start{
   font-family: 'Raleway', sans-serif;
   font-weight:300;

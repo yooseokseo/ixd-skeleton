@@ -97,3 +97,13 @@ $('#contact-nav-content').mouseleave(function(){
     $('#contact-nav-content .nav-bar').removeClass('nav-down-bar-active');
 
 });
+
+
+function gotoBottom(id){
+  console.log('here');
+   var element = document.getElementById(id);
+   console.log(element);
+   console.log(element.scrollHeight);
+   console.log(element.clientHeight);
+   element.scrollTop = 100;
+}

@@ -63,9 +63,21 @@ $(function() {
 
 })
 
-function generateStoreHour1(){
+$('#contact-us-mobile').click(function(){
+  console.log('clicked');
+  gotoBottom('contact-us-close');
+  
+  $('#contact-us-close').show();
+  $('.contact-form-container-mobile').slideDown();
+});
 
-}
+
+
+$('#contact-us-close').click(function(){
+  console.log('clicked');
+  $(this).hide();
+  $('.contact-form-container-mobile').slideUp();
+});
 
 
 $('#formBtn').click(function() {
@@ -76,9 +88,6 @@ $('#formBtn').click(function() {
 $('.form-popup-x').click(function() {
   $('.form-popup-container').removeClass('formActive');
 })
-
-
-
 
 
 $('.form-popup-submit').click(function() {
