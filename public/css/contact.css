@@ -47,6 +47,7 @@
   grid-template-areas: "Name" "Adde" "Phone" "Hours";
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  height: 11rem;
 }
 
 .contact-map {
@@ -54,7 +55,7 @@
   border: 0.5rem solid #eeeeee;
 }
 
-.contact-name, .contact-adde, .contact-phone, .contact-btn-box ,.contact-phone{
+.contact-name, .contact-adde, .contact-phone, .contact-btn-box{
   display: flex;
   flex-direction: row;
   align-items: center;
