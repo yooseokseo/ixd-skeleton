@@ -66,7 +66,7 @@ $(function() {
 $('#contact-us-mobile').click(function(){
   console.log('clicked');
   gotoBottom('contact-us-close');
-  
+
   $('#contact-us-close').show();
   $('.contact-form-container-mobile').slideDown();
 });
@@ -90,9 +90,9 @@ $('.form-popup-x').click(function() {
 })
 
 
-$('.form-popup-submit').click(function() {
+$('#contact-form-sent-btn').click(function() {
   console.log('send btn clicked');
-  $('.form-popup-x').click();
+  $('#contact-us-close').click();
   $('.thank').fadeIn(1000);
   $('.thank').fadeOut(4000);
 })
