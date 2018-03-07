@@ -867,5 +867,8 @@ a:visited{
   .empty{
     grid-area: Empty;
   }
+  .branch{
+    font-size: 1.2rem;
+  }
 
 }

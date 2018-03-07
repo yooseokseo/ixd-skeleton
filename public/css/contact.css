@@ -43,8 +43,8 @@
   grid-area: Info;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.5fr 0.5fr;
-  grid-template-areas: "Name" "Adde" "Phone";
+  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr;
+  grid-template-areas: "Name" "Adde" "Phone" "Hours";
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
@@ -243,11 +243,13 @@
 .start-end-hours {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
+  font-size: 1.3rem;
 }
-#contact-us-mobile:hover{
+#contact-us-mobile:hover, #contact-us-desktop:hover{
  color: black;
+ background-color: white;
+ border-color: #ACBA9A;
 }
 
 @media (min-width: 700px) {
