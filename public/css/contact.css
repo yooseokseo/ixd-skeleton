@@ -35,7 +35,7 @@
 .contact-form-box {
   width: 100%;
   height: 9rem;
-  margin: 3rem 0;
+  margin: 2rem 0;
   margin-bottom: 0;
 }
 
@@ -254,9 +254,9 @@
 
 .contact-form-container-mobile{
   display: none;
-  height: 31rem;
+  height: 35rem;
   width: 100%;
-  background-color: gray;
+  background-color: #e1e1e1;
   position: relative;
 }
 #contact-us-close{
@@ -280,6 +280,7 @@
   height: 3rem;
   padding-left:  1rem;
   font-size: 1.3rem;
+  border-radius: 0.5rem;
 }
 
 #name-input::placeholder, #email-input::placeholder, #textarea-input::placeholder{
@@ -290,6 +291,7 @@
 }
 #name-input{
   margin-top: 4rem;
+    border: 1px solid black;
 }
 #textarea-input::placeholder{
 padding-top: 1rem;
@@ -302,13 +304,28 @@ padding-top: 1rem;
 
 #email-input{
   margin-top: 1rem;
+  border: 1px solid black;
 }
-#contact-form-mobile{
+#contact-form-mobile, .btns-cotact{
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
 }
+#contact-form-sent-btn{
+padding-left:  0.1rem;
+font-family: 'Raleway', sans-serif;
+font-weight: 300;
+width: 85%;
+height: 4rem;
+font-size: 2rem;
+border-radius: 0.5rem;
+margin-top: 1rem;
+background-color: #ACBA9A;
+border: 0.3rem solid gray;
+color: white;
+}
+
 
 @media (min-width: 700px) {
   .contact-content-boxes {
