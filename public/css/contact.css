@@ -47,7 +47,7 @@
   grid-template-areas: "Name" "Adde" "Phone" "Hours";
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  height: 11rem;
+  height: 15rem;
 }
 
 .contact-map {
