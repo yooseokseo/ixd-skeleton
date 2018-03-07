@@ -282,12 +282,17 @@
   font-size: 1.3rem;
 }
 
-#name-input::placeholder, #email-input::placeholder{
-  padding-left:  1rem;
+#name-input::placeholder, #email-input::placeholder, #textarea-input::placeholder{
+  padding-left:  0.1rem;
   font-size: 1.3rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 #name-input{
   margin-top: 4rem;
+}
+#textarea-input::placeholder{
+padding-top: 1rem;
 }
 
 #textarea-input{
