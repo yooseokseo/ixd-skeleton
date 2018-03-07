@@ -54,10 +54,11 @@
   border: 0.5rem solid #eeeeee;
 }
 
-.contact-name, .contact-adde, .contact-phone, .contact-btn-box {
+.contact-name, .contact-adde, .contact-phone, .contact-btn-box ,.contact-phone{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .contact-name {
