@@ -88,7 +88,7 @@ $('#formBtn').click(function() {
 $('.form-popup-x').click(function() {
   $('.form-popup-container').removeClass('formActive');
 })
-
+//hello
 
 $('#contact-form-sent-btn').click(function() {
   console.log('send btn clicked');
