@@ -330,19 +330,32 @@ color: white;
   border-radius: 0.5rem;
   display: none;
 }
+.thank-text{
+  margin: 0 0.2rem;
+}
+
 #thank-1{
-font-size: 2rem;
+font-size: 1.8rem;
+font-family: 'Raleway', sans-serif;
+font-weight: 300;
 }
 #thank-2{
   font-size: 0.8rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 #thank-3{
   font-size: 0.8rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 #thank-4{
-  font-size: 2rem;
-  margin-top: 2rem;
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
+
 
 @media (min-width: 700px) {
   .contact-content-boxes {
@@ -492,7 +505,7 @@ height: 9rem;
   #thank-1{
   font-size: 3rem;
   }
-  #thank-2{
+  #thank-2, #thank-3{
     font-size: 1.8rem;
   }
   #thank-4{
