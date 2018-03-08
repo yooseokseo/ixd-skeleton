@@ -93,6 +93,23 @@ $('.form-popup-x').click(function() {
 $('#contact-form-sent-btn').click(function() {
   console.log('send btn clicked');
   $('#contact-us-close').click();
-  $('.thank').fadeIn(1000);
-  $('.thank').fadeOut(4000);
+  $('.thank').fadeIn(1000).css('display', 'flex');
+
+  $('.thank').fadeOut(4000).css('display', 'flex');
+})
+
+$('#contact-us-desktop').click(function() {
+
+  $('.poke-form-container-desk').slideDown();
+
+})
+
+$('#close-icon-desk').click(function(){
+  $('.poke-form-container-desk').slideUp();
+})
+
+$('#sendBtn-desk').click(function(){
+  $('.poke-form-container-desk').slideUp();
+  $('.thank').fadeIn(1000).css('display', 'flex');
+  $('.thank').fadeOut(4000).css('display', 'flex');
 })

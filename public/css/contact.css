@@ -211,11 +211,11 @@
 }
 
 .thank {
-  display: none;
+
   margin: auto;
   height: 15rem;
   width: 17rem;
-  background-color: red;
+  background-color: #e1e1e1;
 }
 
 .contact-content-boxes {
@@ -325,7 +325,24 @@ background-color: #ACBA9A;
 border: 0.3rem solid gray;
 color: white;
 }
+.thank{
 
+  border-radius: 0.5rem;
+  display: none;
+}
+#thank-1{
+font-size: 2rem;
+}
+#thank-2{
+  font-size: 0.8rem;
+}
+#thank-3{
+  font-size: 0.8rem;
+}
+#thank-4{
+  font-size: 2rem;
+  margin-top: 2rem;
+}
 
 @media (min-width: 700px) {
   .contact-content-boxes {
@@ -343,9 +360,8 @@ color: white;
     display: none;
   }
   .contact-form-container {
-    display: block;
     width: 100%;
-    height: 30rem;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -363,7 +379,7 @@ color: white;
   .contact-content-box2 {
     grid-template-rows: 1fr 1fr;
   }
-  .contact-title2 {}
+
   .contact-desc {
     font-size: 2rem;
     margin-bottom: auto;
@@ -372,7 +388,7 @@ color: white;
   .poke-form-container {
     width: 30rem;
     height: 100%;
-    background-color: gray;
+    background-color: #e1e1e1;
   }
   .poke-form-box input {
     width: 20rem;
@@ -414,5 +430,73 @@ color: white;
   }
   .start-end-hours{
     display: none;
+  }
+  #name-input-desk{
+    margin-top: 4rem;
+  }
+  #close-icon-desk{
+    width: 2rem;
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+
+  }
+  .poke-form-container-desk{
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    background-color: #e1e1e1;
+    display: none;
+
+  }
+  #name-input-desk::placeholder, #email-input-desk::placeholder, #textarea-input-desk::placeholder{
+    padding-left:  0.1rem;
+    font-size: 1.3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+  }
+  #sendBtn{
+    padding-left:  0.1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    background-color: #ACBA9A;
+    border: 0.3rem solid gray;
+    color: white;
+  }
+  #textarea-input-desk{
+height: 9rem;
+  }
+  #sendBtn:hover{
+  color: black;
+    background-color: white;
+    border: 0.3rem solid #ACBA9A;
+  }
+  .thank{
+    width: 30rem;
+    height: 30rem;
+    text-align: left;
+    border-radius: 1rem;
+    display: none;
+  }
+  .thank-text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 0 1rem;
+  }
+  #thank-1{
+  font-size: 3rem;
+  }
+  #thank-2{
+    font-size: 1.8rem;
+  }
+  #thank-4{
+    font-size: 3rem;
+    margin-top: 2rem;
   }
 }
