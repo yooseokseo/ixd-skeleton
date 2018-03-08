@@ -1,6 +1,8 @@
 ;
 exports.home = function(req, res){
-  res.render('home');
+  res.render('home', {
+    isHomePage: true
+  });
 
 };
 
