@@ -512,4 +512,7 @@ height: 9rem;
     font-size: 3rem;
     margin-top: 2rem;
   }
+  #sendBtn-desk{
+    margin-top: 1rem;
+  }
 }
