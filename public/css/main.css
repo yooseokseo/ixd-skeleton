@@ -233,7 +233,7 @@ a:visited{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  margin-top: auto;
+  margin-top: 1rem;
   background-image: url('/images/nav2.jpg');
 }
 .bottom-nav-box{
