@@ -207,7 +207,7 @@ a:visited{
   grid-area: NavMenu;
   width: 100%;
   position: absolute;
-  height: 90vh;
+  height: 87vh;
   z-index: 50;
   visibility: visible;
   animation-name: navDrop;
