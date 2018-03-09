@@ -9,24 +9,37 @@ var navHamburgerContent= $('.site-nav-open');
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
+var isNavClicked = false;
+
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyFunc() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-    menu.addClass('addTopMargin');
-    navHamburgerContent.addClass('addTopPosition');
-
-  } else {
-    navbar.classList.remove("sticky");
-    menu.removeClass('addTopMargin');
-    navHamburgerContent.removeClass('addTopPosition');
+  if(isNavClicked){
+    //do nothing
   }
+  else{
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+      menu.addClass('addTopMargin');
+      navHamburgerContent.addClass('addTopPosition');
+
+    } else {
+      navbar.classList.remove("sticky");
+      menu.removeClass('addTopMargin');
+      navHamburgerContent.removeClass('addTopPosition');
+    }
+  }
+
 }
 
 $('.menu-toggle').click(function() {
 
-
-
+  if(isNavClicked){
+    isNavClicked = false;
+  }
+  else{
+    isNavClicked = true;
+  }
+  console.log(isNavClicked);
 
   $('.site-nav').toggleClass('site-nav--open', 500);
   $(this).toggleClass('open');
