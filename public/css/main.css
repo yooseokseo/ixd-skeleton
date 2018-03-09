@@ -299,7 +299,7 @@ a:visited{
 }
 
 .carousel-container {
-  height: 39.8rem;
+  height: 100%;
   position: relative;
   width: 100%;
 }

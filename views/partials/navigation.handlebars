@@ -14,48 +14,56 @@
 
     <div id="home-nav-content" class="site-content">
       <a href="/">Home
-    
-        <div class="nav-bar">
-          <div class="nav-down-bar"></div>
+        {{#if isHomePage}}
+        <div class="nav-bar" style="display:flex; justify-content:center;">
+          <div class="nav-down-bar nav-down-bar-active"></div>
         </div>
-
+        {{/if}}
       </a>
 
     </div>
     <div id="menu-nav-content" class="site-content">
       <a href="/menu">Menu
-        <div class="nav-bar">
-          <div class="nav-down-bar">
+        {{#if isMenuPage}}
+        <div class="nav-bar" style="display:flex; justify-content:center;">
+          <div class="nav-down-bar nav-down-bar-active">
 
           </div>
         </div>
+        {{/if}}
       </a>
     </div>
     <div id="gallery-nav-content"  class="site-content">
       <a href="/gallery">Gallery
-        <div class="nav-bar">
-          <div class="nav-down-bar">
+        {{#if isGalleryPage}}
+        <div class="nav-bar" style="display:flex; justify-content:center;">
+          <div class="nav-down-bar nav-down-bar-active">
 
           </div>
         </div>
+        {{/if}}
       </a>
     </div>
     <div id="about-nav-content"   class="site-content">
       <a href="/about">About
-        <div class="nav-bar">
-          <div class="nav-down-bar">
+        {{#if isAboutPage}}
+        <div class="nav-bar" style="display:flex; justify-content:center;">
+          <div class="nav-down-bar nav-down-bar-active">
 
           </div>
         </div>
+        {{/if}}
       </a>
     </div>
     <div id="contact-nav-content"  class="site-content">
-      <a href="/contact">Contact
-        <div class="nav-bar">
-          <div class="nav-down-bar">
+      <a href="/contact">Locations
+        {{#if isLocationsPage}}
+        <div class="nav-bar" style="display:flex; justify-content:center;">
+          <div class="nav-down-bar nav-down-bar-active">
 
           </div>
         </div>
+        {{/if}}
       </a>
 
     </div>
