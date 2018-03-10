@@ -278,6 +278,7 @@ a:visited{
 
 .order {
   grid-area: Order;
+  margin-top: 0.5rem;
 }
 
 .nav-pop-up {
