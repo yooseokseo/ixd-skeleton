@@ -26,7 +26,7 @@ function stickyFunc() {
       isAddedTopPosiotion = true;
       $('#navbar').css('position', 'fixed');
       $('#navbar').css('width', '100%');
-      console.log(navbar.offsetTop);
+
 
 
     } else {
@@ -36,7 +36,7 @@ function stickyFunc() {
       isAddedTopPosiotion = false;
       $('#navbar').css('position', 'relative');
       $('#navbar').css('width', '100%');
-      console.log(navbar.offsetTop);
+
     }
   }
 
@@ -74,7 +74,7 @@ $('.menu-toggle').click(function() {
       $('#navbar').css('position', 'relative');
       */
       if(isShownOrderDelivery){
-        console.log('isShownOrderDelivery - 1');
+
         $('.site-nav').toggleClass('site-nav--open', 500);
         $(this).toggleClass('open');
         $('.site-nav-open').toggleClass('site-nav-show', 100);
@@ -85,7 +85,7 @@ $('.menu-toggle').click(function() {
         $('.main').css('margin-top', '0'  );
       }
       else {
-          console.log('No isShownOrderDelivery - 2');
+
           $('.site-nav').toggleClass('site-nav--open', 500);
           $(this).toggleClass('open');
           $('.site-nav-open').toggleClass('site-nav-show', 100);
@@ -104,7 +104,7 @@ $('.menu-toggle').click(function() {
           $('#navbar').css('position', 'static');
           */
           if(isShownOrderDelivery){
-            console.log('isShownOrderDelivery - 3');
+
             $('.site-nav').toggleClass('site-nav--open', 500);
             $(this).toggleClass('open');
             $('.site-nav-open').toggleClass('site-nav-show', 100);
@@ -136,7 +136,7 @@ $('.menu-toggle').click(function() {
         $('#navbar').css('position', 'static');
         */
         if(isShownOrderDelivery){
-          console.log('isShownOrderDelivery - 5');
+
           $('#navbar').css('position', 'static');
           $('.site-nav').toggleClass('site-nav--open', 500);
           $(this).toggleClass('open');
@@ -152,7 +152,7 @@ $('.menu-toggle').click(function() {
     }
     else {
       if(isShownOrderDelivery){
-        console.log('isShownOrderDelivery - 7');
+
         $('.site-nav').toggleClass('site-nav--open', 500);
         $(this).toggleClass('open');
         $('.site-nav-open').toggleClass('site-nav-show', 100);
@@ -170,10 +170,23 @@ $('.menu-toggle').click(function() {
 
 });
 
+$('#bottom-nav-email').click(function() {
+  console.log('email');
+});
+
+
+$('#bottom-nav-phone').click(function() {
+  console.log('phone');
+});
 
 $('#bottom-nav-location').click(function() {
   console.log('location');
 });
+
+$('#bottom-nav-hour').click(function() {
+  console.log('hour');
+});
+
 
 
 $('.menu-toggle-inside').click(function() {
