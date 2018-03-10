@@ -11,6 +11,7 @@ var sticky = navbar.offsetTop;
 
 var isNavClicked = false;
 var isAddedTopPosiotion = false;
+var isShownOrderDelivery =true;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyFunc() {
@@ -25,6 +26,7 @@ function stickyFunc() {
       isAddedTopPosiotion = true;
       $('#navbar').css('position', 'fixed');
       $('#navbar').css('width', '100%');
+      console.log(navbar.offsetTop);
 
 
     } else {
@@ -32,12 +34,23 @@ function stickyFunc() {
       menu.removeClass('addTopMargin');
       navHamburgerContent.removeClass('addTopPosition');
       isAddedTopPosiotion = false;
+      $('#navbar').css('position', 'relative');
+      $('#navbar').css('width', '100%');
+      console.log(navbar.offsetTop);
     }
   }
 
 }
 
 $('.menu-toggle').click(function() {
+  if(navbar.offsetTop === 40){
+
+    isShownOrderDelivery = true;
+  }
+  else{
+
+    isShownOrderDelivery = false;
+  }
 
   if(isNavClicked){
     isNavClicked = false;
@@ -48,38 +61,120 @@ $('.menu-toggle').click(function() {
     isNavClicked = true;
   }
 
-  console.log(isNavClicked);
-
   if(isAddedTopPosiotion){
     if(isNavClicked){
+      /*
       console.log('case 1');
       console.log('get rid of top position for while');
       $('#navbar').css('z-index', '0');
       navHamburgerContent.css('top', '0');
       navHamburgerContent.css('grid-template-areas', '  ". Logo Close" ". Logo CLose" ". Home ." ". Menu ." ". Gallery ." ". About ." ". Contact ." ". Order ." "Nav Nav Nav"');
       $('.close-nav').show();
-      $('.main').css('magin-top', '0'  );
+      $('.main').css('margin-top', '0'  );
       $('#navbar').css('position', 'relative');
+      */
+      if(isShownOrderDelivery){
+        console.log('isShownOrderDelivery - 1');
+        $('.site-nav').toggleClass('site-nav--open', 500);
+        $(this).toggleClass('open');
+        $('.site-nav-open').toggleClass('site-nav-show', 100);
+        $('body').toggleClass('nav-fix', 100);
+        $('html').toggleClass('nav-fix', 100);
+          $('#navbar').css('position', 'static');
+        $('.site-nav-open').css('top', '0');
+        $('.main').css('margin-top', '0'  );
+      }
+      else {
+          console.log('No isShownOrderDelivery - 2');
+          $('.site-nav').toggleClass('site-nav--open', 500);
+          $(this).toggleClass('open');
+          $('.site-nav-open').toggleClass('site-nav-show', 100);
+          $('body').toggleClass('nav-fix', 100);
+          $('html').toggleClass('nav-fix', 100);
+          $('#navbar').css('position', 'static');
+          $('.site-nav-open').css('top', '0');
+          $('.main').css('margin-top', '0'  );
+      }
     }
     else{
+      /*
       console.log('case 2');
       $('#navbar').css('z-index', '15');
         $('.main').css('magin-top', '0'  );
+          $('#navbar').css('position', 'static');
+          */
+          if(isShownOrderDelivery){
+            console.log('isShownOrderDelivery - 3');
+            $('.site-nav').toggleClass('site-nav--open', 500);
+            $(this).toggleClass('open');
+            $('.site-nav-open').toggleClass('site-nav-show', 100);
+            $('body').toggleClass('nav-fix', 100);
+            $('html').toggleClass('nav-fix', 100);
+            $('#navbar').css('position', 'relative');
+            $('.site-nav-open').css('top', '-7.5rem');
+            $('.main').css('margin-top', '0'  );
+          }
+          else {
+              console.log('No isShownOrderDelivery - 4');
+          }
     }
 
   }
   else {
-    console.log('good to go');
-      $('#navbar').css('z-index', '15');
+    if(isNavClicked){
+      /*
+      navbar.classList.remove("sticky");
+      menu.removeClass('addTopMargin');
+      navHamburgerContent.removeClass('addTopPosition');
+      isAddedTopPosiotion = false;
 
-  }
+      $('#navbar').css('width', '100%');
+      console.log(navbar.offsetTop);
+      console.log('case 3');
+      console.log('good to go');
+      $('#navbar').css('z-index', '15');
+        $('#navbar').css('position', 'static');
+        */
+        if(isShownOrderDelivery){
+          console.log('isShownOrderDelivery - 5');
+          $('#navbar').css('position', 'static');
+          $('.site-nav').toggleClass('site-nav--open', 500);
+          $(this).toggleClass('open');
+          $('.site-nav-open').toggleClass('site-nav-show', 100);
+          $('body').toggleClass('nav-fix', 100);
+          $('html').toggleClass('nav-fix', 100);
+
+
+        }
+        else {
+            console.log('No isShownOrderDelivery - 6');
+        }
+    }
+    else {
+      if(isShownOrderDelivery){
+        console.log('isShownOrderDelivery - 7');
+        $('.site-nav').toggleClass('site-nav--open', 500);
+        $(this).toggleClass('open');
+        $('.site-nav-open').toggleClass('site-nav-show', 100);
+        $('body').toggleClass('nav-fix', 100);
+        $('html').toggleClass('nav-fix', 100);
+      }
+      else {
+          console.log('No isShownOrderDelivery - 8');
+      }
+    }
+
+
+  };
+
+/*
   $('.site-nav').toggleClass('site-nav--open', 500);
   $(this).toggleClass('open');
   $('.site-nav-open').toggleClass('site-nav-show', 100);
   $('body').toggleClass('nav-fix', 100);
   $('html').toggleClass('nav-fix', 100);
 
-
+*/
 
 
 

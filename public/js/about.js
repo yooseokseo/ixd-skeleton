@@ -6,12 +6,12 @@ $(document).ready(function(){
   startAutoplayAbout();
   $('#arrow-left-about').click(function(){
     showPrevAbout();
-    console.log('currentViewItemIndexAbout: ' + currentViewItemIndexAbout);
+
   })
 
   $('#arrow-right-about').click(function(){
     showNextAbout();
-    console.log('currentViewItemIndexAbout: ' + currentViewItemIndexAbout);
+
   })
 
 
@@ -56,14 +56,14 @@ function showCurrentPageAbout(index) {
   }
 
   var findItemId = '#c' + index + '-about';
-  console.log("findItemId" + findItemId);
+
   $(findItemId).addClass('active');
 
 
 }
 
 function showPrevAbout(){
-  console.log('Prev clicked');
+
   hideCurrentImageAbout();
   hideCurrentBarAbout();
   //decrease index by 1
@@ -77,7 +77,7 @@ function showPrevAbout(){
 };
 
 function showNextAbout(){
-  console.log('Next clicked');
+
   hideCurrentImageAbout();
   hideCurrentBarAbout();
 
@@ -87,7 +87,7 @@ function showNextAbout(){
   if(currentViewItemIndexAbout == totalNumOfImages){
     currentViewItemIndexAbout= 0;
   }
-  console.log('currentViewItemIndex: ' + currentViewItemIndexAbout );
+
 
   showCurrentImageAbout();
   showCurrentBarAbout();
@@ -103,7 +103,7 @@ function hideCurrentImageAbout(){
     $(currentItemId).removeClass('active');
   }
   var currentItemId = '#c'+ currentViewItemIndexAbout + '-about';
-  console.log('currentItemId: ' + currentItemId);
+
   $(currentItemId).removeClass('active');
 }
 
@@ -120,7 +120,7 @@ function hideCurrentBarAbout(){
   }
   //make current bar as background-color as gray
   var currentItemId = '#bar-'+ currentViewItemIndexAbout + '-about';
-  console.log('currentItemId: ' + currentItemId);
+
   $(currentItemId).removeClass('activeBar');
 }
 
@@ -142,7 +142,7 @@ function showCurrentStatusAbout(index){
 }
 
 function startAutoplayAbout(){
-  console.log('set');
+
   setInterval(function(){
       showNextAbout();
  }, 5000);

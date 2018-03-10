@@ -61,14 +61,14 @@ function showCurrentPage(index) {
   }
 
   var findItemId = '#c' + index;
-  console.log("findItemId" + findItemId);
+
   $(findItemId).addClass('active');
 
 
 }
 
 function showPrev(){
-  console.log('Prev clicked');
+
   hideCurrentImage();
   hideCurrentBar();
   //decrease index by 1
@@ -82,7 +82,7 @@ function showPrev(){
 };
 
 function showNext(){
-  console.log('Next clicked');
+
   hideCurrentImage();
   hideCurrentBar();
 
@@ -92,7 +92,7 @@ function showNext(){
   if(currentViewItemIndex == totalNumOfImages){
     currentViewItemIndex= 0;
   }
-  console.log('currentViewItemIndex: ' + currentViewItemIndex );
+
 
   showCurrentImage();
   showCurrentBar();
@@ -108,7 +108,7 @@ function showMenu(){
 function hideCurrentImage(){
   //make current image as display:none
   var currentItemId = '#c'+ currentViewItemIndex;
-  console.log('currentItemId: ' + currentItemId);
+
   $(currentItemId).removeClass('active');
 }
 
@@ -121,7 +121,7 @@ function showCurrentImage(){
 function hideCurrentBar(){
   //make current bar as background-color as gray
   var currentItemId = '#bar-'+ currentViewItemIndex;
-  console.log('currentItemId: ' + currentItemId);
+
   $(currentItemId).removeClass('activeBar');
 }
 
@@ -143,7 +143,7 @@ function showCurrentStatus(index){
 }
 
 function startAutoplay(){
-  console.log('set');
+
   setInterval(function(){
       showNext();
  }, 5000);
