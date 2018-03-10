@@ -198,10 +198,12 @@ $('#bottom-nav-hour').click(function() {
 
 
 $('.menu-toggle-inside').click(function() {
-  $('.bot-nav-phone').fadeOut();
+  $('.site-nav-open').removeClass('showPhone');
+  $('.bot-nav-phone').hide();
+
   $('.nav-pop-up').show();
   $('.close-nav').hide();
-  $('.site-nav-open').removeClass('showPhone');
+
   $('.bottom-nav').show();
   $('#site-hamburger').css('z-index', '1000');
 });
