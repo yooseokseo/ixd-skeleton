@@ -80,7 +80,7 @@ $('.menu-toggle').click(function() {
         $('.site-nav-open').toggleClass('site-nav-show', 100);
         $('body').toggleClass('nav-fix', 100);
         $('html').toggleClass('nav-fix', 100);
-          $('#navbar').css('position', 'static');
+        $('#navbar').css('position', 'static');
         $('.site-nav-open').css('top', '0');
         $('.main').css('margin-top', '0'  );
       }
