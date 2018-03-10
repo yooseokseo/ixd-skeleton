@@ -6,7 +6,17 @@ $(".back").click(function () {
    $("html, body").animate({scrollTop: 0}, 1000);
 });
 
-;
+$('#footer-facebook-icon').hover(function(){
+  $(this).attr('src','/images/icons/FBHover.png' );
+});
+$('#footer-ig-icon').hover(function(){
+  $(this).attr('src','/images/icons/IGHover.png' );
+});
+
+$('#footer-yelp-icon').hover(function(){
+  $(this).attr('src','/images/icons/YelpHover.png' );
+});
+
 
 function localChange(){
   var locationSelesction = $('#loc-selc').val();
