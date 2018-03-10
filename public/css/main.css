@@ -492,6 +492,7 @@ a:visited{
   grid-template-rows:  1fr 1fr 1fr 1fr 1fr 2fr 1fr;
   grid-template-areas: "LocIcon LocDrop LocDrop LocDrop" "AddeIcon AddeData AddeData AddeData" "PhoneIcon PhoneData PhoneData PhoneData" "EmailIcon EmailData EmailData EmailData" "HourIcon HourData HourData HourData" "SocialIcons SocialIcons SocialIcons SocialIcons" "Copyright Copyright Copyright Copyright";
   margin-top: 1rem;
+  position: relative;
 }
 
 .back {
@@ -787,6 +788,11 @@ a:visited{
 }
 .loc-drop{
   position: relative;
+}
+.BackToTop{
+  position: absolute;
+  right: -4.5rem;
+  top:-3rem;
 }
 
 /* for desktop version*/

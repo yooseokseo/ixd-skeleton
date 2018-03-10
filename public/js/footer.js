@@ -1,4 +1,4 @@
-$(".back").click(function () {
+$(".BackToTop").click(function () {
    //1 second of animation time
    //html works for FFX but not Chrome
    //body works for Chrome but not FFX
