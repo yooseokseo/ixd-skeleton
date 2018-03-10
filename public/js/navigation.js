@@ -189,6 +189,12 @@ $('#bottom-nav-phone').click(function() {
 
 $('#bottom-nav-location').click(function() {
   console.log('location');
+  $('.nav-pop-up').hide();
+  $('.close-nav').show();
+  $('.bot-nav-location').fadeIn();
+  $('.site-nav-open').addClass('showLocation');
+  $('.bottom-nav').hide();
+  $('#site-hamburger').css('z-index', '0');
 });
 
 $('#bottom-nav-hour').click(function() {
@@ -199,7 +205,9 @@ $('#bottom-nav-hour').click(function() {
 
 $('.menu-toggle-inside').click(function() {
   $('.site-nav-open').removeClass('showPhone');
+  $('.site-nav-open').removeClass('showLocation');
   $('.bot-nav-phone').hide();
+  $('.bot-nav-location').hide();
 
   $('.nav-pop-up').show();
   $('.close-nav').hide();
