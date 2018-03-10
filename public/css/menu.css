@@ -250,7 +250,7 @@
   height: 2rem;
 }
 
-.base, .protein, .mix, .sauce, .salad, .toppings ,.protein-l, .mix-l, .sauce, .sauce-l{
+.base, .protein, .mix, .sauce, .salad, .toppings ,.protein-l, .mix-l, .sauce, .sauce-l, .toppings-l{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -289,11 +289,11 @@
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
 }
-.protein, .mix, .sauce{
+.protein, .mix, .sauce, .toppings{
   justify-content:flex-start;
   margin-left: 1.3rem;
 }
-.protein-l, .mix-l, .sauce-l{
+.protein-l, .mix-l, .sauce-l, .toppings-l{
   margin-right: 1.3rem;
   justify-content:flex-end;
 }
@@ -307,10 +307,10 @@
   align-items: center;
   height: 3.5rem;
 }
-.sauce-l{
+.sauce-l, .toppings-l{
   text-align: right;
 }
-.sauce{
+.sauce, .toppings{
   text-align: left;
 }
 .extra{
@@ -327,13 +327,13 @@
 .menu-order-deliver-btn{
   width: 15rem;
   height: 4rem;
-  border: 0.3rem solid gray;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  background-color:  #ACBA9A;
+  background-image: url('/images/nav2.jpg');
+  background-size: cover;
   color: white;
 }
 
@@ -343,7 +343,7 @@
   border-color: #ACBA9A;
 }
 
-.base, .protein, .size-price, .mix, .sauce, .salad, .toppings, .menu-order-deliver-btn, .menu-start{
+.base, .protein, .size-price, .mix, .sauce, .salad, .toppings, .menu-order-deliver-btn, .menu-start, .toppings-l{
   font-family: 'Oswald', sans-serif;
   font-weight:300;
 }
