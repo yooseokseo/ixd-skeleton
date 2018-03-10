@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Playball');
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
-
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 
 * {
@@ -645,30 +645,26 @@ a:visited{
   color: #ACBA9A;
 }
 #about-page-div{
-  background-image: url('/images/nav2.jpg');
-  background-size: cover;
+
   position: relative;
 }
 #menu-page-div{
-  background-image: url('/images/nav2.jpg');
-  background-size: cover;
+
   position: relative;
 }
 #gallery-page-div{
-  background-image: url('/images/nav2.jpg');
-  background-size: cover;
+
   position: relative;
 }
 
 #contact-page-div{
-  background-image: url('/images/nav2.jpg');
-  background-size: cover;
+  position: relative;
 }
 
 
 .page-title-color-font{
-    font-family: 'Playball', cursive;
-  color: white;
+    font-family: 'Pacifico', cursive;
+  color: #ACBA9A;
 }
 
 .bot-nav-phone, .bot-nav-location, .bot-nav-hour{

@@ -11,23 +11,23 @@
 
 .page-title {
   width: 100%;
-  height: 2.7rem;
+  height: 4rem;
 }
 
 .menu-title{
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   position: absolute;
-  top:-0.2rem;
   width: 100%;
   text-align: center;
-  letter-spacing:0.5rem;
+  letter-spacing:0.2rem;
   left: 0;
   right: 0;
+  margin-top: 0.5rem;
 }
 
 .menu-signature-container {
   width: 100%;
-  height: 14rem;
+  height: 18rem;
   overflow-x: scroll;
   overflow-y: hidden;
 }
@@ -41,16 +41,20 @@
 .signature-title {
   position: relative;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   bottom: -1rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight:300;
+}
+.title-1{
+  font-weight:400;
+  font-size: 1.8rem;
 }
 
 .items-containers {
   width: 100%;
   position: relative;
-  top: 5rem;
+  top: 8rem;
   height: 6rem;
   display: flex;
   flex-direction: row;
@@ -72,6 +76,7 @@
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-weight:300;
+  margin-top: 1rem;
 }
 
 .arrow-down {
@@ -100,7 +105,7 @@
   border-left: 3rem solid transparent;
   border-right: 3rem solid transparent;
 
-  border-top: 1rem solid white;
+  border-top: 1.2rem solid white;
 }
 
 
@@ -196,11 +201,7 @@
   height: 120rem;
 }
 
-.menu-start {
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 0.5rem;
-}
+
 
 .menu-box-step {
   font-size: 1.5rem;
@@ -323,6 +324,13 @@
   align-items: center;
   font-family: 'Raleway', sans-serif;
   font-weight:300;
+}
+.menu-start {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight:400;
 }
 
 @media (min-width: 700px) {
