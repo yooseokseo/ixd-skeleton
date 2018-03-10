@@ -489,8 +489,9 @@ a:visited{
   height: 23rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
-  grid-template-areas: "Back Back Back Back" "LocIcon LocDrop LocDrop LocDrop" "AddeIcon AddeData AddeData AddeData" "PhoneIcon PhoneData PhoneData PhoneData" "EmailIcon EmailData EmailData EmailData" "HourIcon HourData HourData HourData" "SocialIcons SocialIcons SocialIcons SocialIcons" "Copyright Copyright Copyright Copyright";
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr 2fr 1fr;
+  grid-template-areas: "LocIcon LocDrop LocDrop LocDrop" "AddeIcon AddeData AddeData AddeData" "PhoneIcon PhoneData PhoneData PhoneData" "EmailIcon EmailData EmailData EmailData" "HourIcon HourData HourData HourData" "SocialIcons SocialIcons SocialIcons SocialIcons" "Copyright Copyright Copyright Copyright";
+  margin-top: 1rem;
 }
 
 .back {
@@ -514,9 +515,9 @@ a:visited{
 }
 
 .loc-drop select {
-  width: 70%;
+  width: 100%;
   background-color: white;
-  text-align-last: center;
+  /*text-align-last: center;*/
 }
 
 .loc-drop option {
@@ -551,6 +552,9 @@ a:visited{
 
 .data {
   width: 100%;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
 
 }
 
@@ -594,7 +598,7 @@ a:visited{
   grid-area: SocialIcons;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -610,6 +614,7 @@ a:visited{
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
+  font-family: 'Oswald', sans-serif;
 }
 
 .desktopOnly {
