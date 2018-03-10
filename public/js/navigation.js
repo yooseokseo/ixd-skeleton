@@ -171,12 +171,12 @@ $('.menu-toggle').click(function() {
 });
 
 $('#bottom-nav-email').click(function() {
-  console.log('email');
+
 });
 
 
 $('#bottom-nav-phone').click(function() {
-  console.log('phone');
+
 
   $('.nav-pop-up').hide();
   $('.close-nav').show();
@@ -188,7 +188,7 @@ $('#bottom-nav-phone').click(function() {
 });
 
 $('#bottom-nav-location').click(function() {
-  console.log('location');
+
   $('.nav-pop-up').hide();
   $('.close-nav').show();
   $('.bot-nav-location').fadeIn();
@@ -198,7 +198,13 @@ $('#bottom-nav-location').click(function() {
 });
 
 $('#bottom-nav-hour').click(function() {
-  console.log('hour');
+  
+  $('.nav-pop-up').hide();
+  $('.close-nav').show();
+  $('.bot-nav-hour').fadeIn();
+  $('.site-nav-open').addClass('showHour');
+  $('.bottom-nav').hide();
+  $('#site-hamburger').css('z-index', '0');
 });
 
 
@@ -206,8 +212,10 @@ $('#bottom-nav-hour').click(function() {
 $('.menu-toggle-inside').click(function() {
   $('.site-nav-open').removeClass('showPhone');
   $('.site-nav-open').removeClass('showLocation');
+  $('.site-nav-open').removeClass('showHour');
   $('.bot-nav-phone').hide();
   $('.bot-nav-location').hide();
+  $('.bot-nav-hour').hide();
 
   $('.nav-pop-up').show();
   $('.close-nav').hide();
@@ -219,61 +227,61 @@ $('.menu-toggle-inside').click(function() {
 
 
 $('#home-nav-content').mouseenter(function(){
-  console.log('enter');
+
     $('#home-nav-content .nav-bar').addClass('nav-down-bar-active');
 
 });
 
 $('#home-nav-content').mouseleave(function(){
-  console.log('leave');
+
     $('#home-nav-content .nav-bar').removeClass('nav-down-bar-active');
 
 });
 
 $('#menu-nav-content').mouseenter(function(){
-  console.log('enter');
+
     $('#menu-nav-content .nav-bar').addClass('nav-down-bar-active');
 
 });
 
 $('#menu-nav-content').mouseleave(function(){
-  console.log('leave');
+
     $('#menu-nav-content .nav-bar').removeClass('nav-down-bar-active');
 
 });
 
 $('#gallery-nav-content').mouseenter(function(){
-  console.log('enter');
+
     $('#gallery-nav-content .nav-bar').addClass('nav-down-bar-active');
 
 });
 
 $('#gallery-nav-content').mouseleave(function(){
-  console.log('leave');
+
     $('#gallery-nav-content .nav-bar').removeClass('nav-down-bar-active');
 
 });
 
 $('#about-nav-content').mouseenter(function(){
-  console.log('enter');
+
     $('#about-nav-content .nav-bar').addClass('nav-down-bar-active');
 
 });
 
 $('#about-nav-content').mouseleave(function(){
-  console.log('leave');
+
     $('#about-nav-content .nav-bar').removeClass('nav-down-bar-active');
 
 });
 
 $('#contact-nav-content').mouseenter(function(){
-  console.log('enter');
+
     $('#contact-nav-content .nav-bar').addClass('nav-down-bar-active');
 
 });
 
 $('#contact-nav-content').mouseleave(function(){
-  console.log('leave');
+
     $('#contact-nav-content .nav-bar').removeClass('nav-down-bar-active');
 
 });
