@@ -789,6 +789,7 @@ a:visited{
   position: absolute;
   right: -4.5rem;
   top:-3rem;
+  z-index: 1000;
 }
 
 /* for desktop version*/
