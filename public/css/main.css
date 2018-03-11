@@ -1068,5 +1068,11 @@ a:visited{
   .branch{
     font-size: 1.2rem;
   }
+  .carousel-container img{
+    height: 100%;
+  }
+  .arrow img{
+    height: 6rem;
+  }
 
 }
