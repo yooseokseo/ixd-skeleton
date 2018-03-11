@@ -1,6 +1,51 @@
 
 var googleURL = '';
+var disArray = [];
 
+function findNearest(){
+  var nearestStoreIndex = 0;
+  var smallestDistance = disArray[0];
+  for (var i = 0; i < disArray.length; i++) {
+    if(disArray[i] >= smallestDistance){
+      //skip
+    }
+    else{
+      smallestDistance = disArray[i];
+      nearestStoreIndex = i;
+    }
+  }
+  console.log(nearestStoreIndex);
+  findPhoneNearest(nearestStoreIndex);
+
+}
+function findPhoneNearest(num){
+  switch (num) {
+    case 0:
+    console.log('DTC');
+      break;
+    case 1:
+    console.log('Glendale');
+    break;
+    case 2:
+    console.log('Downtown');
+      $('#phone-out').html('Downtown');
+    break;
+    case 3:
+    console.log('Englewood');
+    break;
+
+    default:
+      console.log('error undefined store index');
+  }
+}
+
+function updateDistance(num1, num2, num3, num4){
+  disArray.push(num1);
+  disArray.push(num2);
+  disArray.push(num3);
+  disArray.push(num4);
+  findNearest();
+}
 
 function geoFindMe() {
 
@@ -12,15 +57,20 @@ function geoFindMe() {
   function success(position) {
     var latitude  = position.coords.latitude;
     var longitude = position.coords.longitude;
-    console.log("latitude :" + latitude);
-    console.log("longitude :" + longitude);
-/*
+    var disURL = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins='+latitude+','+ longitude+'&destinations=39.624795,-104.893516|39.695809,-104.939637|39.741855,-104.988494|39.654924,-104.987796&key=AIzaSyC_Xx3Yrmyy7jSADAV4NhTqzgHzS-ZJ-yk';
     $.ajax({
       type: 'GET',
-      url: "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=32.8704319,-117.2187208&destinations=39.624795,-104.893516|39.695809,-104.939637|39.741855,-104.988494|39.654924,-104.987796&key=AIzaSyC_Xx3Yrmyy7jSADAV4NhTqzgHzS-ZJ-yk",
-      headers: {  'Access-Control-Allow-Origin': '*' }
+      url: disURL,
+      success: function(result){
+        console.log("current address: "+result.origin_addresses);
+        console.log(result.rows[0].elements[0].distance);
+        console.log(result.rows[0].elements[1].distance);
+        console.log(result.rows[0].elements[2].distance);
+        console.log(result.rows[0].elements[3].distance);
+        updateDistance(result.rows[0].elements[0].distance.value,result.rows[0].elements[1].distance.value,result.rows[0].elements[2].distance.value,result.rows[0].elements[3].distance.value);
+      }
     });
-*/
+
 
 
 
