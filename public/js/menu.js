@@ -2,6 +2,7 @@ var currentSignatureMenuIndex = 0;
 var totalNumberofSignatureMenu = 4;
 
 $(document).ready(function(){
+  geoFindMe();
   $('.item1').click(function(){
     console.log('item1 is clicked');
     currentSignatureMenuIndex = 0;
