@@ -29,6 +29,10 @@ color: #ACBA9A;
   grid-template-rows: 1fr 2fr;
   grid-template-areas: "Info" "Map";
 }
+.open-now{
+  font-weight: 300;
+  font-size: 1.5rem;
+}
 
 .contact-form-box {
   width: 100%;
@@ -41,9 +45,9 @@ color: #ACBA9A;
   grid-area: Info;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "Name" "Adde" "Phone" "Hours";
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
   height: 11rem;
   color: black;
@@ -68,12 +72,12 @@ color: #ACBA9A;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  font-weight: 400;
 }
 
 .contact-adde {
   grid-area: Adde;
   font-size: 1.3rem;
-  margin-left: 0.3rem;
 }
 
 .contact-phone {
@@ -229,9 +233,10 @@ color: #ACBA9A;
 }
 
 .open {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   text-align: right;
-  color: red;
+  color: #ACBA9A;
+  font-weight: 300;
 }
 
 .start, .end {
