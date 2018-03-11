@@ -867,7 +867,7 @@ a:visited{
     top: 20rem;
   }
   .carousel-circle-btns {
-    grid-template-columns: 12fr 1fr 1fr 1fr 1fr 12fr;
+    grid-template-columns: 15fr 1fr 1fr 1fr 1fr 15fr;
   }
   .nav-bar {
     width: 100%;
