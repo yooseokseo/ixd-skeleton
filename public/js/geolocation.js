@@ -14,6 +14,7 @@ function geoFindMe() {
     var longitude = position.coords.longitude;
     console.log("latitude :" + latitude);
     console.log("longitude :" + longitude);
+
     
 
 
