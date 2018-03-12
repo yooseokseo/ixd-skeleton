@@ -58,7 +58,7 @@ function geoFindMe() {
     console.log("Geolocation is not supported by your browser");
     return;
   }
-
+$('#phone-name-out').html('success');
   function success(position) {
     var latitude  = position.coords.latitude;
     var longitude = position.coords.longitude;
