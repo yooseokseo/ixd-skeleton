@@ -67,7 +67,7 @@ function geoFindMe() {
     //var disURL = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins='+latitude+','+ longitude+'&destinations=39.624795,-104.893516|39.695809,-104.939637|39.741855,-104.988494|39.654924,-104.987796&key=AIzaSyC_Xx3Yrmyy7jSADAV4NhTqzgHzS-ZJ-yk';
 
     $.ajax({
-    type: 'POST',
+    type: 'GET',
     url: 'https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins='+position.coords.latitude+','+ position.coords.longitude+'&destinations=39.624795,-104.893516|39.695809,-104.939637|39.741855,-104.988494|39.654924,-104.987796&key=AIzaSyC_Xx3Yrmyy7jSADAV4NhTqzgHzS-ZJ-yk',
     success: function(result){
         console.log(result);
