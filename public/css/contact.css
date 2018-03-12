@@ -104,7 +104,7 @@ color: #ACBA9A;
   margin: auto;
   text-align: center;
   font-size: 1.5rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
 }
 
@@ -289,7 +289,7 @@ color: #ACBA9A;
 #name-input::placeholder, #email-input::placeholder, #textarea-input::placeholder{
   padding-left:  0.1rem;
   font-size: 1.3rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
 }
 #name-input{
@@ -317,7 +317,7 @@ padding-top: 1rem;
 }
 #contact-form-sent-btn{
 padding-left:  0.1rem;
-font-family: 'Raleway', sans-serif;
+font-family: 'Oswald', sans-serif;
 font-weight: 300;
 width: 85%;
 height: 4rem;
@@ -339,23 +339,23 @@ color: white;
 
 #thank-1{
 font-size: 1.8rem;
-font-family: 'Raleway', sans-serif;
+font-family: 'Oswald', sans-serif;
 font-weight: 300;
 }
 #thank-2{
   font-size: 0.8rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
 }
 #thank-3{
   font-size: 0.8rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
 }
 #thank-4{
   font-size: 1.8rem;
   margin-top: 0.3rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
 }
 
@@ -468,12 +468,12 @@ font-weight: 300;
   #name-input-desk::placeholder, #email-input-desk::placeholder, #textarea-input-desk::placeholder{
     padding-left:  0.1rem;
     font-size: 1.3rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 300;
   }
   #sendBtn{
     padding-left:  0.1rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 300;
 
     height: 4rem;
@@ -500,7 +500,7 @@ height: 9rem;
     display: none;
   }
   .thank-text{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-size: 2rem;
     margin: 0 1rem;

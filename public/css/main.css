@@ -1,6 +1,6 @@
 /* this is for main layout */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 @import url('https://fonts.googleapis.com/css?family=Playball');
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
@@ -181,7 +181,7 @@ a:visited{
   padding: 1rem;
   text-decoration: none;
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight:300;
 }
 
@@ -388,7 +388,7 @@ a:visited{
   justify-content: center;
   align-items: center;
   font-size: 1.1rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
   color: white;
   border: 0.1rem solid white;
@@ -482,7 +482,7 @@ a:visited{
 }
 
 .footer-content-container {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight:300;
   color: white;
   width: 60%;
@@ -1068,7 +1068,7 @@ a:visited{
     font-size: 1rem;
   }
   .footer-content-container-desk{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight:300;
     color: white;
     margin-top: 1rem;
@@ -1090,7 +1090,7 @@ a:visited{
   align-items: center;
   background-color: #ACBA9A;
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   background-color:  #ACBA9A;
   }
   .footer{
@@ -1100,7 +1100,7 @@ a:visited{
   margin-top: 2.5rem;
   }
   #orderOnline-btn{
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
     height: 3rem;
     background-color: #ACBA9A;
   }
