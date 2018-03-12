@@ -65,24 +65,37 @@ function geoFindMe() {
     var longitude = position.coords.longitude;
       $('#phone-name-out').html('' + position.coords.latitude +' '+ position.coords.longitude);
     var disURL = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins='+latitude+','+ longitude+'&destinations=39.624795,-104.893516|39.695809,-104.939637|39.741855,-104.988494|39.654924,-104.987796&key=AIzaSyC_Xx3Yrmyy7jSADAV4NhTqzgHzS-ZJ-yk';
+
+    $.ajax({
+    type: 'POST',
+    url: disURL,
+    success: function(){
+        console.log('Done');
+        $('#phone-name-out').html('Downtown');
+    },
+    error: function(e){
+        console.log('ERROR! ');
+    }
+});
+
 /*
     $.ajax({
       type: 'GET',
       url: disURL,
       success: function(result){
-        $('#phone-name-out').html('Downtown');
-        $('#phone-phone-out').html('(720)-904-7937');
+      //$('#phone-name-out').html('Downtown');
+      //$('#phone-phone-out').html('(720)-904-7937');
         console.log("current address: "+result.origin_addresses);
         console.log(result.rows[0].elements[0].distance);
         console.log(result.rows[0].elements[1].distance);
         console.log(result.rows[0].elements[2].distance);
         console.log(result.rows[0].elements[3].distance);
-        //updateDistance(result.rows[0].elements[0].distance.value,result.rows[0].elements[1].distance.value,result.rows[0].elements[2].distance.value,result.rows[0].elements[3].distance.value);
+        updateDistance(result.rows[0].elements[0].distance.value,result.rows[0].elements[1].distance.value,result.rows[0].elements[2].distance.value,result.rows[0].elements[3].distance.value);
       }
     });
 
 */
-  $.get(disURL, callback);
+
 
 
   }
