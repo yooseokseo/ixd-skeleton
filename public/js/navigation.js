@@ -185,7 +185,6 @@ $('#bottom-nav-phone').click(function() {
   $('.site-nav-open').addClass('showPhone');
   $('.bottom-nav').hide();
   $('#site-hamburger').css('z-index', '0');
-  $('#phone-name-out').html('geoFindMe before');
 
 });
 
