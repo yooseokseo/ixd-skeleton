@@ -28,7 +28,9 @@ function findPhoneNearest(num){
     break;
     case 2:
     console.log('Downtown');
-      $('#phone-out').html('Downtown');
+      $('#phone-name-out').html('Downtown');
+      $('#phone-phone-out').html('(720)-904-7937');
+      $('#phone-downtown').hide();
     break;
     case 3:
     console.log('Englewood');
