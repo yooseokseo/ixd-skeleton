@@ -179,12 +179,14 @@ $('#bottom-nav-phone').click(function() {
 
   $('.nav-pop-up').hide();
   $('.close-nav').show();
-  $('.bot-nav-phone').fadeIn();
+  $('.bot-nav-phone').fadeIn(function(){
+    geoFindMe();
+  });
   $('.site-nav-open').addClass('showPhone');
   $('.bottom-nav').hide();
   $('#site-hamburger').css('z-index', '0');
   $('#phone-name-out').html('geoFindMe before');
-  geoFindMe();
+
 });
 
 $('#bottom-nav-location').click(function() {
