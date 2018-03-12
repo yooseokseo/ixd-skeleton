@@ -65,6 +65,7 @@ function geoFindMe() {
     var longitude = position.coords.longitude;
       $('#phone-name-out').html('' + position.coords.latitude +' '+ position.coords.longitude);
     var disURL = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins='+latitude+','+ longitude+'&destinations=39.624795,-104.893516|39.695809,-104.939637|39.741855,-104.988494|39.654924,-104.987796&key=AIzaSyC_Xx3Yrmyy7jSADAV4NhTqzgHzS-ZJ-yk';
+/*
     $.ajax({
       type: 'GET',
       url: disURL,
@@ -80,8 +81,8 @@ function geoFindMe() {
       }
     });
 
-
-
+*/
+  $.get(disURL, callback);
 
 
   }
@@ -89,7 +90,10 @@ function geoFindMe() {
   function error() {
     console.log("Unable to retrieve your location");
   }
-
+  function callback(result){
+    console.log(result);
+    $('#phone-name-out').html('callback');
+  }
 
 
 
