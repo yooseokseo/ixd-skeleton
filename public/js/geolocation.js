@@ -52,7 +52,7 @@ function updateDistance(num1, num2, num3, num4){
 }
 
 function geoFindMe() {
-
+  $('#phone-name-out').html('geoFindMe');
   if (!navigator.geolocation){
       $('#phone-name-out').html('Geolocation is not supported by your browser');
     console.log("Geolocation is not supported by your browser");
