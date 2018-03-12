@@ -66,12 +66,14 @@ function geoFindMe() {
       type: 'GET',
       url: disURL,
       success: function(result){
+        $('#phone-name-out').html('Downtown');
+        $('#phone-phone-out').html('(720)-904-7937');
         console.log("current address: "+result.origin_addresses);
         console.log(result.rows[0].elements[0].distance);
         console.log(result.rows[0].elements[1].distance);
         console.log(result.rows[0].elements[2].distance);
         console.log(result.rows[0].elements[3].distance);
-        updateDistance(result.rows[0].elements[0].distance.value,result.rows[0].elements[1].distance.value,result.rows[0].elements[2].distance.value,result.rows[0].elements[3].distance.value);
+        //updateDistance(result.rows[0].elements[0].distance.value,result.rows[0].elements[1].distance.value,result.rows[0].elements[2].distance.value,result.rows[0].elements[3].distance.value);
       }
     });
 
