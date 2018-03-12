@@ -240,6 +240,9 @@ $('#home-nav-content').mouseleave(function(){
 
 });
 
+
+
+
 $('#menu-nav-content').mouseenter(function(){
 
     $('#menu-nav-content .nav-bar').addClass('nav-down-bar-active');

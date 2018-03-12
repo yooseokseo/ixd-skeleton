@@ -9,6 +9,7 @@ $(document).ready(function(){
   })
 
   $('#arrow-right').click(function(){
+    console.log('clicked');
     showNext();
   })
 

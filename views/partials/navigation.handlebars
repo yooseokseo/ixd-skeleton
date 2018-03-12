@@ -18,6 +18,10 @@
         <div class="nav-bar" style="display:flex; justify-content:center;">
           <div class="nav-down-bar nav-down-bar-active"></div>
         </div>
+        {{else}}
+        <div class="nav-bar">
+          <div class="nav-down-bar"></div>
+        </div>
         {{/if}}
       </a>
 
@@ -26,9 +30,11 @@
       <a href="/menu">MENU
         {{#if isMenuPage}}
         <div class="nav-bar" style="display:flex; justify-content:center;">
-          <div class="nav-down-bar nav-down-bar-active">
-
-          </div>
+          <div class="nav-down-bar nav-down-bar-active"></div>
+        </div>
+        {{else}}
+        <div class="nav-bar">
+          <div class="nav-down-bar"></div>
         </div>
         {{/if}}
       </a>
@@ -41,6 +47,10 @@
 
           </div>
         </div>
+        {{else}}
+        <div class="nav-bar">
+          <div class="nav-down-bar"></div>
+        </div>
         {{/if}}
       </a>
     </div>
@@ -52,6 +62,10 @@
 
           </div>
         </div>
+        {{else}}
+        <div class="nav-bar">
+          <div class="nav-down-bar"></div>
+        </div>
         {{/if}}
       </a>
     </div>
@@ -62,6 +76,10 @@
           <div class="nav-down-bar nav-down-bar-active">
 
           </div>
+        </div>
+        {{else}}
+        <div class="nav-bar">
+          <div class="nav-down-bar"></div>
         </div>
         {{/if}}
       </a>

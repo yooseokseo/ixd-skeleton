@@ -807,8 +807,6 @@ a:visited{
   display: none;
 }
 
-/* for desktop version*/
-
 @media (min-width: 700px) {
   #navbar {
     grid-template-columns: 4fr 4fr 2fr;
@@ -821,6 +819,29 @@ a:visited{
   #logo-img{
     display: none;
 
+  }
+
+  .arrow-background{
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    position: relative;
+    left: -5.5rem;
+    top: -1rem;
+    z-index: 0;
+    opacity: 0.6;
+  }
+  .arrow-background-right{
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    position: relative;
+    right: -2.5rem;
+    top: -1rem;
+    z-index: 0;
+    opacity: 0.6;
   }
   .desk-logo{
     display: block;
@@ -1093,7 +1114,18 @@ a:visited{
     height: 100%;
   }
   .arrow img{
-    height: 6rem;
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    z-index: 1000;
+
   }
+  .left{
+    left: -0.5rem;
+  }
+  .right{
+    right: -5.5rem;
+  }
+  
 
 }

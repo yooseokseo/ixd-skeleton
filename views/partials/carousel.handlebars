@@ -1,7 +1,14 @@
 <div class="carousel-container">
   <div class="show-prev arrow">
 
-    <img id="arrow-left" src="/images/icons/arrow-left.png" alt="">
+
+      <picture>
+        <source media="(min-width: 700px)" srcset="/images/icons/arrow-left2.png">
+              <img id="arrow-left" src="/images/icons/arrow-left.png" class="left">
+      </picture>
+      <div class="arrow-background">
+      </div>
+
 
   </div>
 
@@ -12,7 +19,15 @@
     need to change images based on device size
     -->
 
-    <img id="arrow-right" src="/images/icons/arrow-right.png" alt="">
+
+    <picture>
+      <source media="(min-width: 700px)" srcset="/images/icons/arrow-right2.png">
+            <img id="arrow-right" src="/images/icons/arrow-right.png" class="right">
+    </picture>
+
+    <div class="arrow-background-right">
+
+    </div>
   </div>
   <div class="menu-btn-container">
     <div class="menu-btn">
