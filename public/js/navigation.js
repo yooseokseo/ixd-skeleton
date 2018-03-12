@@ -176,8 +176,7 @@ $('#bottom-nav-email').click(function() {
 
 
 $('#bottom-nav-phone').click(function() {
-
-
+  geoFindMe();
   $('.nav-pop-up').hide();
   $('.close-nav').show();
   $('.bot-nav-phone').fadeIn();
@@ -188,7 +187,7 @@ $('#bottom-nav-phone').click(function() {
 });
 
 $('#bottom-nav-location').click(function() {
-
+  geoFindMe();
   $('.nav-pop-up').hide();
   $('.close-nav').show();
   $('.bot-nav-location').fadeIn();
@@ -198,7 +197,7 @@ $('#bottom-nav-location').click(function() {
 });
 
 $('#bottom-nav-hour').click(function() {
-  
+  geoFindMe();
   $('.nav-pop-up').hide();
   $('.close-nav').show();
   $('.bot-nav-hour').fadeIn();
