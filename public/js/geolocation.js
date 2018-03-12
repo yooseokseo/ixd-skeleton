@@ -69,8 +69,8 @@ function geoFindMe() {
     $.ajax({
     type: 'POST',
     url: disURL,
-    success: function(){
-        console.log('Done');
+    success: function(result){
+        console.log(result);
         $('#phone-name-out').html('Downtown');
     },
     error: function(e){
