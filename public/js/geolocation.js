@@ -52,7 +52,7 @@ function updateDistance(num1, num2, num3, num4){
 }
 
 function geoFindMe() {
-  $('#phone-name-out').html('geoFindMe');
+  $('#phone-name-out').html('Loading');
   if (!navigator.geolocation){
       $('#phone-name-out').html('Geolocation is not supported by your browser');
     console.log("Geolocation is not supported by your browser");
@@ -70,8 +70,8 @@ function geoFindMe() {
     type: 'GET',
     url: 'https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins='+position.coords.latitude+','+ position.coords.longitude+'&destinations=39.624795,-104.893516|39.695809,-104.939637|39.741855,-104.988494|39.654924,-104.987796&key=AIzaSyC_Xx3Yrmyy7jSADAV4NhTqzgHzS-ZJ-yk',
     success: function(result){
-        console.log(result);
-        $('#phone-name-out').html('Downtown');
+        updateDistance(result.rows[0].elements[0].distance.value,result.rows[0].elements[1].distance.value,result.rows[0].elements[2].distance.value,result.rows[0].elements[3].distance.value);
+        //$('#phone-name-out').html('Downtown');
     },
     error: function(e){
         $('#phone-name-out').html('error');

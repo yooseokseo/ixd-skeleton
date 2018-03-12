@@ -214,6 +214,7 @@ $('.menu-toggle-inside').click(function() {
   $('.site-nav-open').removeClass('showPhone');
   $('.site-nav-open').removeClass('showLocation');
   $('.site-nav-open').removeClass('showHour');
+  $('#phone-downtown').show();
   $('.bot-nav-phone').hide();
   $('.bot-nav-location').hide();
   $('.bot-nav-hour').hide();
