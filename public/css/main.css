@@ -82,8 +82,8 @@ a:visited{
 
 
 #logo-img {
-  width: 4rem;
-  height: 4rem;
+  width: 6rem;
+  height: 6rem;
 }
 
 #navbar::after {
@@ -814,13 +814,10 @@ a:visited{
 
     grid-template-rows: 1fr;
     grid-template-areas: "Logo Nav Order";
-    height: 5rem;
+    height: 6.5rem;
     position: relative;
   }
-  #logo-img{
-    display: none;
 
-  }
   .carousel-container-about-mobile{
     display: none;
   }
