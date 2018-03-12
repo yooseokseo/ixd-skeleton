@@ -176,34 +176,34 @@ $('#bottom-nav-email').click(function() {
 
 
 $('#bottom-nav-phone').click(function() {
-  geoFindMe();
+
   $('.nav-pop-up').hide();
   $('.close-nav').show();
   $('.bot-nav-phone').fadeIn();
   $('.site-nav-open').addClass('showPhone');
   $('.bottom-nav').hide();
   $('#site-hamburger').css('z-index', '0');
-
+  geoFindMe();
 });
 
 $('#bottom-nav-location').click(function() {
-  geoFindMe();
   $('.nav-pop-up').hide();
   $('.close-nav').show();
   $('.bot-nav-location').fadeIn();
   $('.site-nav-open').addClass('showLocation');
   $('.bottom-nav').hide();
   $('#site-hamburger').css('z-index', '0');
+  geoFindMe();
 });
 
 $('#bottom-nav-hour').click(function() {
-  geoFindMe();
   $('.nav-pop-up').hide();
   $('.close-nav').show();
   $('.bot-nav-hour').fadeIn();
   $('.site-nav-open').addClass('showHour');
   $('.bottom-nav').hide();
   $('#site-hamburger').css('z-index', '0');
+  geoFindMe();
 });
 
 
