@@ -61,7 +61,6 @@ function showCurrentPage(index) {
   }
 
   var findItemId = '#c' + index;
-
   $(findItemId).addClass('active');
 
 
@@ -108,13 +107,14 @@ function showMenu(){
 function hideCurrentImage(){
   //make current image as display:none
   var currentItemId = '#c'+ currentViewItemIndex;
-
   $(currentItemId).removeClass('active');
+
 }
 
 function showCurrentImage(){
   //make next image as display:block
   currentItemId = '#c'+ currentViewItemIndex;
+
   $(currentItemId).addClass('active');
 }
 

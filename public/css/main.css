@@ -803,16 +803,33 @@ a:visited{
   top:-3rem;
   z-index: 1000;
 }
+.desk-logo{
+  display: none;
+}
 
 /* for desktop version*/
 
 @media (min-width: 700px) {
   #navbar {
-    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-columns: 4fr 4fr 2fr;
 
     grid-template-rows: 1fr;
     grid-template-areas: "Logo Nav Order";
     height: 5rem;
+    position: relative;
+  }
+  #logo-img{
+    display: none;
+
+  }
+  .desk-logo{
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 7rem;
+    height: 7rem;
+    z-index: 1000;
+    left: 10rem;
   }
   .logo{
     width: 100%;
@@ -856,7 +873,7 @@ a:visited{
     grid-area:Order;
   }
   .site-nav a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
 
   }
@@ -1065,7 +1082,6 @@ a:visited{
     font-family: 'Raleway', sans-serif;
     height: 3rem;
     background-color: #ACBA9A;
-    border: 0.3rem solid gray;
   }
   .empty{
     grid-area: Empty;
