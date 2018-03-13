@@ -31,13 +31,13 @@
 }
 
 #arrow-left-about-mobile{
-  z-index: 1000;
+  z-index: 49;
   position: absolute;
   height: 3rem;
   top: 6rem;
 }
 #arrow-right-about-mobile{
-  z-index: 1000;
+  z-index: 49;
   position: absolute;
   right: 0;
   height: 3rem;
