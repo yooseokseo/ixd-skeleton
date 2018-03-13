@@ -293,10 +293,10 @@
 }
 .protein, .mix, .sauce, .toppings{
   justify-content:flex-start;
-  margin-left: 1.3rem;
+  padding-left: 1.3rem;
 }
 .protein-l, .mix-l, .sauce-l, .toppings-l{
-  margin-right: 1.3rem;
+  padding-right: 1.3rem;
   justify-content:flex-end;
 }
 .sauce-l div, .sauce div{
@@ -340,9 +340,9 @@
 }
 
 .menu-order-deliver-btn:hover{
-  color: black;
-  background-color: white;
-  border-color: #ACBA9A;
+  color: #ACBA9A;
+
+
 }
 
 .base, .protein, .size-price, .mix, .sauce, .salad, .toppings, .menu-order-deliver-btn, .menu-start, .toppings-l{
@@ -433,6 +433,7 @@
   }
   .menu-container{
     margin-top: 3rem;
+    height: 170rem;
   }
   #one-item-0, #one-item-1, #one-item-2, #one-item-3{
   background-size: cover;
@@ -474,7 +475,24 @@
   margin: auto;
 
   }
-}
-
-
+  .menu-box-base-container, .menu-box-salad-container {
+    margin: auto;
+    width: 30%;
+  }
+  .menu-box-protein-container, .menu-box-mix-container {
+    height: 14rem;
+  }
+  .protein-l, .mix-l, .sauce-l, .toppings-l{
+    border-right: 1px solid #ACBA9A;
+    height:3.5rem;
+  }
+  .protein, .mix, .sauce, .toppings{
+    height:3.5rem;
+  }
+  .menu-box{
+    height: 165rem;
+  }
+  .menu-order-deliver-btn{
+    margin-top: 6rem;
+  }
 }
