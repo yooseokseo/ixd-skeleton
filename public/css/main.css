@@ -370,7 +370,7 @@ a:visited{
   position: relative;
   height: 6rem;
   width: 4rem;
-
+  z-index: 49;
 }
 
 .menu-btn-container {
@@ -384,7 +384,7 @@ a:visited{
 }
 
 .menu-btn {
-  background-image:url('/images/nav2.jpg');
+  background-color: #ACBA9A;
   height: 3rem;
   width: 10rem;
   display: flex;
@@ -395,8 +395,9 @@ a:visited{
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   color: white;
-  border: 0.1rem solid white;
+  
   border-radius: 0.1rem;
+  z-index: 49;
 }
 
 .carousel-img {
@@ -458,6 +459,7 @@ a:visited{
   background-color: white;
   width: 1rem;
   border-radius: 100%;
+  z-index: 49;
 }
 
 .activeBar {
