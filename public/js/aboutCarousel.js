@@ -23,8 +23,7 @@ $('#arrow-right-about-mobile').click(()=>{
     }
     lastImage = 1;
   }
-  console.log(lastImage);
-  console.log('next');
+
 
   $('.about-caro-image-' + lastImage ).addClass('sliding-right').one(animationEnd, function() {
     $(this).hide();
@@ -36,14 +35,12 @@ $('#arrow-right-about-mobile').click(()=>{
 
 
 $('#arrow-left-about-mobile').click(()=>{
-  console.log('prev');
   lastImage--;
-  console.log(lastImage);
   if(lastImage === 0 ){
     lastImage = 4;
     $('.about-caro-image-3').hide();
-      $('.about-caro-image-2').hide();
-        $('.about-caro-image-1').hide();
+    $('.about-caro-image-2').hide();
+    $('.about-caro-image-1').hide();
 
   }
   console.log(lastImage);
