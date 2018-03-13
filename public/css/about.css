@@ -100,6 +100,27 @@
     grid-template-areas: "Title" "Desc" "Image";
     margin-top: 1rem;
 }
+.about-fran-title{
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  color: #ACBA9A;
+  text-align: center;
+  background-image: url('/images/nav2.jpg');
+  position: relative;
+  top:-1rem;
+  color: white;
+}
+.about-fran-desc{
+  font-size: 1.1rem;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  position: relative;
+  background-image: url('/images/nav2.jpg');
+  top:-1rem;
+  padding: 1rem;
+  color: white;
+  font-weight: 300;
+}
 
 .about-content{
   font-size: 2rem;
@@ -117,6 +138,7 @@ line-height: 1.5rem;
 
 margin: 1rem;
 margin-bottom: 2rem;
+font-size: 1.1rem;
 }
 
 
