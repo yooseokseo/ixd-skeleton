@@ -53,3 +53,7 @@ $('#arrow-left-about-mobile').click(()=>{
 
 
 });
+
+setInterval(function(){
+    $('#arrow-right-about-mobile').click();
+}, 4000);
