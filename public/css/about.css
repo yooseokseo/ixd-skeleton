@@ -1,3 +1,54 @@
+.carousel-container-about-mobile{
+
+  height: 15rem;
+  width: 100%;
+}
+@keyframes slideRight {
+    from {margin-left:0;}
+    to {
+      margin-left:100vw;
+    }
+}
+@keyframes slideLeft {
+    from {margin-left:100vw;}
+    to {
+      margin-left:0;
+    }
+}
+
+.sliding-right{
+  animation-name: slideRight;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+.sliding-left{
+  animation-name: slideLeft;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+
+}
+
+#arrow-left-about-mobile{
+  z-index: 1000;
+  position: absolute;
+  height: 3rem;
+  top: 6rem;
+}
+#arrow-right-about-mobile{
+  z-index: 1000;
+  position: absolute;
+  right: 0;
+  height: 3rem;
+  top: 6rem;
+}
+.fix{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .about-title {
   font-size: 2.5rem;
   position: absolute;
@@ -6,7 +57,29 @@
   letter-spacing:0.2rem;
   left: 0;
   right: 0;
-  margin-top: 0.5rem;
+
+}
+.hidden{
+  display: none;
+}
+.about-caro-image{
+  width: 100%;
+  height: 100%;
+}
+.about-caro-image-1{
+
+    margin-left: 0;
+}
+.about-caro-image-2{
+
+  margin-left: 0;
+}
+
+.about-caro-image-3{
+
+}
+.about-caro-image-4{
+
 }
 
 .about-content-container {
