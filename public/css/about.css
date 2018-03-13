@@ -113,7 +113,7 @@
 .about-fran-desc{
   font-size: 1.2rem;
   font-family: 'Oswald', sans-serif;
-  text-align: center;
+  text-align: left;
   position: relative;
   background-image: url('/images/nav2.jpg');
   top:-1rem;
