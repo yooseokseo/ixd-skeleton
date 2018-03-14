@@ -61,6 +61,7 @@
     grid-template-areas:
       "Title Image"
       "Desc Image";
+      margin-top: 0;
   }
   .home-image{
     grid-area: Image;

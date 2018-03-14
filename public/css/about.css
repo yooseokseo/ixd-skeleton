@@ -192,7 +192,8 @@ font-size: 1.3rem;
 }
 @media (min-width: 700px) {
   .about-content-container{
-    height: 37em;
+    height: 33em;
+    margin-top: 5rem;
   }
   .about-content-box, .about-desc, .about-image, .about-image img{
     display: none;
@@ -235,6 +236,13 @@ font-family: 'Oswald', sans-serif;
   .about-image-desktop img{
 
     width: 100%;
+  }
+  .carousel-circle-btn-container-about{
+    top:8rem;
+    height: 100%;
+  }
+  .carousel-circle-btns-about{
+      grid-template-columns: 8fr 1fr 1fr 1fr 1fr 8fr;
   }
 
 }
