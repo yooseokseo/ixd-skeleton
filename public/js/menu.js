@@ -4,7 +4,7 @@ var totalNumberofSignatureMenu = 4;
 var lastScrollLeft = 0;
 var documentScrollLeft = $('.menu-signature-container').scrollLeft();
 if(documentScrollLeft === 0){
-  console.log('init');
+
   $('#arrow-right-menu').fadeIn();
   $('#arrow-left-menu').fadeOut();
 }
@@ -12,11 +12,11 @@ if(documentScrollLeft === 0){
 $('.menu-signature-container').scroll(function() {
     documentScrollLeft = $('.menu-signature-container').scrollLeft();
     if (lastScrollLeft != documentScrollLeft) {
-        console.log(documentScrollLeft);
+      
         if(lastScrollLeft >= documentScrollLeft){
                 //scrollong left
           if(documentScrollLeft === 0){
-            console.log('start point');
+
             $('#arrow-right-menu').fadeIn();
           }
           if(documentScrollLeft >150){
@@ -33,35 +33,7 @@ $('.menu-signature-container').scroll(function() {
           }
 
         }
-          /*
-        if(documentScrollLeft > 0 && documentScrollLeft< 150){
-          $('#arrow-right-menu').fadeOut();
-        }
-        else if(documentScrollLeft === 0){
-          $('#arrow-right-menu').fadeIn();
-          $('#arrow-left-menu').fadeOut();
-        }
-        else {
-          console.log('here');
-          $('#arrow-left-menu').fadeIn();
-        }
-        /*
-        if (documentScrollLeft === 0){
-          console.log('start point');
-          $('#arrow-left-menu').fadeOut();
-          $('#arrow-right-menu').fadeIn();
-        }
-        else if(documentScrollLeft >= 150){
-          console.log('end point');
-          $('#arrow-left-menu').fadeIn();
-          $('#arrow-right-menu').fadeOut();
-        }
 
-        else{
-          console.log('where1');
-
-        }
-        */
 
         lastScrollLeft = documentScrollLeft;
     }
