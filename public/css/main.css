@@ -922,7 +922,6 @@ a:visited{
   #orderOnline {
     display: block;
     grid-area:Order;
-
   }
   .site-nav a {
     font-size: 1.2rem;
@@ -1094,7 +1093,7 @@ a:visited{
     grid-area: img4;
   }
   .carousel-about-img {
-    display: none;
+    position: relative;
   }
   .active {
     display: block;

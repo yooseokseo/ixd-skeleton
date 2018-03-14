@@ -1,19 +1,34 @@
 var currentViewItemIndexAbout = 0;
-var totalNumOfImages = 4;
+var totalNumOfImages = 5;
+var lastImageAboutDesk = 1;
 
 
 $(document).ready(function(){
-  startAutoplayAbout();
+  //startAutoplayAbout();
   $('#arrow-left-about').click(function(){
     showPrevAbout();
 
   })
 
   $('#arrow-right-about').click(function(){
+
+    if(lastImageAboutDesk === 5){
+      for (var i = 0; i < 5; i++) {
+        $('#c'+ i + '-about').show();
+      }
+      lastImageAboutDesk = 1;
+    }
+      $('#c'+ currentViewItemIndexAbout + '-about').addClass('sliding-right').one(animationEnd, function() {
+        $(this).hide();
+        $(this).removeClass('sliding-right');
+        currentViewItemIndexAbout++;
+
+      });
+      lastImageAboutDesk++;
     showNextAbout();
 
   })
-  
+
 
 
   // initialize first bar as active
@@ -21,24 +36,24 @@ $(document).ready(function(){
 
   $('#bar-0-about').click(function(){
     currentViewItemIndexAbout = 0;
-    showCurrentCaroselImageAbout(currentViewItemIndexAbout);
+    //showCurrentCaroselImageAbout(currentViewItemIndexAbout);
 
   });
 
   $('#bar-1-about').click(function(){
     currentViewItemIndexAbout = 1;
-    showCurrentCaroselImageAbout(currentViewItemIndexAbout);
+    //showCurrentCaroselImageAbout(currentViewItemIndexAbout);
 
   });
 
   $('#bar-2-about').click(function(){
     currentViewItemIndexAbout = 2;
-    showCurrentCaroselImageAbout(currentViewItemIndexAbout);
+    //showCurrentCaroselImageAbout(currentViewItemIndexAbout);
 
   });
   $('#bar-3-about').click(function(){
     currentViewItemIndexAbout = 3;
-    showCurrentCaroselImageAbout(currentViewItemIndexAbout);
+    //showCurrentCaroselImageAbout(currentViewItemIndexAbout);
 
   });
 
@@ -65,7 +80,7 @@ function showCurrentPageAbout(index) {
 
 function showPrevAbout(){
 
-  hideCurrentImageAbout();
+  //hideCurrentImageAbout();
   hideCurrentBarAbout();
   //decrease index by 1
   if(currentViewItemIndexAbout == 0){
@@ -73,13 +88,13 @@ function showPrevAbout(){
   }
   currentViewItemIndexAbout--;
 
-  showCurrentImageAbout();
+  //showCurrentImageAbout();
   showCurrentBarAbout();
 };
 
 function showNextAbout(){
 
-  hideCurrentImageAbout();
+  //hideCurrentImageAbout();
   hideCurrentBarAbout();
 
 
@@ -90,7 +105,7 @@ function showNextAbout(){
   }
 
 
-  showCurrentImageAbout();
+  //showCurrentImageAbout();
   showCurrentBarAbout();
 
 
