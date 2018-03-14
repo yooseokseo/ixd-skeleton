@@ -50,7 +50,7 @@ function updateDistance(num1, num2, num3, num4){
   disArray.push(num4);
   findNearest();
 }
-
+/*
 function geoFindMe() {
   $('#phone-name-out').html('Loading');
   if (!navigator.geolocation){
@@ -76,6 +76,7 @@ function geoFindMe() {
     error: function(e){
         $('#phone-name-out').html('error');
     }
+
 });
 
 /*
@@ -94,7 +95,7 @@ function geoFindMe() {
       }
     });
 
-*/
+
 
 
 
@@ -113,3 +114,4 @@ function geoFindMe() {
 
   navigator.geolocation.getCurrentPosition(success, error);
 }
+*/

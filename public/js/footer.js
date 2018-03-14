@@ -6,16 +6,113 @@ $(".BackToTop").click(function () {
    $("html, body").animate({scrollTop: 0}, 1000);
 });
 
-$('#footer-facebook-icon').hover(function(){
-  $(this).attr('src','/images/icons/FBHover.png' );
+$('#footer-facebook-icon').mouseenter(function(){
+  $(this).attr('src', '/images/icons/FBHover.png');
 });
-$('#footer-ig-icon').hover(function(){
-  $(this).attr('src','/images/icons/IGHover.png' );
+$('#footer-facebook-icon').mouseleave(function(){
+  $(this).attr('src', '/images/icons/FBL.png');
 });
 
-$('#footer-yelp-icon').hover(function(){
-  $(this).attr('src','/images/icons/YelpHover.png' );
+$('#footer-ig-icon').mouseenter(function(){
+  $(this).attr('src', '/images/icons/IGHover.png');
 });
+$('#footer-ig-icon').mouseleave(function(){
+  $(this).attr('src', '/images/icons/IGL.png');
+});
+
+$('#footer-yelp-icon').mouseenter(function(){
+  $(this).attr('src', '/images/icons/YelpHover.png');
+});
+$('#footer-yelp-icon').mouseleave(function(){
+  $(this).attr('src', '/images/icons/YelpL.png');
+});
+
+//DTC
+$('#dtc-facebook').mouseenter(function(){
+  $(this).attr('src', '/images/icons/FBHover.png');
+});
+$('#dtc-facebook').mouseleave(function(){
+  $(this).attr('src', '/images/icons/FBL.png');
+});
+
+$('#dtc-insta').mouseenter(function(){
+  $(this).attr('src', '/images/icons/IGHover.png');
+});
+$('#dtc-insta').mouseleave(function(){
+  $(this).attr('src', '/images/icons/IGL.png');
+});
+
+$('#dtc-yelp').mouseenter(function(){
+  $(this).attr('src', '/images/icons/YelpHover.png');
+});
+$('#dtc-yelp').mouseleave(function(){
+  $(this).attr('src', '/images/icons/YelpL.png');
+});
+//GLENDALE
+
+$('#glendale-facebook').mouseenter(function(){
+  $(this).attr('src', '/images/icons/FBHover.png');
+});
+$('#glendale-facebook').mouseleave(function(){
+  $(this).attr('src', '/images/icons/FBL.png');
+});
+
+$('#glendale-insta').mouseenter(function(){
+  $(this).attr('src', '/images/icons/IGHover.png');
+});
+$('#glendale-insta').mouseleave(function(){
+  $(this).attr('src', '/images/icons/IGL.png');
+});
+
+$('#glendale-yelp').mouseenter(function(){
+  $(this).attr('src', '/images/icons/YelpHover.png');
+});
+$('#glendale-yelp').mouseleave(function(){
+  $(this).attr('src', '/images/icons/YelpL.png');
+});
+//DOWNTOWN
+$('#downtown-facebook').mouseenter(function(){
+  $(this).attr('src', '/images/icons/FBHover.png');
+});
+$('#downtown-facebook').mouseleave(function(){
+  $(this).attr('src', '/images/icons/FBL.png');
+});
+
+$('#downtown-insta').mouseenter(function(){
+  $(this).attr('src', '/images/icons/IGHover.png');
+});
+$('#downtown-insta').mouseleave(function(){
+  $(this).attr('src', '/images/icons/IGL.png');
+});
+
+$('#downtown-yelp').mouseenter(function(){
+  $(this).attr('src', '/images/icons/YelpHover.png');
+});
+$('#downtown-yelp').mouseleave(function(){
+  $(this).attr('src', '/images/icons/YelpL.png');
+});
+//Englewood
+$('#englewood-facebook').mouseenter(function(){
+  $(this).attr('src', '/images/icons/FBHover.png');
+});
+$('#englewood-facebook').mouseleave(function(){
+  $(this).attr('src', '/images/icons/FBL.png');
+});
+
+$('#englewood-insta').mouseenter(function(){
+  $(this).attr('src', '/images/icons/IGHover.png');
+});
+$('#englewood-insta').mouseleave(function(){
+  $(this).attr('src', '/images/icons/IGL.png');
+});
+
+$('#englewood-yelp').mouseenter(function(){
+  $(this).attr('src', '/images/icons/YelpHover.png');
+});
+$('#englewood-yelp').mouseleave(function(){
+  $(this).attr('src', '/images/icons/YelpL.png');
+});
+
 
 
 function localChange(){

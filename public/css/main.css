@@ -1060,7 +1060,7 @@ a:visited{
     height: 3rem;
     width: 3rem;
     z-index: 49;
-
+    cursor: pointer;
   }
   .carousel-circle-btn-container-about {
     position: absolute;
@@ -1169,6 +1169,7 @@ a:visited{
   .carousel-circle-btn-container{
     bottom: 5rem;
   }
+
 
 
 }

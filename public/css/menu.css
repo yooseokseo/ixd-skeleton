@@ -341,7 +341,7 @@
 }
 
 .menu-order-deliver-btn:hover{
-  color: #ACBA9A;
+  color: black;
 
 
 }
@@ -380,6 +380,11 @@
   position: absolute;
   width: 100%;
   bottom: 1.2rem;
+}
+.size-text-2{
+  position: absolute;
+  width: 100%;
+  bottom: 0rem;
 }
 .mix-l{
 
@@ -435,6 +440,7 @@
     position: relative;
     font-family: 'Oswald', sans-serif;
     font-weight:300;
+    cursor: pointer;
 
   }
   .arrow-up{
@@ -512,5 +518,13 @@
   }
   .menu-order-deliver-btn{
     margin-top: 6rem;
+  }
+  .menu-box-image-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 15rem;
+  }
+  .size-text{
+    bottom:0rem;
   }
 }

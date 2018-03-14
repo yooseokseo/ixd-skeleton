@@ -242,7 +242,7 @@ font-family: 'Oswald', sans-serif;
     height: 100%;
   }
   .carousel-circle-btns-about{
-      grid-template-columns: 8fr 1fr 1fr 1fr 1fr 8fr;
+      grid-template-columns: 15fr 1fr 1fr 1fr 1fr 15fr;
   }
 
 }
