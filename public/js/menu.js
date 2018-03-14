@@ -105,6 +105,9 @@ $(document).ready(function(){
     showArrowUp(currentSignatureMenuIndex);
     hideAllSignatureOne();
     showSignatureOne(currentSignatureMenuIndex);
+    setItem2();
+
+
   })
   $('.item3').click(function(){
     console.log('item3 is clicked');
@@ -115,6 +118,7 @@ $(document).ready(function(){
     showArrowUp(currentSignatureMenuIndex);
     hideAllSignatureOne();
     showSignatureOne(currentSignatureMenuIndex);
+    setItem3();
   })
   $('.item4').click(function(){
     console.log('item4 is clicked');
@@ -129,6 +133,13 @@ $(document).ready(function(){
 
 
 });
+
+function setItem2(){
+  $('.menu-signature-container').scrollLeft(27);
+}
+function setItem3(){
+  $('.menu-signature-container').scrollLeft(177);
+}
 
 function hideAllArrowDown(){
   for (var i = 0; i < totalNumberofSignatureMenu; i++) {
