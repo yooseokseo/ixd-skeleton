@@ -384,15 +384,18 @@
 }
 #arrow-left-menu{
   position: absolute;
-  background-color: gray;
-  top:0;
-  left: 11rem;
+
+  top:2rem;
+  left: 49vw;
+  display: none;
+  width: 2rem;
 }
 #arrow-right-menu{
   position: absolute;
-  background-color: gray;
-  top:0;
-  left: 15rem;
+
+  top:2rem;
+  right: 49vw;
+  width: 2rem;
 }
 
 @media (min-width: 700px) {

@@ -2,18 +2,83 @@ var currentSignatureMenuIndex = 0;
 var totalNumberofSignatureMenu = 4;
 
 var lastScrollLeft = 0;
+var documentScrollLeft = $('.menu-signature-container').scrollLeft();
+if(documentScrollLeft === 0){
+  console.log('init');
+  $('#arrow-right-menu').fadeIn();
+  $('#arrow-left-menu').fadeOut();
+}
 
 $('.menu-signature-container').scroll(function() {
-  var documentScrollLeft = $('.menu-signature-container').scrollLeft();
+    documentScrollLeft = $('.menu-signature-container').scrollLeft();
     if (lastScrollLeft != documentScrollLeft) {
         console.log(documentScrollLeft);
+        if(lastScrollLeft >= documentScrollLeft){
+                //scrollong left
+          if(documentScrollLeft === 0){
+            console.log('start point');
+            $('#arrow-right-menu').fadeIn();
+          }
+          if(documentScrollLeft >150){
+            console.log('here');
+          }
+
+
+        }
+        else {
+          //scrolling right
+          $('#arrow-right-menu').fadeOut();
+          if(documentScrollLeft >150){
+            $('#arrow-left-menu').fadeIn();
+          }
+
+        }
+          /*
+        if(documentScrollLeft > 0 && documentScrollLeft< 150){
+          $('#arrow-right-menu').fadeOut();
+        }
+        else if(documentScrollLeft === 0){
+          $('#arrow-right-menu').fadeIn();
+          $('#arrow-left-menu').fadeOut();
+        }
+        else {
+          console.log('here');
+          $('#arrow-left-menu').fadeIn();
+        }
+        /*
+        if (documentScrollLeft === 0){
+          console.log('start point');
+          $('#arrow-left-menu').fadeOut();
+          $('#arrow-right-menu').fadeIn();
+        }
+        else if(documentScrollLeft >= 150){
+          console.log('end point');
+          $('#arrow-left-menu').fadeIn();
+          $('#arrow-right-menu').fadeOut();
+        }
+
+        else{
+          console.log('where1');
+
+        }
+        */
+
         lastScrollLeft = documentScrollLeft;
     }
+    else {
+        $('#arrow-right-menu').fadeIn();
+    }
+
+
 
 });
 
 
 $(document).ready(function(){
+  $('#arrow-right-menu').click(function(){
+    $('.menu-signature-container').animate( { scrollLeft: '+=300' }, 1000);
+
+  });
 
   $('.item1').click(function(){
     console.log('item1 is clicked');
