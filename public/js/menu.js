@@ -1,6 +1,18 @@
 var currentSignatureMenuIndex = 0;
 var totalNumberofSignatureMenu = 4;
 
+var lastScrollLeft = 0;
+
+$('.menu-signature-container').scroll(function() {
+  var documentScrollLeft = $('.menu-signature-container').scrollLeft();
+    if (lastScrollLeft != documentScrollLeft) {
+        console.log(documentScrollLeft);
+        lastScrollLeft = documentScrollLeft;
+    }
+
+});
+
+
 $(document).ready(function(){
 
   $('.item1').click(function(){
@@ -43,6 +55,7 @@ $(document).ready(function(){
     hideAllSignatureOne();
     showSignatureOne(currentSignatureMenuIndex);
   })
+
 
 });
 
