@@ -20,22 +20,26 @@ function initMap() {
   var marker1 = new google.maps.Marker({
     position: {lat: 39.624795, lng: -104.893516},
     map: map,
-    title: 'POKE CITY - DTC'
+    title: 'POKE CITY - DTC',
+    icon: ''
   });
   var marker2 = new google.maps.Marker({
     position: {lat: 39.695809, lng: -104.939637},
     map: map2,
-    title: 'POKE CITY - GLENDALE'
+    title: 'POKE CITY - GLENDALE',
+    icon: ''
   });
   var marker3 = new google.maps.Marker({
     position: {lat: 39.741855, lng: -104.988494},
     map: map3,
-    title: 'POKE CITY - DOWNTOWN'
+    title: 'POKE CITY - DOWNTOWN',
+    icon: ''
   });
   var marker4 = new google.maps.Marker({
     position: {lat: 39.654924, lng: -104.987796},
     map: map4,
-    title: 'POKE CITY - ENGLEWOOD'
+    title: 'POKE CITY - ENGLEWOOD',
+    icon: ''
   });
   marker1.addListener('click', map1Maker);
   marker2.addListener('click', map2Maker);
