@@ -20,7 +20,7 @@ $('.menu-signature-container').scroll(function() {
             $('#arrow-right-menu').fadeIn();
           }
           if(documentScrollLeft >150){
-            console.log('here');
+            $('#arrow-left-menu').fadeOut();
           }
 
 
@@ -79,6 +79,12 @@ $(document).ready(function(){
     $('.menu-signature-container').animate( { scrollLeft: '+=300' }, 1000);
 
   });
+  $('#arrow-left-menu').click(function(){
+    $('.menu-signature-container').animate( { scrollLeft: '-=300' }, 1000);
+
+  });
+
+
 
   $('.item1').click(function(){
     console.log('item1 is clicked');
