@@ -1,15 +1,15 @@
 .home-content-container{
   width:100%;
-  height: 73rem;
+  height: 85rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+
 }
 
 .home-content-box{
   width: 95%;
-  height: 53rem;
+  height: 47rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 3fr;
@@ -17,7 +17,7 @@
     "Title"
     "Desc"
     "Image";
-    margin-top: 100vh;
+    margin-top: 85vh;
 }
 
 .home-title{

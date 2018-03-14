@@ -46,6 +46,7 @@ a:visited{
   background-color:  #ACBA9A;
   color: white;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 #orderDe{
@@ -239,6 +240,7 @@ a:visited{
 }
 .logo{
   grid-area: Logo;
+  cursor: pointer;
 }
 
 .home {
@@ -371,6 +373,7 @@ a:visited{
   height: 6rem;
   width: 4rem;
   z-index: 49;
+  cursor: pointer;
 }
 
 .menu-btn-container {
@@ -395,7 +398,7 @@ a:visited{
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   color: white;
-
+  cursor: pointer;
   border-radius: 0.1rem;
   z-index: 49;
 }
@@ -462,6 +465,7 @@ a:visited{
   width: 1rem;
   border-radius: 100%;
   z-index: 49;
+  cursor: pointer;
 }
 
 .activeBar {
@@ -567,6 +571,7 @@ a:visited{
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   font-size: 1.1rem;
+  cursor: pointer;
 
 }
 
@@ -617,6 +622,7 @@ a:visited{
 .social-icons {
   height: 3rem;
   width: 3rem;
+  cursor: pointer;
 }
 
 .copyright-container {
@@ -811,6 +817,7 @@ a:visited{
   right: -4.5rem;
   top:-3rem;
   z-index: 1000;
+  cursor: pointer;
 }
 .desk-logo{
   display: none;
