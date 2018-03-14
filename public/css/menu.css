@@ -523,6 +523,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     height: 15rem;
+
   }
   .size-text{
     bottom:0rem;
