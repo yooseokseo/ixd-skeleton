@@ -389,6 +389,7 @@
   left: 49vw;
   display: none;
   width: 2rem;
+  cursor: pointer;
 }
 #arrow-right-menu{
   position: absolute;
@@ -396,6 +397,7 @@
   top:2rem;
   right: 49vw;
   width: 2rem;
+  cursor: pointer;
 }
 
 @media (min-width: 700px) {
