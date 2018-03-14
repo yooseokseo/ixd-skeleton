@@ -195,9 +195,15 @@ a:visited{
   grid-area: NavMenu;
   height: 0rem;
 }
+/*
 @keyframes navDrop {
     from {right: -26rem;}
     to {right:0;}
+}
+*/
+@keyframes navDrop {
+    from {top:-44.5rem;}
+    to {top:-7.5rem;}
 }
 .nav-fix{
   margin: 0;
