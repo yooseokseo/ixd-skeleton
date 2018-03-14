@@ -138,7 +138,7 @@ function setItem2(){
   $('.menu-signature-container').scrollLeft(27);
 }
 function setItem3(){
-  $('.menu-signature-container').scrollLeft(177);
+  $('.menu-signature-container').scrollLeft(181);
 }
 
 function hideAllArrowDown(){
