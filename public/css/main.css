@@ -205,6 +205,7 @@ a:visited{
     from {top:-44.5rem;}
     to {top:-7.5rem;}
 }
+
 .nav-fix{
   margin: 0;
   height: 100%;
@@ -742,6 +743,9 @@ a:visited{
 .phone-box-text-branch{
   margin-top: 2rem;
   width: 13rem;
+}
+.branch-first{
+  margin-top: 5rem;
 }
 .phone-box-text-name-normal{
   font-family: 'Oswald', sans-serif;
