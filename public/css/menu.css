@@ -334,8 +334,7 @@
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  background-image: url('/images/nav2.jpg');
-  background-size: cover;
+  background-color: #ACBA9A;
   color: white;
 }
 
