@@ -33,15 +33,17 @@
 #arrow-left-about-mobile{
   z-index: 49;
   position: absolute;
-  height: 3rem;
-  top: 6rem;
+  height: 5rem;
+  top: 5rem;
+  width: 3rem;
 }
 #arrow-right-about-mobile{
   z-index: 49;
   position: absolute;
   right: 0;
-  height: 3rem;
-  top: 6rem;
+  height: 5rem;
+  top: 5rem;
+  width: 3rem;
 }
 .fix{
   position: absolute;
@@ -114,7 +116,7 @@
 .about-fran-desc{
   font-size: 1.2rem;
   font-family: 'Oswald', sans-serif;
-  text-align: left;
+  text-align: center;
   position: relative;
   background-image: url('/images/nav2.jpg');
   top:-1rem;
@@ -157,6 +159,36 @@ font-size: 1.3rem;
   font-size: 1.8rem;
     font-family: 'Oswald', sans-serif;
   font-weight:300;
+}
+.carousel-circle-btn-container-about{
+  position: relative;
+  top:11rem;
+}
+.carousel-circle-btns-about{
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 1fr 1fr 4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". img1 img2 img3 img4 .";
+  width: 100%;
+  height: 1.5rem;
+}
+#status-00-about {
+  grid-area: img1;
+}
+
+#status-01-about {
+  grid-area: img2;
+}
+
+#status-02-about {
+  grid-area: img3;
+}
+
+#status-03-about {
+  grid-area: img4;
+}
+.dot{
+  background-color: #ACBA9A;
 }
 @media (min-width: 700px) {
   .about-content-container{

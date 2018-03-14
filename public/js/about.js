@@ -13,6 +13,7 @@ $(document).ready(function(){
     showNextAbout();
 
   })
+  
 
 
   // initialize first bar as active
