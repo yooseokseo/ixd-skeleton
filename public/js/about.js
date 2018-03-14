@@ -18,10 +18,9 @@ $(document).ready(function(){
       }
       lastImageAboutDesk = 1;
     }
-      $('#c'+ currentViewItemIndexAbout + '-about').addClass('sliding-right').one(animationEnd, function() {
+      $('#c'+ lastImageAboutDesk + '-about').addClass('sliding-right').one(animationEnd, function() {
         $(this).hide();
         $(this).removeClass('sliding-right');
-        currentViewItemIndexAbout++;
 
       });
       lastImageAboutDesk++;
