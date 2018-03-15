@@ -116,6 +116,12 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
+.about-desc-desktop-pallraxImage{
+  display: none;
+}
+.franchsing-about{
+  display: none;
+}
 
 @media (min-width: 700px) {
   .home-content-container{
@@ -181,5 +187,8 @@ background-size: cover;
   }
   .home-menu-title{
     margin-top: 3rem;
+  }
+  .franchsing-about{
+    display: block;
   }
 }
