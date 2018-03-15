@@ -49,20 +49,53 @@
 .home-menu-1{
   background-color: red;
   height: 20rem;
-  width: 95%;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
 
 }
 .home-menu-2{
   background-color: gray;
   height: 20rem;
-  width: 95%;
+  width: 90%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.home-menu-title{
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
   margin-top: 1rem;
 }
+.home-menu-desc{
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+font-weight:300;
 
+  text-align: center;
+  margin: 1rem;
+}
+.home-menu-btn{
+  width: 15rem;
+  height: 4rem;
+  text-align: center;
+  background-color: #ACBA9A;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+font-weight:300;
+margin-top: 0.5rem;
+cursor: pointer;
+
+}
 
 
 
