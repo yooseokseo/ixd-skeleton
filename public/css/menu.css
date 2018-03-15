@@ -594,9 +594,7 @@
   .base7{
     grid-area:base7;
   }
-  .menu-order-deliver-btn{
-    margin-top: 6rem;
-  }
+
   .menu-box-image-container{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -630,12 +628,12 @@
   }
   .desktopOnly-menu{
     display: grid;
-
+  margin-top: 0;
   }
   .desktopOnly-menu-block{
     display: block;
   height: auto;
-    width:15rem;
+    width:13rem;
     position: relative;
     text-align: left;
 
