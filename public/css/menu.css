@@ -539,6 +539,7 @@
     "base1 base1"
     "col1  col2"
     "order order";
+    width: 70%;
   }
   .menu-start{
     grid-area:start;
@@ -664,6 +665,9 @@
     position: absolute;
     top:0.4rem;
     left: 7rem;
+  }
+  #orderOnline-btn:hover{
+    color: black;
   }
 
 }
