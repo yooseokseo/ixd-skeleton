@@ -634,7 +634,7 @@
   .desktopOnly-menu-block{
     display: block;
   height: auto;
-    width:13rem;
+    width:15rem;
     position: relative;
     text-align: left;
 
@@ -668,6 +668,9 @@
   }
   #orderOnline-btn:hover{
     color: black;
+  }
+  .menu-box-step span{
+    color:#ACBA9A;
   }
 
 }
