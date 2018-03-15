@@ -1,23 +1,23 @@
 .home-content-container{
   width:100%;
-  height: 85rem;
+  height: 100rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 
 }
 
 .home-content-box{
   width: 95%;
-  height: 47rem;
+  height: 18rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "Title"
-    "Desc"
-    "Image";
-    margin-top: 85vh;
+    "Desc";
+    margin-top: 74vh;
 }
 
 .home-title{
@@ -40,11 +40,27 @@
   font-family: 'Oswald', sans-serif;
   font-weight:300;
   margin: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .home-image img{
   width: 100%;
+}
+.home-menu-1{
+  background-color: red;
+  height: 20rem;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.home-menu-2{
+  background-color: gray;
+  height: 20rem;
+  width: 95%;
+  margin-top: 1rem;
 }
 
 
