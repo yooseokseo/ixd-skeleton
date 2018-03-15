@@ -532,7 +532,7 @@
     height: 110rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 8fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 8fr 1fr;
     grid-template-areas:
     "start start"
     "step1 step1"
