@@ -192,8 +192,10 @@ font-size: 1.3rem;
 }
 @media (min-width: 700px) {
   .about-content-container{
-    height: 33em;
-    margin-top: 5rem;
+    height: 124em;
+    margin-top: 2rem;
+    flex-direction: column;
+
   }
   .about-content-box, .about-desc, .about-image, .about-image img{
     display: none;
@@ -202,12 +204,10 @@ font-size: 1.3rem;
     display: block;
   }
   .about-content-box-desktop{
-      width: 95%;
-      height: 27rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows:  1fr 3fr;
-      grid-template-areas: "Title Image" "Desc Image";
+      width: 60%;
+      height: 20rem;
+      margin: auto;
+
   }
   .what-is-pokecity-desktop{
     grid-area:Title;
@@ -218,15 +218,17 @@ font-size: 1.3rem;
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
+    margin-top: 2rem;
   }
   .about-desc-desktop{
     grid-area:Desc;
     text-align: center;
-    height: 10rem;
+    height: 3rem;
     line-height: 1.5rem;
 font-family: 'Oswald', sans-serif;
     font-weight: 300;
     margin: 1rem;
+    font-size: 1.3rem;
 
   }
   .about-image-desktop{
@@ -244,5 +246,83 @@ font-family: 'Oswald', sans-serif;
   .carousel-circle-btns-about{
       grid-template-columns: 15fr 1fr 1fr 1fr 1fr 15fr;
   }
+  .about-desc-desktop-pallraxImage{
+    width: 100%;
+    background-color: red;
+    height: 154.4rem;
+    position: relative;
+  }
+  .about-graphics{
+    position: relative;
+    width: 100%;
 
+  }
+  .about-graphics-2{
+    position: relative;
+    width: 100%;
+
+  }
+  .about-graphics img, .about-graphics-2 img{
+    width: 42rem;
+    position: absolute;
+  }
+    .about-graphics img{
+      left: 0;
+    }
+    .about-graphics-2 img{
+      right: 0;
+    }
+    .graphics-1{
+      margin: 2rem;
+      margin-left: 3rem;
+    }
+    .graphics-3{
+    bottom: -71.2rem;
+    margin: 2rem;
+    margin-left: 3rem;
+    }
+    .graphics-2{
+      bottom: -48.8rem;
+      margin: 2rem;
+      margin-right: 3rem;
+    }
+    .graphics-4{
+      bottom: -93.5rem;
+      margin: 2rem;
+        margin-right: 3rem;
+    }
+    .about-fran-title, .about-fran-desc{
+    background-color: white;
+    color:black;
+    background-image: none;
+    font-size: 1.3rem;
+    }
+    .franchsing-about{
+      height: 20rem;
+    }
+    .about-fran-title-desk{
+      font-size: 1.8rem;
+      font-family: 'Oswald', sans-serif;
+      color: #ACBA9A;
+      text-align: center;
+      position: relative;
+      top:-1rem;
+      color: black;
+      padding-top: 1rem;
+      margin-top: 3rem;
+    }
+    .about-desc-desktop-pallraxImage{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image:url('/images/home/p.png');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+
+    }
 }
