@@ -56,6 +56,7 @@
   align-items: center;
   margin-top: 2.5rem;
 
+
 }
 .home-menu-2{
   background-color: gray;
@@ -66,6 +67,8 @@
   flex-direction: column;
 
   align-items: center;
+
+
 }
 .home-menu-title{
   font-family: 'Pacifico', cursive;
@@ -116,16 +119,17 @@ background-size: cover;
 
 @media (min-width: 700px) {
   .home-content-container{
-    height: 42rem;
+    height: 74rem;
   }
   .home-content-box{
-    height: 40rem;
+    height: 30rem;
     grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "Title Image"
       "Desc Image";
       margin-top: 0;
+      margin-bottom: 1rem;
   }
   .home-image{
     grid-area: Image;
@@ -140,5 +144,41 @@ background-size: cover;
   }
   .home-desc{
     margin: 1rem;
+  }
+  .home-menu-1{
+    background-color: red;
+    height: 20rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-right: auto;
+    margin-left: 2.5rem;
+
+  }
+  .home-menu-2{
+    background-color: gray;
+    height: 20rem;
+    width: 50%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    position:relative;
+    margin-left: auto;
+    margin-right: 2.5rem;
+    top: -3rem;
+  }
+  .parallax-image{
+    height: 43rem;
+  }
+  .home-content-container{
+    justify-content:flex-start;
+  }
+  .home-menu-title{
+    margin-top: 3rem;
   }
 }
