@@ -457,7 +457,7 @@
   }
   .menu-container{
     margin-top: 3rem;
-    height: 170rem;
+    height: 115rem;
   }
   #one-item-0, #one-item-1, #one-item-2, #one-item-3{
   background-size: cover;
@@ -508,13 +508,81 @@
   }
   .protein-l, .mix-l, .sauce-l, .toppings-l{
     border-right: 1px solid #ACBA9A;
-    height:3.5rem;
+    height:100%;
   }
   .protein, .mix, .sauce, .toppings{
     height:3.5rem;
   }
   .menu-box{
-    height: 165rem;
+    height: 110rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "start start"
+    "step1 step1"
+    "base1 base1"
+    "step2 step3"
+    "base2 base3"
+    "step4 step5"
+    "base4 base5"
+    "step6 step7"
+    "base6 base7"
+    "order order";
+  }
+  .menu-start{
+    grid-area:start;
+    margin-top: auto;
+  }
+  .step1{
+    grid-area:step1;
+  }
+  .step2{
+    grid-area:step2;
+  }
+  .step3{
+    grid-area:step3;
+  }
+  .step4{
+    grid-area:step4;
+  }
+  .step5{
+    grid-area:step5;
+  }
+  .step6{
+    grid-area:step6;
+  }
+  .step7{
+    grid-area:step7;
+  }
+
+  .base1{
+    grid-area:base1;
+  }
+  .base2{
+    grid-area:base2;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .base3{
+    grid-area:base3;
+  }
+  .base4{
+    grid-area:base4;
+  }
+  .base5{
+    grid-area:base5;
+    height: 13.5rem;
+  }
+  .base6{
+    grid-area:base6;
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  .base7{
+    grid-area:base7;
   }
   .menu-order-deliver-btn{
     margin-top: 6rem;
@@ -527,5 +595,20 @@
   }
   .size-text{
     bottom:0rem;
+  }
+  .base2-item{
+    margin: 0;
+    margin-top: 3rem;
+
+  }
+  .base2-item-first{
+    margin-top: 1rem;
+  }
+  .base6-item{
+    margin: 0;
+    margin-top: 3rem;
+  }
+  .menu-order-deliver{
+    grid-area:order;
   }
 }
