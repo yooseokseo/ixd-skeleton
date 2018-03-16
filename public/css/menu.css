@@ -397,8 +397,8 @@
 #arrow-left-menu{
   position: absolute;
 
-  top:2rem;
-  left: 49vw;
+  top:3.5rem;
+  left: 50vw;
   display: none;
   width: 2rem;
   cursor: pointer;
@@ -406,8 +406,8 @@
 #arrow-right-menu{
   position: absolute;
 
-  top:2rem;
-  right: 49vw;
+  top:3.5rem;
+  right: 50vw;
   width: 2rem;
   cursor: pointer;
 }

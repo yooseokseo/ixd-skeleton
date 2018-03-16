@@ -26,7 +26,7 @@ color: #ACBA9A;
   display: grid;
   margin: 1rem auto;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 0.8fr;
   grid-template-areas: "Info" "Map";
 }
 .open-now{
@@ -49,13 +49,14 @@ color: #ACBA9A;
   grid-template-areas: "Name" "Adde" "Phone" "Hours";
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-  height: 11rem;
+  height: 13rem;
   color: black;
 }
 
 .contact-map {
   grid-area: Map;
   border: 0.5rem solid #eeeeee;
+  height: 10rem;
 }
 
 .contact-name, .contact-adde, .contact-phone, .contact-btn-box{
@@ -78,6 +79,7 @@ color: #ACBA9A;
 .contact-adde {
   grid-area: Adde;
   font-size: 1.3rem;
+  line-height: 1.5rem;
 }
 
 .contact-phone {
@@ -237,6 +239,9 @@ color: #ACBA9A;
   text-align: right;
   color: #ACBA9A;
   font-weight: 300;
+  position: absolute;
+  top:-0.2rem;
+  left: 9.5rem;
 }
 
 .start, .end {
@@ -244,9 +249,9 @@ color: #ACBA9A;
 }
 
 .start-end-hours {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: block;
+  position: relative;
+
   font-size: 1.3rem;
 }
 #contact-us-mobile:hover, #contact-us-desktop:hover{
@@ -357,6 +362,16 @@ font-weight: 300;
   margin-top: 0.3rem;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
+}
+.contact-phone{
+  margin: 1rem 0;
+}
+.info-2{
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 10rem;
+}
+.box-2{
+  height: 18rem;
 }
 
 
