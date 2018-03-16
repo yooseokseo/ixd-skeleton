@@ -240,7 +240,7 @@ color: #ACBA9A;
   color: #ACBA9A;
   font-weight: 300;
   position: absolute;
-  top:-0.2rem;
+  top:0rem;
   left: 9.5rem;
 }
 
@@ -253,6 +253,7 @@ color: #ACBA9A;
   position: relative;
 
   font-size: 1.3rem;
+  line-height: 1.5rem;
 }
 #contact-us-mobile:hover, #contact-us-desktop:hover{
  color: black;
