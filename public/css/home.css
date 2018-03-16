@@ -17,7 +17,7 @@
   grid-template-areas:
     "Title"
     "Desc";
-    margin-top: 88vh;
+    margin-top: 40rem;
 }
 
 .home-title{
@@ -122,6 +122,33 @@ background-size: cover;
 .franchsing-about{
   display: none;
 }
+
+
+
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .home-content-box{
+      margin-top: 38rem;
+    }
+}
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .home-content-box{
+      margin-top: 40rem;
+    }
+}
+
+
+
+
+
 
 @media (min-width: 700px) {
   .home-content-container{
