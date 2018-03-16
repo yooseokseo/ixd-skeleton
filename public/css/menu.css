@@ -701,5 +701,16 @@
     margin-top: 0.5rem;
 
   }
+  .menu-start{
+    font-size:3rem;
+    font-family: 'Pacifico', cursive;
+    font-weight:300;
+
+  }
+  
+  .signature-titles{
+    text-transform: uppercase;
+  }
+
 
 }
