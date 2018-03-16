@@ -10,7 +10,7 @@
 
 .home-content-box{
   width: 95%;
-  height: 15rem;
+  height: 17rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -24,6 +24,7 @@
   grid-area:Title;
   margin: auto;
   margin-bottom: 0;
+  height: 3rem;
 }
 .what-is-poke{
   font-size: 2rem;
@@ -35,11 +36,13 @@
   grid-area:Desc;
 
   text-align: center;
-  height: 8rem;
+  height: 11rem;
   line-height: 1.5rem;
   font-family: 'Oswald', sans-serif;
   font-weight:300;
   margin: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .home-image img{
