@@ -1,6 +1,6 @@
 .home-content-container{
   width:100%;
-  height: 120rem;
+  height: 100rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
 
 .home-content-box{
   width: 95%;
-  height: 28rem;
+  height: 24rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -35,12 +35,11 @@
   grid-area:Desc;
 
   text-align: center;
-  height: 10rem;
+  height: 8rem;
   line-height: 1.5rem;
   font-family: 'Oswald', sans-serif;
   font-weight:300;
   margin: 1rem;
-  margin-bottom: 0;
 }
 
 .home-image img{
@@ -48,7 +47,7 @@
 }
 .home-menu-1{
   background-color: red;
-  height: 25rem;
+  height: 24rem;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -60,7 +59,7 @@
 }
 .home-menu-2{
   background-color: gray;
-  height: 20rem;
+  height: 19rem;
   width: 90%;
   margin-top: 1rem;
   display: flex;
@@ -106,11 +105,11 @@ cursor: pointer;
 
 .parallax-image{
 width: 100%;
-height: 100%;
+height: 80rem;
 display: flex;
 flex-direction: column;
 align-items: center;
-background-image:url('/images/home/p.png');
+background-image:url('/images/home/blurredHomePage.jpg');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -131,7 +130,8 @@ background-size: cover;
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     .home-content-box{
-      margin-top: 38rem;
+      margin-top: 36rem;
+      position:relative;
     }
 }
 @media only screen
