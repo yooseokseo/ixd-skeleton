@@ -111,7 +111,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 background-image:url('/images/home/p.png');
-background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -217,5 +216,10 @@ background-size: cover;
   }
   .franchsing-about{
     display: block;
+  }
+  .parallax-image{
+
+  background-attachment: fixed;
+  
   }
 }
