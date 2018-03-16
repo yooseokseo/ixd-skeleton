@@ -153,12 +153,12 @@ background-attachment: fixed;
 
 @media (min-width: 700px) {
   .home-content-container{
-    height: 74rem;
+    height: 83rem;
   }
   .home-content-box{
     height: 30rem;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 1fr;
     grid-template-areas:
       "Title Image"
       "Desc Image";
@@ -177,8 +177,10 @@ background-attachment: fixed;
     margin-bottom:0;
   }
   .home-desc{
-    margin: 1rem;
+    margin: auto;
     font-size: 1.3rem;
+    width: 70%;
+    margin-top: 1rem;
   }
   .home-menu-1{
     background-color: red;
@@ -208,7 +210,7 @@ background-attachment: fixed;
     top: -3rem;
   }
   .parallax-image{
-    height: 57rem;
+    height: 52rem;
   }
   .home-content-container{
     justify-content:flex-start;
@@ -223,5 +225,13 @@ background-attachment: fixed;
 
   background-attachment: fixed;
 
+  }
+  .test{
+    height: 100%;
+    grid-area: Image;
+    background-image: url('/images/home/WhatIsPoke2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
