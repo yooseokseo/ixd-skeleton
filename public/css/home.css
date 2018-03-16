@@ -181,21 +181,21 @@ background-size: cover;
   }
   .home-menu-1{
     background-color: red;
-    height: 22rem;
-    width: 50%;
+    height: 25.5rem;
+    width: 40%;
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center;
     margin-top: 2.5rem;
     margin-right: auto;
-    margin-left: 2.5rem;
+    margin-left: 9.5rem;
 
   }
   .home-menu-2{
     background-color: gray;
-    height: 20rem;
-    width: 50%;
+    height: 23rem;
+    width: 40%;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
@@ -203,7 +203,7 @@ background-size: cover;
     align-items: center;
     position:relative;
     margin-left: auto;
-    margin-right: 2.5rem;
+    margin-right: 9.5rem;
     top: -3rem;
   }
   .parallax-image{

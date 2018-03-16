@@ -261,9 +261,9 @@
 .base, .protein, .mix, .sauce, .salad, .toppings ,.protein-l, .mix-l, .sauce, .sauce-l, .toppings-l{
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  font-size: 1.3rem
+  font-size: 1.3rem;
+  justify-content: center;
 }
 
 .menu-box-protein-container, .menu-box-mix-container {
@@ -423,6 +423,14 @@
 .desktopOnly-menu-block{
   display: none;
 }
+.base2{
+  width: 80%;
+  margin: auto;
+}
+.base6{
+  width: 80%;
+  margin: auto;
+}
 
 @media (min-width: 700px) {
   .mobile-step{
@@ -480,7 +488,7 @@
   }
   .menu-container{
     margin-top: 3rem;
-    height: 115rem;
+    height: 120rem;
   }
   #one-item-0, #one-item-1, #one-item-2, #one-item-3{
   background-size: cover;
