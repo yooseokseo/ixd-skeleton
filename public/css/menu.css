@@ -548,7 +548,7 @@
     height:100%;
   }
   .menu-box{
-    height: 110rem;
+    height: 120rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -707,7 +707,7 @@
     font-weight:300;
 
   }
-  
+
   .signature-titles{
     text-transform: uppercase;
   }
