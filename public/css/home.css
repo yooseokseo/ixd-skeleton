@@ -44,6 +44,7 @@
   margin: 1rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .home-image img{
@@ -147,6 +148,7 @@ background-attachment: fixed;
     .home-content-box{
       margin-top: 85vh;
       position:relative;
+      height: 20rem;
     }
 }
 
@@ -178,7 +180,9 @@ background-attachment: fixed;
 
   }
   .home-title{
-    margin-bottom:0;
+
+    margin: auto;
+      margin-bottom:0;
   }
   .home-desc{
     margin: auto;
