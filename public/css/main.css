@@ -31,7 +31,7 @@ a[href^=tel] {
 }
 
 a:visited{
-  color: white;
+  color:inherit;
 
 }
 
