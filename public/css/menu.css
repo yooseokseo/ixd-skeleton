@@ -4,7 +4,12 @@
   justify-content: center;
   align-items: center;
 }
-
+.mobile-step{
+  display: inline;
+}
+.desktop-step{
+  display: none;
+}
 #menu-cover-up{
   height:9.9rem;
 }
@@ -420,6 +425,12 @@
 }
 
 @media (min-width: 700px) {
+  .mobile-step{
+    display: none;
+  }
+  .desktop-step{
+    display: inline;
+  }
   .page-title {
     display: none;
   }
@@ -519,10 +530,10 @@
     height: 14rem;
   }
   .protein-l, .mix-l, .sauce-l, .toppings-l{
-    justify-content:flex-start;
-    height:2rem;
+    border-right: 1px solid #ACBA9A;
+    height:100%;
     margin-left: 0rem;
-    text-align: left;
+    text-align: right;
 
   }
   .protein, .mix, .sauce, .toppings{
@@ -532,13 +543,19 @@
     height: 110rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 1fr 8fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "start start"
     "step1 step1"
     "base1 base1"
-    "col1  col2"
+    "step2 step3"
+    "base2 base3"
+    "step4 step5"
+    "base4 base5"
+    "step6 step7"
+    "base6 base7"
     "order order";
+
     width: 70%;
   }
   .menu-start{
@@ -609,17 +626,16 @@
     margin: 0;
     justify-content: flex-start;
     margin-left: 0rem;
+    margin-top: 3rem;
 
   }
-  .base2-item-first{
-    margin-top: 0.5rem;
 
-  }
   .base6-item{
     margin: 0;
 
     text-align: left;
     justify-content: flex-start;
+      margin-top: 3rem;
   }
   .menu-order-deliver{
     grid-area:order;
@@ -656,7 +672,7 @@
 
   }
   .sauce-l{
-    height: 2rem;
+    height: 100%;
   }
   .sauce-l div{
     position:relative;
@@ -671,6 +687,10 @@
   }
   .menu-box-step span{
     color:#ACBA9A;
+  }
+  .base2-item-first{
+    margin-top: 0.5rem;
+
   }
 
 }
