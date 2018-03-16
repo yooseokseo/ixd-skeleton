@@ -46,10 +46,16 @@
 .gallery-container-desk{
   display: none;
 }
+.gallery-title-desk{
+  display: none;
+}
 
 @media (min-width: 700px) {
   .gallery-container{
     display: none;
+  }
+  .gallery-title-desk{
+    display: block;
   }
   .gallery-container-desk{
     display:flex;
