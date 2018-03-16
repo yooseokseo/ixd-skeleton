@@ -201,12 +201,12 @@
 
 .menu-container {
   width: 100%;
-  height: 155rem;
+  height: 150rem;
 }
 
 .menu-box {
   width: 95%;
-  height: 150rem;
+  height: 145rem;
 }
 
 
@@ -216,7 +216,7 @@
   text-align: center;
   margin: 4rem 0;
   font-family: 'Oswald', sans-serif;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .menu-box-title {
