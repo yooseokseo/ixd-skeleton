@@ -130,7 +130,7 @@ background-size: cover;
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     .home-content-box{
-      margin-top: 36rem;
+      margin-top: 85vh;
       position:relative;
     }
 }
@@ -140,7 +140,7 @@ background-size: cover;
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
     .home-content-box{
-      margin-top: 36rem;
+      margin-top: 85vh;
       position:relative;
     }
 }
