@@ -36,7 +36,7 @@ $(function() {
   if (now > openHourStore1 && now < closedHourStore1) {
 
     $('#store1-open-closed').html('<span class="open-now" style="color:#ACBA9A;">Open Now</span>');
-
+    $('#store1-open-closed').css('left', '8.4rem');
     $('#store1-open-closed2').html('<span class="open-now" style="color:#ACBA9A;">Open Now</span>');
 
   }
@@ -49,6 +49,7 @@ $(function() {
   if (now > openHourStore2 && now < closedHourStore2) {
 
     $('#store2-open-closed').html('<span class="open-now" style="color:#ACBA9A;">Open Now</span>');
+    $('#store2-open-closed').css('left', '8.4rem');
     $('#store2-open-closed2').html('<span class="open-now" style="color:#ACBA9A;">Open Now</span>');
   }
   else {
@@ -59,6 +60,7 @@ $(function() {
   if (now > openHourStore3 && now < closedHourStore3) {
 
     $('#store3-open-closed').html('<span class="open-now" style="color:#ACBA9A;">Open Now</span>');
+    $('#store3-open-closed').css('left', '8.4rem');
     $('#store3-open-closed2').html('<span class="open-now" style="color:#ACBA9A;">Open Now</span>');
   }
   else {
