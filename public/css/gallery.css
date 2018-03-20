@@ -254,6 +254,9 @@
 .gallery-title-desk{
   display: none;
 }
+.sub-nav{
+  grid-area: Food-subtitle;
+}
 
 @media (min-width: 700px) {
   .gallery-container{
@@ -302,6 +305,11 @@
   .photo{
     background-position: center;
     background-size: cover;
+
+    /*
+    cursor: pointer;
+    */
+
   }
   #photo-0{
     grid-area:ft;
@@ -311,6 +319,7 @@
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 1rem;
+    cursor:inherit;
 
   }
   #photo-1{

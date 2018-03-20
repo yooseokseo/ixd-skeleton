@@ -1170,6 +1170,9 @@ a:visited{
   .carousel-circle-btn-container{
     bottom: 5rem;
   }
+  .menu-btn:hover{
+    color: black;
+  }
 
 
 

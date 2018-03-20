@@ -130,7 +130,12 @@ background-attachment: fixed;
 .franchsing-about{
   display: none;
 }
-
+.home-menu-btn:hover{
+  color: black;
+}
+.gallery-hover-1{
+  display: none;
+}
 
 
 
@@ -195,7 +200,7 @@ background-attachment: fixed;
     margin-top: 1rem;
   }
   .home-menu-1{
-    background-color: red;
+
     height: 25.5rem;
     width: 40%;
     display: flex;
@@ -249,4 +254,5 @@ background-attachment: fixed;
   .home-menu-desc{
     margin: 1rem 3rem;
   }
+  
 }

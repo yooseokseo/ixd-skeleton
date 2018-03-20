@@ -26,6 +26,9 @@ $('.g-food-btn').click(function(){
   $('.food-p').show();
   $('.interior-p').hide();
   $('.community-p').hide();
+  $('.gallery-box').css('grid-template-rows', '0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr');
+  $('.gallery-box').css('grid-template-areas', '"Food-title" "Fimage1" "Fimage2" "Fimage3" "Fimage4" "Fimage5" "Fimage6" "Fimage7" "Fimage8" "Fimage9"');
+  $('.sub-nav').hide();
 });
 
 $('.g-interior-btn').click(function(){
@@ -35,6 +38,9 @@ $('.g-interior-btn').click(function(){
   $('.food-p').hide();
   $('.interior-p').show();
   $('.community-p').hide();
+  //$('.gallery-box').css('grid-template-rows', '0.2fr 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr');
+  //$('.gallery-box').css('grid-template-areas', '"Food-title" "Food-subtitle" "Fimage1" "Fimage2" "Fimage3" "Fimage4" "Fimage5" "Fimage6" "Fimage7" "Fimage8" "Fimage9"');
+  $('.sub-nav').show();
 });
 
 $('.g-community-btn').click(function(){
@@ -45,3 +51,12 @@ $('.g-community-btn').click(function(){
   $('.interior-p').hide();
   $('.community-p').show();
 });
+
+/*
+$('.desk-photo-hover-1').mouseenter(function(){
+  $('.gallery-hover-1').slideDown();
+})
+$('.desk-photo-hover-1').mouseleave(function(){
+  $('.gallery-hover-1').hide();
+})
+*/
