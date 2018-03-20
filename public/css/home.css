@@ -29,7 +29,7 @@
 }
 .what-is-poke{
   font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
+  font-family: 'Pacifico', cursive;
   font-weight:300;
 }
 
@@ -243,5 +243,8 @@ background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+  }
+  .home-menu-desc{
+    margin: 1rem 3rem;
   }
 }
