@@ -276,20 +276,24 @@
   }
   .gallery-box{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 0.1fr 1fr 1fr 0.1fr 1fr 1fr;
     grid-template-areas:
-    "g1 g1 g1 g1 g1 g2 g2 g2"
-    "g1 g1 g1 g1 g1 g2 g2 g2"
-    "g4 g4 g5 g5 g6 g6 g6 g6"
-    "g4 g4 g7 g7 g6 g6 g6 g6"
-    "g4 g4 g7 g7 g6 g6 g6 g6"
-    "g8 g8 g8 g3 g3 g9 g9 g9";
+    "ft ft ft ft"
+    "f1 f2 f3 f4"
+    "f5 f6 f7 f8"
+    "it it it it"
+    "i1 i2 i3 i4"
+    "i5 i6 i7 i8"
+    "ct ct ct ct"
+    "c1 c2 c3 c4"
+    "c5 c6 c7 c8";
 
-    grid-gap: 0.8rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    height: 50rem;
+
+
+    height: auto;
+    grid-gap: 1rem;
+    margin-bottom: 10rem;
   }
   .gallery-box img{
     width: 100%;
@@ -300,40 +304,183 @@
     background-size: cover;
   }
   #photo-0{
-    grid-area:g1;
-    background-image: url('/images/gallery/1.jpg');
+    grid-area:ft;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
   }
   #photo-1{
-    grid-area:g2;
-    background-image: url('/images/gallery/2.jpg');
+    grid-area:f1;
+    background-image: url('/images/gallery/food/1.png');
+    background-position: center;
+    background-size: cover;
   }
   #photo-2{
-    grid-area:g3;
-    background-image: url('/images/gallery/3.jpg');
+    grid-area:f2;
+    background-image: url('/images/gallery/food/2.png');
+    background-position: center;
+    background-size: cover;
   }
   #photo-3{
-    grid-area:g4;
-    background-image: url('/images/gallery/4.jpg');
+    grid-area:f3;
+    background-image: url('/images/gallery/food/3.png');
+    background-position: center;
+    background-size: cover;
   }
   #photo-4{
-    grid-area:g5;
-    background-image: url('/images/gallery/5.jpg');
+    grid-area:f4;
+    background-image: url('/images/gallery/food/4.png');
+    background-position: center;
+    background-size: cover;
   }
   #photo-5{
-    grid-area:g6;
-    background-image: url('/images/gallery/6.jpg');
+    grid-area:f5;
+    background-image: url('/images/gallery/food/5.png');
+    background-position: center;
+    background-size: cover;
   }
   #photo-6{
-    grid-area:g7;
-    background-image: url('/images/gallery/7.jpg');
+    grid-area:f6;
+    background-image: url('/images/gallery/food/6.png');
+    background-position: center;
+    background-size: cover;
   }
   #photo-7{
-    grid-area:g8;
-    background-image: url('/images/gallery/8.jpg');
+    grid-area:f7;
+    background-image: url('/images/gallery/food/7.png');
+    background-position: center;
+    background-size: cover;
   }
   #photo-8{
-    grid-area:g9;
-    background-image: url('/images/gallery/9.jpeg');
+    grid-area:f8;
+    background-image: url('/images/gallery/food/9.jpg');
+    background-position: center;
+    background-size: cover;
   }
+  #photo-9{
+    grid-area:it;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+  #photo-10{
+    grid-area: i1;
+    background-image: url('/images/gallery/i/1.jpg');
+    background-position: center;
+    background-size: cover;
+
+
+  }
+  #photo-11{
+    grid-area: i2;
+    background-image: url('/images/gallery/i/2.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-12{
+    grid-area: i3;
+    background-image: url('/images/gallery/i/3.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-13{
+    grid-area: i4;
+    background-image: url('/images/gallery/i/5.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-14{
+    grid-area: i5;
+    background-image: url('/images/gallery/i/6.png');
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-15{
+    grid-area: i6;
+    background-image: url('/images/gallery/i/7.png');
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-16{
+    grid-area: i7;
+    background-image: url('/images/gallery/i/8.png');
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-17{
+    grid-area: i8;
+    background-image: url('/images/gallery/i/9.png');
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-18{
+    grid-area:ct;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+  #photo-19{
+    grid-area: c1;
+    background-image: url('/images/gallery/c/1.png');
+    background-position: center;
+    background-size: cover;
+
+
+  }
+  #photo-20{
+    grid-area: c2;
+    background-image: url('/images/gallery/c/3.png');
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-21{
+    grid-area: c3;
+    background-image: url('/images/gallery/c/4.png');
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-22{
+    grid-area: c4;
+    background-image: url('/images/gallery/c/5.png');
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-23{
+    grid-area: c5;
+    background-image: url('/images/gallery/c/6.png');
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-24{
+    grid-area: c6;
+    background-image: url('/images/gallery/c/7.png');
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-25{
+    grid-area: c7;
+    background-image: url('/images/gallery/c/8.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  #photo-26{
+    grid-area: c8;
+    background-image: url('/images/gallery/c/9.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
 
 }
