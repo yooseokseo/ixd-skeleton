@@ -19,9 +19,11 @@
     margin-top: 2rem;
 
 }
-.food-p{
+.gallery-active{
+  color: #ACBA9A;
 
 }
+
 .community-p{
   display: none;
 }
@@ -118,50 +120,51 @@
   text-align: center;
 }
 #photo-10{
-  grid-area: Iimage1;
+  grid-area: Fimage1;
   background-image: url('/images/gallery/i/1.jpg');
   background-position: center;
   background-size: cover;
+  height: 20rem;
 
 }
 #photo-11{
-  grid-area: Iimage2;
+  grid-area: Fimage2;
   background-image: url('/images/gallery/i/2.jpg');
   background-position: center;
   background-size: cover;
 }
 #photo-12{
-  grid-area: Iimage3;
+  grid-area: Fimage3;
   background-image: url('/images/gallery/i/3.jpg');
   background-position: center;
   background-size: cover;
 }
 #photo-13{
-  grid-area: Iimage4;
+  grid-area: Fimage4;
   background-image: url('/images/gallery/i/5.jpg');
   background-position: center;
   background-size: cover;
 }
 #photo-14{
-  grid-area: Iimage5;
+  grid-area: Fimage5;
   background-image: url('/images/gallery/i/6.png');
   background-position: center;
   background-size: cover;
 }
 #photo-15{
-  grid-area: Iimage6;
+  grid-area: Fimage6;
   background-image: url('/images/gallery/i/7.png');
   background-position: center;
   background-size: cover;
 }
 #photo-16{
-  grid-area: Iimage7;
+  grid-area: Fimage7;
   background-image: url('/images/gallery/i/8.png');
   background-position: center;
   background-size: cover;
 }
 #photo-17{
-  grid-area: Iimage8;
+  grid-area: Fimage8;
   background-image: url('/images/gallery/i/9.png');
   background-position: center;
   background-size: cover;
@@ -175,50 +178,51 @@
   text-align: center;
 }
 #photo-19{
-  grid-area: Cimage1;
+  grid-area: Fimage1;
   background-image: url('/images/gallery/c/1.png');
   background-position: center;
   background-size: cover;
+  height: 20rem;
 
 }
 #photo-20{
-  grid-area: Cimage2;
+  grid-area: Fimage2;
   background-image: url('/images/gallery/c/3.png');
   background-position: center;
   background-size: cover;
 }
 #photo-21{
-  grid-area: Cimage3;
+  grid-area: Fimage3;
   background-image: url('/images/gallery/c/4.png');
   background-position: center;
   background-size: cover;
 }
 #photo-22{
-  grid-area: Cimage4;
+  grid-area: Fimage4;
   background-image: url('/images/gallery/c/5.png');
   background-position: center;
   background-size: cover;
 }
 #photo-23{
-  grid-area: Cimage5;
+  grid-area: Fimage5;
   background-image: url('/images/gallery/c/6.png');
   background-position: center;
   background-size: cover;
 }
 #photo-24{
-  grid-area: Cimage6;
+  grid-area: Fimage6;
   background-image: url('/images/gallery/c/7.png');
   background-position: center;
   background-size: cover;
 }
 #photo-25{
-  grid-area: Cimage7;
+  grid-area: Fimage7;
   background-image: url('/images/gallery/c/8.jpg');
   background-position: center;
   background-size: cover;
 }
 #photo-26{
-  grid-area: Cimage8;
+  grid-area: Fimage8;
   background-image: url('/images/gallery/c/9.jpg');
   background-position: center;
   background-size: cover;
