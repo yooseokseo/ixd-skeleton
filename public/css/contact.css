@@ -241,7 +241,7 @@ color: #ACBA9A;
   font-weight: 300;
   position: absolute;
   top:0rem;
-  left: 9.5rem;
+  left: 9.3rem;
 }
 
 .start, .end {
@@ -431,7 +431,7 @@ font-weight: 300;
     height: 5rem;
   }
   .contact-content-box {
-    grid-template-columns: 2.5fr 5fr;
+    grid-template-columns: 2fr 5fr;
     grid-template-rows: 1fr;
     grid-template-areas: "Info Map";
     height: 18rem;

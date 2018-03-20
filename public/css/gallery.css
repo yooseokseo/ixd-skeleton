@@ -67,7 +67,7 @@
   background-image: url('/images/gallery/food/1.png');
   background-position: center;
   background-size: cover;
-  height: 12rem;
+  height: 18rem;
 }
 #photo-2{
   grid-area: Fimage2;
@@ -124,7 +124,7 @@
   background-image: url('/images/gallery/i/1.jpg');
   background-position: center;
   background-size: cover;
-  height: 12rem;
+  height: 18rem;
 
 }
 #photo-11{
@@ -182,7 +182,7 @@
   background-image: url('/images/gallery/c/1.png');
   background-position: center;
   background-size: cover;
-  height: 12rem;
+  height: 18rem;
 
 }
 #photo-20{
@@ -318,6 +318,7 @@
     background-image: url('/images/gallery/food/1.png');
     background-position: center;
     background-size: cover;
+    height: 12rem;
   }
   #photo-2{
     grid-area:f2;
@@ -376,6 +377,7 @@
     background-image: url('/images/gallery/i/1.jpg');
     background-position: center;
     background-size: cover;
+    height: 12rem;
 
 
   }
@@ -436,6 +438,7 @@
     background-image: url('/images/gallery/c/1.png');
     background-position: center;
     background-size: cover;
+    height: 12rem;
 
 
   }
