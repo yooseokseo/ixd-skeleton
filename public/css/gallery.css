@@ -19,47 +19,53 @@
     margin-top: 2rem;
 
 }
+.food-p{
+
+}
+.community-p{
+  display: none;
+}
+.interior-p{
+  display: none;
+}
 .gallery-box {
   width: 95%;
   height: auto;
   margin-bottom: 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 1.1fr 1fr 1fr 1fr 1fr 1.1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "Food-title Food-title"
-  "Fimage1 Fimage2"
-  "Fimage3 Fimage4"
-  "Fimage5 Fimage6"
-  "Fimage7 Fimage8"
-  "Int-title Int-title"
-  "Iimage1 Iimage2"
-  "Iimage3 Iimage4"
-  "Iimage5 Iimage6"
-  "Iimage7 Iimage8"
-  "C-title C-title"
-  "Cimage1 Cimage2"
-  "Cimage3 Cimage4"
-  "Cimage5 Cimage6"
-  "Cimage7 Cimage8";
-  grid-gap: 0.1rem;
+  "Food-title"
+  "Fimage1"
+  "Fimage2"
+  "Fimage3"
+  "Fimage4"
+  "Fimage5"
+  "Fimage6"
+  "Fimage7"
+  "Fimage8"
+  "Fimage9";
+  grid-row-gap: 0.3rem;
 
 
 }
 #photo-0{
   grid-area: Food-title;
-  margin-top: auto;
+  margin-top: 1rem;
   font-family: 'Oswald', sans-serif;
-  font-size: 2.5em;
-  margin-bottom: 2rem;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
   text-align: center;
+  font-weight: 300;
+
 }
 #photo-1{
   grid-area: Fimage1;
   background-image: url('/images/gallery/food/1.png');
   background-position: center;
   background-size: cover;
-  height: 12rem;
+  height: 20rem;
 }
 #photo-2{
   grid-area: Fimage2;
