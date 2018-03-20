@@ -23,7 +23,201 @@
   width: 95%;
   height: auto;
   margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 1.1fr 1fr 1fr 1fr 1fr 1.1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "Food-title Food-title"
+  "Fimage1 Fimage2"
+  "Fimage3 Fimage4"
+  "Fimage5 Fimage6"
+  "Fimage7 Fimage8"
+  "Int-title Int-title"
+  "Iimage1 Iimage2"
+  "Iimage3 Iimage4"
+  "Iimage5 Iimage6"
+  "Iimage7 Iimage8"
+  "C-title C-title"
+  "Cimage1 Cimage2"
+  "Cimage3 Cimage4"
+  "Cimage5 Cimage6"
+  "Cimage7 Cimage8";
+
+
 }
+#photo-0{
+  grid-area: Food-title;
+  margin-top: auto;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+#photo-1{
+  grid-area: Fimage1;
+  background-image: url('/images/gallery/food/1.png');
+  background-position: center;
+  background-size: cover;
+  height: 12rem;
+}
+#photo-2{
+  grid-area: Fimage2;
+  background-image: url('/images/gallery/food/2.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-3{
+  grid-area: Fimage3;
+  background-image: url('/images/gallery/food/3.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-4{
+  grid-area: Fimage4;
+  background-image: url('/images/gallery/food/4.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-5{
+  grid-area: Fimage5;
+  background-image: url('/images/gallery/food/5.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-6{
+  grid-area: Fimage6;
+  background-image: url('/images/gallery/food/6.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-7{
+  grid-area: Fimage7;
+  background-image: url('/images/gallery/food/7.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-8{
+  grid-area: Fimage8;
+  background-image: url('/images/gallery/food/9.jpg');
+  background-position: center;
+  background-size: cover;
+}
+#photo-9{
+  grid-area: Int-title;
+  margin-top: auto;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+#photo-10{
+  grid-area: Iimage1;
+  background-image: url('/images/gallery/i/1.jpg');
+  background-position: center;
+  background-size: cover;
+
+}
+#photo-11{
+  grid-area: Iimage2;
+  background-image: url('/images/gallery/i/2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+#photo-12{
+  grid-area: Iimage3;
+  background-image: url('/images/gallery/i/3.jpg');
+  background-position: center;
+  background-size: cover;
+}
+#photo-13{
+  grid-area: Iimage4;
+  background-image: url('/images/gallery/i/5.jpg');
+  background-position: center;
+  background-size: cover;
+}
+#photo-14{
+  grid-area: Iimage5;
+  background-image: url('/images/gallery/i/6.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-15{
+  grid-area: Iimage6;
+  background-image: url('/images/gallery/i/7.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-16{
+  grid-area: Iimage7;
+  background-image: url('/images/gallery/i/8.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-17{
+  grid-area: Iimage8;
+  background-image: url('/images/gallery/i/9.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-18{
+  grid-area: C-title;
+  margin-top: auto;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+#photo-19{
+  grid-area: Cimage1;
+  background-image: url('/images/gallery/c/1.png');
+  background-position: center;
+  background-size: cover;
+
+}
+#photo-20{
+  grid-area: Cimage2;
+  background-image: url('/images/gallery/c/3.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-21{
+  grid-area: Cimage3;
+  background-image: url('/images/gallery/c/4.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-22{
+  grid-area: Cimage4;
+  background-image: url('/images/gallery/c/5.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-23{
+  grid-area: Cimage5;
+  background-image: url('/images/gallery/c/6.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-24{
+  grid-area: Cimage6;
+  background-image: url('/images/gallery/c/7.png');
+  background-position: center;
+  background-size: cover;
+}
+#photo-25{
+  grid-area: Cimage7;
+  background-image: url('/images/gallery/c/8.jpg');
+  background-position: center;
+  background-size: cover;
+}
+#photo-26{
+  grid-area: Cimage8;
+  background-image: url('/images/gallery/c/9.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+
 
 .photo{
   width: 100%;
