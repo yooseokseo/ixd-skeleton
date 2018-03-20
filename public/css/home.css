@@ -51,8 +51,9 @@
   width: 100%;
 }
 .home-menu-1{
-  background-color: red;
-  height: 24rem;
+  background-image: url('/images/nav2.jpg');
+  background-size: cover;
+  height: 23rem;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -63,8 +64,9 @@
 
 }
 .home-menu-2{
-  background-color: gray;
-  height: 19.5rem;
+  background-image: url('/images/nav2.jpg');
+  background-size: cover;
+  height: 18.5rem;
   width: 90%;
   margin-top: 1rem;
   display: flex;
