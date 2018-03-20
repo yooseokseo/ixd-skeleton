@@ -30,30 +30,41 @@ $(function() {
   closedHourStore3.setHours(18);
   closedHourStore3.setMinutes(00);
   closedHourStore3.setSeconds(00);
-
+  console.log(now);
+  console.log(openHourStore1);
+  console.log(now > openHourStore1);
   if (now > openHourStore1 && now < closedHourStore1) {
 
     $('#store1-open-closed').html('<span class="open-now" style="color:#ACBA9A;">Open Now</span>');
+
+    $('#store1-open-closed2').html('<span class="open-now" style="color:#ACBA9A;">Open Now</span>');
+
   }
   else {
 
     $('#store1-open-closed').html('<b>CLOSED</b>');
+    $('#store1-open-closed2').html('<b>CLOSED</b>');
   }
+
   if (now > openHourStore2 && now < closedHourStore2) {
 
     $('#store2-open-closed').html('<span class="open-now" style="color:#ACBA9A;">Open Now</span>');
+    $('#store2-open-closed2').html('<span class="open-now" style="color:#ACBA9A;">Open Now</span>');
   }
   else {
 
     $('#store2-open-closed').html('<b>CLOSED</b>');
+      $('#store2-open-closed2').html('<b>CLOSED</b>');
   }
   if (now > openHourStore3 && now < closedHourStore3) {
 
     $('#store3-open-closed').html('<span class="open-now" style="color:#ACBA9A;">Open Now</span>');
+    $('#store3-open-closed2').html('<span class="open-now" style="color:#ACBA9A;">Open Now</span>');
   }
   else {
 
     $('#store3-open-closed').html('<b>CLOSED</b>');
+      $('#store3-open-closed2').html('<b>CLOSED</b>');
   }
 
 

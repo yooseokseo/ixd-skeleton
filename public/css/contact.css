@@ -436,9 +436,11 @@ font-weight: 300;
     grid-template-areas: "Info Map";
     height: 18rem;
     margin: 1rem auto;
+    width: 75%;
   }
   .contact-info {
-    height: 100%;
+
+  margin-top: 1rem;
   }
   .contact-map {
     grid-area: Map;
@@ -450,15 +452,22 @@ font-weight: 300;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
     grid-template-areas: "Name" "Adde" "Phone" "Hours";
+    height: 14rem;
   }
   .contact-hours {
     font-size: 1.3rem;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+
   }
   .open {
-    text-align: center;
+    position: relative;
+    text-align: left;
+    top: -2.2rem;
+    width: 10rem;
+    height: 1rem;
+    left: 9.3rem;
+
   }
   .start-end-hours{
     display: none;
@@ -472,6 +481,7 @@ font-weight: 300;
     right: 0;
     margin: 1rem;
 
+
   }
   .poke-form-container-desk{
     position: relative;
@@ -479,6 +489,7 @@ font-weight: 300;
     height: 30rem;
     background-color: #e1e1e1;
     display: none;
+
 
   }
   #name-input-desk::placeholder, #email-input-desk::placeholder, #textarea-input-desk::placeholder{

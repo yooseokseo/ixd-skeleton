@@ -67,7 +67,7 @@
   background-image: url('/images/gallery/food/1.png');
   background-position: center;
   background-size: cover;
-  height: 20rem;
+  height: 12rem;
 }
 #photo-2{
   grid-area: Fimage2;
@@ -124,7 +124,7 @@
   background-image: url('/images/gallery/i/1.jpg');
   background-position: center;
   background-size: cover;
-  height: 20rem;
+  height: 12rem;
 
 }
 #photo-11{
@@ -182,7 +182,7 @@
   background-image: url('/images/gallery/c/1.png');
   background-position: center;
   background-size: cover;
-  height: 20rem;
+  height: 12rem;
 
 }
 #photo-20{
@@ -290,10 +290,10 @@
     "c5 c6 c7 c8";
 
 
-
+    width: 85%;
     height: auto;
     grid-gap: 1rem;
-    margin-bottom: 10rem;
+    margin-bottom: 12rem;
   }
   .gallery-box img{
     width: 100%;
