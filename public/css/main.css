@@ -758,12 +758,16 @@ a:visited{
   font-weight: 400;
   font-size: 1.5rem;
   text-align: left;
+  grid-area:name;
 }
 .location-layout{
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "name adde"
+  "social adde";
 }
 .phone-box-text-num-2{
   font-family: 'Oswald', sans-serif;
@@ -771,6 +775,7 @@ a:visited{
   text-align:left;
   font-size: 1.1rem;
   margin-left: 0.5rem;
+  grid-area:adde;
 }
 .bot-nav-direction{
   font-family: 'Oswald', sans-serif;
