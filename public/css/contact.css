@@ -22,7 +22,7 @@ color: #ACBA9A;
 
 .contact-content-box {
   width: 90%;
-  height: 25rem;
+  height: 28rem;
   display: grid;
   margin: 1rem auto;
   grid-template-columns: 1fr;
@@ -45,11 +45,11 @@ color: #ACBA9A;
   grid-area: Info;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "Name" "Adde" "Phone" "Hours";
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "Name" "Adde" "Phone" "Hours" "Social";
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-  height: 13rem;
+  height: 17rem;
   color: black;
 }
 
@@ -450,8 +450,8 @@ font-weight: 300;
     grid-area: Info;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
-    grid-template-areas: "Name" "Adde" "Phone" "Hours";
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr;
+    grid-template-areas: "Name" "Adde" "Phone" "Hours" "Social";
     height: 14rem;
   }
   .contact-hours {
