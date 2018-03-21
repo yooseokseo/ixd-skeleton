@@ -13,7 +13,7 @@ color: #ACBA9A;
 
 .contact-content-container {
   width: 100%;
-  height: 110rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -227,7 +227,7 @@ color: #ACBA9A;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 100%;
-  height: 150rem;
+  height: 115rem;
 }
 
 .contact-form-container, .contact-form-box-desktop {
