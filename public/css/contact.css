@@ -452,7 +452,7 @@ font-weight: 300;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr;
     grid-template-areas: "Name" "Adde" "Phone" "Hours" "Social";
-    height: 14rem;
+    height: 16rem;
   }
   .contact-hours {
     font-size: 1.3rem;
